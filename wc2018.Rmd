@@ -39,6 +39,8 @@ points_by_match %>%
 
 ```{r standings, echo = FALSE}
 points_by_group %>% 
+  ungroup() %>% 
+  select(-group) %>% 
   kable() %>%
   gsub("<thead>.*</thead>", "", .) %>% 
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = T) %>% 
