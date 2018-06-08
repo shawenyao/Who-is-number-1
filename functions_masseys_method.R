@@ -36,7 +36,7 @@ masseys_method <- function(scoreboard){
     select(home_team, away_team) %>% 
     # create dummies indicating whether two teams have played
     model.matrix( ~ away_team + 0, .) %>%
-    as.data.frame() %>% 
+    as.tibble() %>% 
     bind_cols(
       scoreboard_doubled %>% select(home_team)
     ) %>% 
@@ -44,6 +44,7 @@ masseys_method <- function(scoreboard){
     # (due to the duplication in the first step, effectively treating away team as home team as well)
     group_by(home_team) %>% 
     summarise_all(sum) %>% 
+    # convert to data.frame to allow the use of column_to_rownames()
     as.data.frame() %>% 
     # convert the column home_team to row name
     column_to_rownames(var = "home_team") %>% 
@@ -65,9 +66,9 @@ masseys_method <- function(scoreboard){
   
   # adjust the net points scored vector and Massey matrix to prevent being singular
   adj_net_points_scored <- team_performance$net_points_scored
-  adj_massey_matrix <- massey_matrix
-  
   adj_net_points_scored[length(adj_net_points_scored)] <- 0
+  
+  adj_massey_matrix <- massey_matrix
   adj_massey_matrix[nrow(adj_massey_matrix), ] <- 1
   
   # solve for the overall Massey ratings
@@ -109,17 +110,19 @@ masseys_method <- function(scoreboard){
 
 #' make predictions of the match score based offensive/defensive ratings
 #' 
-#' @param home_team
-#' @param away_team
-#' @param ratings
+#' @param away_team the name of the away team
+#' @param home_team the name of the home team
+#' @param ratings the Massey's overall/offensive/defensive ratings
 #' 
 #' @return a data.frame
 #' 
-predict_score <- function(home_team, away_team, ratings){
+predict_score <- function(away_team, home_team, ratings){
   
+  # find the ratings for the away/home team
   away_team_ratings <- ratings %>% filter(team == away_team)
   home_team_ratings <- ratings %>% filter(team == home_team)
   
+  # predict scores
   tibble(
     away_team = away_team,
     home_team = home_team,
