@@ -1,0 +1,56 @@
+---
+title: "FIFA World Cup 2018 Predictions"
+author: Wenyao Sha
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(kableExtra)
+
+setwd("C:/Users/Wenyao/Desktop/R/Who-is-number-1")
+source("./main_fifa.R")
+```
+
+<br><br>
+
+```{r predictions, echo = FALSE}
+points_by_match %>% 
+  ungroup() %>% 
+  slice(1:(nrow(.)/2)) %>% 
+  mutate(score = paste0(away_team_score," : ", home_team_score)) %>% 
+  select(away_team, score, home_team) %>% 
+  kable() %>%
+  gsub("<thead>.*</thead>", "", .) %>% 
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = T) %>% 
+  group_rows("Group A", 1, 6) %>%
+  group_rows("Group B", 7, 12) %>% 
+  group_rows("Group C", 13, 18) %>% 
+  group_rows("Group D", 19, 24) %>% 
+  group_rows("Group E", 25, 30) %>% 
+  group_rows("Group F", 31, 36) %>% 
+  group_rows("Group G", 37, 42) %>% 
+  group_rows("Group H", 43, 48)
+```
+
+<br><br>
+
+```{r standings, echo = FALSE}
+points_by_group %>% 
+  kable() %>%
+  gsub("<thead>.*</thead>", "", .) %>% 
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = T) %>% 
+  group_rows("Group A", 1, 4) %>%
+  group_rows("Group B", 5, 8) %>% 
+  group_rows("Group C", 9, 12) %>% 
+  group_rows("Group D", 13, 16) %>% 
+  group_rows("Group E", 17, 20) %>% 
+  group_rows("Group F", 21, 24) %>% 
+  group_rows("Group G", 25, 28) %>% 
+  group_rows("Group H", 29, 32) %>% 
+  row_spec(1:2 + 4 * rep(0:7, each = 2), bold = T, color = "white", background = "#D7261E")
+```
+
+<br><br>

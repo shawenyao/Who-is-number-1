@@ -1,0 +1,128 @@
+#' Massey's rating method
+#'
+#' @param scoreboard score info for each match
+#'
+#' @return a data.frame of the final overall/offensive/defensive ratings
+#' 
+masseys_method <- function(scoreboard){
+  
+  #==== duplicate every single game by swapping the home/away teams ====
+  # effectively disregarding the home/away distinction
+  # for efficient implementation of the Massey's method
+  scoreboard_doubled <- scoreboard %>% 
+    select(
+      date, 
+      away_team = home_team, 
+      home_team = away_team, 
+      away_team_score = home_team_score, 
+      home_team_score = away_team_score
+    ) %>% 
+    # bind the original (unswapped) scoreboard
+    bind_rows(scoreboard)
+  
+  
+  #==== calculate points scored and net points scored for each team ====
+  team_performance <- scoreboard_doubled %>%
+    rename(team = home_team) %>% 
+    group_by(team) %>% 
+    summarise(
+      points_scored = sum(home_team_score),
+      net_points_scored = sum(home_team_score - away_team_score)
+    )
+  
+  
+  #==== count how many times each team has played against each other ====
+  massey_matrix <- scoreboard_doubled %>%
+    select(home_team, away_team) %>% 
+    # create dummies indicating whether two teams have played
+    model.matrix( ~ away_team + 0, .) %>%
+    as.data.frame() %>% 
+    bind_cols(
+      scoreboard_doubled %>% select(home_team)
+    ) %>% 
+    # aggregating the dummies grouped by the same home team
+    # (due to the duplication in the first step, effectively treating away team as home team as well)
+    group_by(home_team) %>% 
+    summarise_all(sum) %>% 
+    as.data.frame() %>% 
+    # convert the column home_team to row name
+    column_to_rownames(var = "home_team") %>% 
+    # get rid of the string "away_team" in the column names
+    set_colnames(colnames(.) %>% gsub("away_team", "", .)) %>% 
+    as.matrix()
+  
+  # the opposite of total games played pair-wise
+  massey_matrix <- -massey_matrix
+  
+  # set the diagonal elements to be the total number of games played by each team
+  diag(massey_matrix) <- -colSums(massey_matrix)
+  
+  
+  #==== the Massey's method ====
+  # make sure the order is consistent
+  all(team_performance$team == colnames(massey_matrix)) %>% stopifnot()
+  
+  # adjust the net points scored vector and Massey matrix to prevent being singular
+  adj_net_points_scored <- team_performance$net_points_scored
+  adj_massey_matrix <- massey_matrix
+  
+  adj_net_points_scored[length(adj_net_points_scored)] <- 0
+  adj_massey_matrix[nrow(adj_massey_matrix), ] <- 1
+  
+  # solve for the overall Massey ratings
+  massey_ratings <- solve(
+    a = adj_massey_matrix,
+    b = adj_net_points_scored,
+    tol = .Machine$double.xmin
+  )
+  
+  
+  #==== the advanced Massey's method ====
+  massey_matrix_T <- massey_matrix %>% diag() %>% diag()
+  massey_matrix_P <- -massey_matrix
+  diag(massey_matrix_P) <- 0
+  
+  # solve for the defensive ratings
+  defensive_ratings <- solve(
+    a = massey_matrix_T + massey_matrix_P,
+    b = (massey_matrix_T %*% massey_ratings - team_performance$points_scored) %>% as.numeric(),
+    tol = .Machine$double.xmin
+  )
+  
+  # derive the offensive ratings
+  offensive_ratings <- massey_ratings - defensive_ratings
+  
+  
+  #==== final ratings====
+  final_ratings <- tibble(
+    team = names(massey_ratings),
+    overall_rating = massey_ratings,
+    overall_rank = rank(-massey_ratings),
+    offensive_rating = offensive_ratings,
+    offensive_rank = rank(-offensive_ratings),
+    defensive_rating = defensive_ratings,
+    defensive_rank = rank(-defensive_ratings)
+  )
+}
+
+
+#' make predictions of the match score based offensive/defensive ratings
+#' 
+#' @param home_team
+#' @param away_team
+#' @param ratings
+#' 
+#' @return a data.frame
+#' 
+predict_score <- function(home_team, away_team, ratings){
+  
+  away_team_ratings <- ratings %>% filter(team == away_team)
+  home_team_ratings <- ratings %>% filter(team == home_team)
+  
+  tibble(
+    away_team = away_team,
+    home_team = home_team,
+    away_team_score = away_team_ratings$offensive_rating - home_team_ratings$defensive_rating,
+    home_team_score = home_team_ratings$offensive_rating - away_team_ratings$defensive_rating
+  )
+}
