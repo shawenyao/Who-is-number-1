@@ -47,7 +47,7 @@ matchups <- world_cup %>%
   map(function(df){
     combn(df$team, 2) %>%
       t() %>% 
-      as.data.frame() %>% 
+      as.tibble() %>% 
       set_colnames(c("home_team", "away_team"))
   }) %>% 
   bind_rows(.id = "group")
