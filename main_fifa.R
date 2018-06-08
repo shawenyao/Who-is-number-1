@@ -48,7 +48,7 @@ matchups <- world_cup %>%
     combn(df$team, 2) %>%
       t() %>% 
       as.tibble() %>% 
-      set_colnames(c("home_team", "away_team"))
+      set_colnames(c("away_team", "home_team"))
   }) %>% 
   bind_rows(.id = "group")
 
@@ -56,7 +56,8 @@ matchups <- world_cup %>%
 # the group stage
 matchups_results <- matchups %>% 
   mutate(
-    result = pmap(.,
+    result = pmap(
+      .,
       function(group, away_team, home_team){
         list(
           ratings_1y = ratings_1y,
@@ -77,7 +78,7 @@ matchups_results <- matchups %>%
 
 # aggregate match results across the 3 ratings
 matchups_results_agg <- matchups_results %>% 
-  group_by(group, home_team, away_team) %>% 
+  group_by(group, away_team, home_team) %>% 
   summarise(
     away_team_score = mean(away_team_score),
     home_team_score = mean(home_team_score)
