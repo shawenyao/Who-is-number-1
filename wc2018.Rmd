@@ -16,6 +16,8 @@ source("./main_fifa.R")
 
 <br><br>
 
+## Group Stage
+### Fixtures
 ```{r predictions, echo = FALSE}
 points_by_match %>% 
   ungroup() %>% 
@@ -37,6 +39,7 @@ points_by_match %>%
 
 <br><br>
 
+### Standings
 ```{r standings, echo = FALSE}
 points_by_group %>% 
   ungroup() %>% 
@@ -56,3 +59,8 @@ points_by_group %>%
 ```
 
 <br><br>
+
+## Knockout Stage
+```{r knockout, echo = FALSE}
+```
+

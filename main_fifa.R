@@ -53,6 +53,7 @@ matchups <- world_cup %>%
   bind_rows(.id = "group")
 
 #==== predict final scores using the 3 ratings====
+# the group stage
 matchups_results <- matchups %>% 
   mutate(
     result = pmap(.,
@@ -111,3 +112,22 @@ points_by_group <- points_by_match %>%
   group_by(group, team) %>% 
   summarise(points = sum(home_team_points)) %>% 
   arrange(group, -points)
+
+
+# the knockout stage
+group_stage_standings <- points_by_group %>% 
+  slice(1:2) %>% 
+  mutate(
+    team_code = paste0(group, row_number())
+  )
+
+round1_matchup <- tibble(
+  home_team_code = c("A1", "C1", "E1", "G1", "B1", "D1", "F1", "H1"),
+  away_team_code = c("B2", "D2", "F2", "H2", "A2", "C2", "E2", "G2")
+)
+
+group_stage_standings %>% 
+  rename(home_team = team) %>% 
+  left_join(round1_matchup, by = c("team_code" = "home_team_code")) %>% 
+  left_join(group_stage_standings %>% ungroup() %>% select(team, team_code), by = c("away_team_code" = "team_code")) %>% 
+  rename(away_team = team)
