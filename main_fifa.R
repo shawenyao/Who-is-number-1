@@ -27,7 +27,7 @@ ratings_2y <- masseys_method(scoreboard = fifa %>% filter(date >= "2016-06-07"))
 ratings_4y <- masseys_method(scoreboard = fifa %>% filter(date >= "2014-06-07"))
 
 
-#==== load World Cup 2018 matches info ====
+#==== load World Cup 2018 groups ====
 world_cup <- tibble(
   group = LETTERS[1:8] %>% rep(each = 4),
   team = c(
@@ -42,9 +42,11 @@ world_cup <- tibble(
   )
 )
 
+#==== the group statge matchup ====
 matchups <- world_cup %>% 
   split(.$group) %>% 
   map(function(df){
+    # all possible combinations of matchups within a group
     combn(df$team, 2) %>%
       t() %>% 
       as.tibble() %>% 
@@ -122,6 +124,7 @@ group_stage_standings <- points_by_group %>%
     team_code = paste0(group, row_number())
   )
 
+# knockout round 1 matchup
 round1_matchup <- tibble(
   home_team_code = c("A1", "C1", "E1", "G1", "B1", "D1", "F1", "H1"),
   away_team_code = c("B2", "D2", "F2", "H2", "A2", "C2", "E2", "G2")
