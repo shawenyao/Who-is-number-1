@@ -69,7 +69,7 @@ matchups_results <- matchups %>%
             away_team = away_team,
             home_team = home_team
           ) %>% 
-          bind_rows(.id = "Method") %>% 
+          bind_rows(.id = "method") %>% 
           select(-away_team, -home_team)
       }
     )
