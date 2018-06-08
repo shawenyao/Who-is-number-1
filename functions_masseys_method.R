@@ -61,6 +61,7 @@ masseys_method <- function(scoreboard){
   #==== the Massey's method ====
   # make sure the order is consistent
   all(team_performance$team == colnames(massey_matrix)) %>% stopifnot()
+  all(colnames(massey_matrix) == rownames(massey_matrix)) %>% stopifnot()
   
   # adjust the net points scored vector and Massey matrix to prevent being singular
   adj_net_points_scored <- team_performance$net_points_scored

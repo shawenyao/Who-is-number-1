@@ -97,6 +97,7 @@ points_by_match <-
   mutate(
     away_team_score = away_team_score %>% round(),
     home_team_score = home_team_score %>% round(),
+    # translate win/draw/lose to points
     home_team_points = case_when(
       home_team_score > away_team_score ~ 3,
       home_team_score == away_team_score ~ 1,
@@ -110,5 +111,3 @@ points_by_group <- points_by_match %>%
   group_by(group, team) %>% 
   summarise(points = sum(home_team_points)) %>% 
   arrange(group, -points)
-
-points_by_group %>% write.table("clipboard-128", row.names=FALSE, sep="\t")
