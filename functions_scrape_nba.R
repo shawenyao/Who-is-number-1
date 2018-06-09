@@ -22,6 +22,7 @@ nba_json_to_df <- function(json){
   out
 }
 
+
 #' scrape NBA.com to extract scoreboard info
 #'
 #' @param start_date

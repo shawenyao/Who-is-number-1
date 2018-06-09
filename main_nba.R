@@ -37,4 +37,4 @@ list(
     away_team = "GSW",
     home_team = "CLE"
   ) %>% 
-  bind_rows(.id = "Method")
+  bind_rows(.id = "method")

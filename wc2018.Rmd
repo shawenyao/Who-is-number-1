@@ -10,20 +10,36 @@ knitr::opts_chunk$set(echo = TRUE)
 
 library(kableExtra)
 
+# format match results in a print-friendly way
+print_match_results <- function(match_results){
+  
+  match_results %>% mutate(
+    away_team_score = away_team_score %>% round(),
+    home_team_score = home_team_score %>% round()
+  ) %>% 
+  mutate(score = paste0(away_team_score," : ", home_team_score)) %>% 
+  select(away_team, score, home_team)
+}
+
 setwd("C:/Users/Wenyao/Desktop/R/Who-is-number-1")
 source("./main_fifa.R")
 ```
 
 <br><br>
 
-## Group Stage
-### Fixtures
+All predictions given by:
+
+* Massey's rating method 
+* applied on [international football match results](https://www.kaggle.com/martj42/international-football-results-from-1872-to-2017)
+* equally weighted over a training window of the past 1/2/4 year(s)
+
+<br>
+
+### Group Stage
+<br>
 ```{r predictions, echo = FALSE}
-points_by_match %>% 
-  ungroup() %>% 
-  slice(1:(nrow(.)/2)) %>% 
-  mutate(score = paste0(away_team_score," : ", home_team_score)) %>% 
-  select(away_team, score, home_team) %>% 
+group_stage_results %>% 
+  print_match_results() %>% 
   kable() %>%
   gsub("<thead>.*</thead>", "", .) %>% 
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = T) %>% 
@@ -39,9 +55,10 @@ points_by_match %>%
 
 <br><br>
 
-### Standings
+### Group Standings
+<br>
 ```{r standings, echo = FALSE}
-points_by_group %>% 
+points_by_team %>% 
   ungroup() %>% 
   select(-group) %>% 
   kable() %>%
@@ -55,12 +72,30 @@ points_by_group %>%
   group_rows("Group F", 21, 24) %>% 
   group_rows("Group G", 25, 28) %>% 
   group_rows("Group H", 29, 32) %>% 
-  row_spec(1:2 + 4 * rep(0:7, each = 2), bold = T, color = "white", background = "#D7261E")
+  row_spec(1:2 + 4 * rep(0:7, each = 2), bold = T, color = "white", background = "steelblue")
 ```
 
 <br><br>
 
-## Knockout Stage
-```{r knockout, echo = FALSE}
+### Knockout Stage
+<br>
+```{r round_of_16, echo = FALSE}
+bind_rows(
+  round_of_16_results,
+  quarter_finals_results,
+  semi_finals_results,
+  third_place_playoff_results,
+  finals_results
+) %>% 
+  print_match_results() %>% 
+  kable() %>%
+  gsub("<thead>.*</thead>", "", .) %>% 
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = T) %>% 
+  group_rows("Round of 16", 1, 8) %>%
+  group_rows("Quarter-finals", 9, 12) %>% 
+  group_rows("Semi-finals", 13, 14) %>% 
+  group_rows("Third place playoff", 15, 15) %>% 
+  group_rows("Finals", 16, 16)
 ```
 
+<br><br>

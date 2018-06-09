@@ -1,3 +1,31 @@
+#' duplicate every single game's result by swapping the home/away teams
+#' effectively disregarding the home/away distinction
+#' 
+#' @param scoreboard a data.frame of scoreboard
+#' 
+#' @return a data.frame of duplicated scoreboard
+#' 
+duplicate_scoreboard <- function(scoreboard){
+  
+  scoreboard <- scoreboard %>% 
+    select(
+      away_team, home_team, away_team_score, home_team_score, everything()
+    )
+  
+  scoreboard %>% 
+    # swap the away/home columns
+    select(
+      away_team = home_team, 
+      home_team = away_team, 
+      away_team_score = home_team_score, 
+      home_team_score = away_team_score,
+      everything()
+    ) %>% 
+    # bind the original (unswapped) scoreboard
+    bind_rows(scoreboard)
+}
+
+
 #' Massey's rating method
 #'
 #' @param scoreboard score info for each match
@@ -9,18 +37,9 @@ masseys_method <- function(scoreboard){
   #==== duplicate every single game by swapping the home/away teams ====
   # effectively disregarding the home/away distinction
   # for efficient implementation of the Massey's method
-  scoreboard_doubled <- scoreboard %>% 
-    select(
-      date, 
-      away_team = home_team, 
-      home_team = away_team, 
-      away_team_score = home_team_score, 
-      home_team_score = away_team_score
-    ) %>% 
-    # bind the original (unswapped) scoreboard
-    bind_rows(scoreboard)
-  
-  
+  scoreboard_doubled <- duplicate_scoreboard(scoreboard)
+
+    
   #==== calculate points scored and net points scored for each team ====
   team_performance <- scoreboard_doubled %>%
     rename(team = home_team) %>% 
@@ -108,7 +127,7 @@ masseys_method <- function(scoreboard){
 }
 
 
-#' make predictions of the match score based offensive/defensive ratings
+#' make predictions for the match score based offensive/defensive ratings
 #' 
 #' @param away_team the name of the away team
 #' @param home_team the name of the home team
@@ -128,5 +147,49 @@ predict_score <- function(away_team, home_team, ratings){
     home_team = home_team,
     away_team_score = away_team_ratings$offensive_rating - home_team_ratings$defensive_rating,
     home_team_score = home_team_ratings$offensive_rating - away_team_ratings$defensive_rating
-  )
+  ) %>% 
+    mutate(
+      away_team_score = pmax(away_team_score, 0),
+      home_team_score = pmax(home_team_score, 0)
+    )
+}
+
+
+#' equally weight predictions from multiple sets of ratings
+#'
+#' @param ratings_list a list of ratings based on different methods
+#' @param matchups a data.frame of matchups
+#' 
+#' @return a data.frame of match results predictions
+#' 
+combine_multiple_predictions <- function(ratings_list, matchups){
+  
+  matchups_results <- matchups %>% 
+    mutate(
+      # loop over the each matchup (i.e., each pair of away/home teams)
+      result = pmap(
+        .,
+        function(group, away_team, home_team){
+          # loop over each set of ratings
+          ratings_list %>% 
+            map(
+              predict_score,
+              away_team = away_team,
+              home_team = home_team
+            ) %>% 
+            bind_rows(.id = "method") %>% 
+            select(-away_team, -home_team)
+        }
+      )
+    ) %>% 
+    unnest()
+  
+  # aggregate match results across all ratings
+  matchups_results_agg <- matchups_results %>% 
+    group_by(group, away_team, home_team) %>% 
+    summarise(
+      away_team_score = mean(away_team_score),
+      home_team_score = mean(home_team_score)
+    ) %>% 
+    ungroup()
 }
