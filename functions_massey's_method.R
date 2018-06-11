@@ -1,31 +1,3 @@
-#' duplicate every single game's result by swapping the home/away teams
-#' effectively disregarding the home/away distinction
-#' 
-#' @param scoreboard a data.frame of scoreboard
-#' 
-#' @return a data.frame of duplicated scoreboard
-#' 
-duplicate_scoreboard <- function(scoreboard){
-  
-  scoreboard <- scoreboard %>% 
-    select(
-      away_team, home_team, away_team_score, home_team_score, everything()
-    )
-  
-  scoreboard %>% 
-    # swap the away/home columns
-    select(
-      away_team = home_team, 
-      home_team = away_team, 
-      away_team_score = home_team_score, 
-      home_team_score = away_team_score,
-      everything()
-    ) %>% 
-    # bind the original (unswapped) scoreboard
-    bind_rows(scoreboard)
-}
-
-
 #' Massey's rating method
 #'
 #' @param scoreboard score info for each match
@@ -36,7 +8,6 @@ masseys_method <- function(scoreboard){
   
   #==== duplicate every single game by swapping the home/away teams ====
   # effectively disregarding the home/away distinction
-  # for efficient implementation of the Massey's method
   scoreboard_doubled <- duplicate_scoreboard(scoreboard)
 
     

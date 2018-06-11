@@ -3,7 +3,9 @@ library(tidyverse)
 library(rio)
 
 setwd("C:/Users/Wenyao/Desktop/R/Who-is-number-1")
-source("./functions_masseys_method.R")
+source("./functions_general.R")
+source("./functions_massey's_method.R")
+source("./functions_colley's_method.R")
 
 
 #==== load the historical NBA scoreboard data ====
@@ -21,16 +23,37 @@ nba_playoffs <- nba_playoffs %>%
 
 
 #==== apply Massey's method the rate team performance ====
-regular_season_ratings <- masseys_method(scoreboard = nba_regular_season)
-playoffs_ratings <- masseys_method(scoreboard = nba_playoffs)
-overall_ratings <- masseys_method(scoreboard = bind_rows(nba_regular_season, nba_playoffs))
+massey_regular_season_ratings <- masseys_method(scoreboard = nba_regular_season)
+massey_playoffs_ratings <- masseys_method(scoreboard = nba_playoffs)
+massey_overall_ratings <- masseys_method(scoreboard = bind_rows(nba_regular_season, nba_playoffs))
 
 
-#==== predict final scores ====
+#==== apply Colley's method the rate team performance ====
+colley_regular_season_ratings <- colleys_method(scoreboard = nba_regular_season)
+colley_playoffs_ratings <- colleys_method(scoreboard = nba_playoffs)
+colley_overall_ratings <- colleys_method(scoreboard = bind_rows(nba_regular_season, nba_playoffs))
+
+
+#==== create rankings comparison summary ====
+rankings_summary <- tibble(
+  Rank = 1:30,
+  
+  `Massey's Method @ Regular Season` = massey_regular_season_ratings %>% format_ratings(),
+  `Colley's Method @ Regular Season` = colley_regular_season_ratings %>% format_ratings(),
+  
+  `Massey's Method @ Playoffs` = massey_playoffs_ratings %>% format_ratings() %>% c(rep("", 14)),
+  `Colley's Method @ Playoffs` = colley_playoffs_ratings %>% format_ratings() %>% c(rep("", 14)),
+  
+  `Massey's Method @ Overall` = massey_overall_ratings %>% format_ratings(),
+  `Colley's Method @ Overall` = colley_overall_ratings %>% format_ratings()
+)
+
+
+#==== for fun: predict GSW vs CLE scores based on Massey's method ====
 list(
-  regular_season_ratings = regular_season_ratings,
-  playoffs_ratings = playoffs_ratings,
-  overall_ratings = overall_ratings
+  regular_season_ratings = massey_regular_season_ratings,
+  playoffs_ratings = massey_overall_ratings,
+  overall_ratings = massey_overall_ratings
 ) %>% 
   map(
     predict_score,

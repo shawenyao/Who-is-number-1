@@ -1,0 +1,44 @@
+---
+title: "NBA 2017-2018 Season Rankings"
+author: Wenyao Sha
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output: 
+  html_document:
+    includes:
+        in_header: myheader.html
+---
+
+```{r setup, include=FALSE}
+library(kableExtra)
+
+knitr::opts_chunk$set(echo = TRUE)
+
+# create myheader.html
+header_file <- file("myheader.html")
+writeLines('<link rel="shortcut icon" href="favicon.png" type="image/x-icon">', header_file)
+close(header_file)
+
+# format match results in a print-friendly way
+print_match_results <- function(match_results){
+  
+  match_results %>% mutate(
+    away_team_score = away_team_score %>% round(),
+    home_team_score = home_team_score %>% round()
+  ) %>% 
+  mutate(score = paste0(away_team_score," : ", home_team_score)) %>% 
+  select(away_team, score, home_team)
+}
+
+setwd("C:/Users/Wenyao/Desktop/R/Who-is-number-1")
+source("./main_nba.R")
+```
+
+<br><br>
+
+```{r predictions, echo = FALSE}
+rankings_summary %>% 
+  kable() %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = T)
+```
+
+<br><br>

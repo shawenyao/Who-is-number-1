@@ -4,7 +4,7 @@
 #' @param teams
 #' @param matchup_rules
 #' 
-#' @return 
+#' @return a data.frame of all possible matchups
 #' 
 find_matchups <- function(teams, matchup_rules){
   
