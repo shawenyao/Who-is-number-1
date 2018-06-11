@@ -28,7 +28,7 @@ print_match_results <- function(match_results){
   select(away_team, score, home_team)
 }
 
-source("./main_fifa.R")
+source("../main/main_fifa.R")
 ```
 
 <br><br>
