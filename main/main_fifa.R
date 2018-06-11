@@ -3,13 +3,13 @@ library(tidyverse)
 library(rio)
 
 setwd("C:/Users/Wenyao/Desktop/R/Who-is-number-1")
-source("./functions_general.R")
-source("./functions_fifa.R")
-source("./functions_massey's_method.R")
-source("./functions_colley's_method.R")
+source("./functions/functions_general.R")
+source("./functions/functions_fifa.R")
+source("./functions/functions_massey's_method.R")
+source("./functions/functions_colley's_method.R")
 
 #==== load the historical scoreboard data ====
-fifa <- import("./Data/FIFA_1982-2018.csv") %>% 
+fifa <- import("./data/FIFA_1982-2018.csv") %>% 
   as.tibble() %>% 
   select(
     date,
@@ -43,12 +43,14 @@ colley_ratings_4y <- colleys_method(scoreboard = fifa %>% filter(date >= "2014-0
 
 
 #==== simulate the match scores based on Massey's ratings ====
-source("./fifa_group_stage.R")
-source("./fifa_knockout_stage.R")
+source("./main/fifa_group_stage.R")
+source("./main/fifa_knockout_stage.R")
 
 
 #==== create rankings comparison summary ====
 rankings_summary <- tibble(
+  Rank = seq_along(group_stage_teams$team),
+  
   `Massey's Method @ 1Y` = massey_ratings_1y %>% format_ratings(group_stage_teams$team),
   `Colley's Method @ 1Y` = colley_ratings_1y %>% format_ratings(group_stage_teams$team),
   

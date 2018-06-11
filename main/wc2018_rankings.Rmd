@@ -1,0 +1,31 @@
+---
+title: "FIFA World Cup 2018 Rankings"
+author: Wenyao Sha
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output: 
+  html_document:
+    includes:
+        in_header: myheader.html
+---
+
+```{r setup, include=FALSE}
+library(kableExtra)
+knitr::opts_chunk$set(echo = TRUE)
+
+# create myheader.html
+header_file <- file("myheader.html")
+writeLines('<link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">', header_file)
+close(header_file)
+
+source("./main_fifa.R")
+```
+
+<br><br>
+
+```{r predictions, echo = FALSE}
+rankings_summary %>% 
+  kable() %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = T)
+```
+
+<br><br>

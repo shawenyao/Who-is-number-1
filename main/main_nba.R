@@ -3,14 +3,14 @@ library(tidyverse)
 library(rio)
 
 setwd("C:/Users/Wenyao/Desktop/R/Who-is-number-1")
-source("./functions_general.R")
-source("./functions_massey's_method.R")
-source("./functions_colley's_method.R")
+source("./functions/functions_general.R")
+source("./functions/functions_massey's_method.R")
+source("./functions/functions_colley's_method.R")
 
 
 #==== load the historical NBA scoreboard data ====
-nba_regular_season <- import("./Data/NBA_2017-2018_Regular_Season.RData") %>% as.tibble()
-nba_playoffs <- import("./Data/NBA_2017-2018_Playoffs.RData") %>% as.tibble()
+nba_regular_season <- import("./data/NBA_2017-2018_Regular_Season.RData") %>% as.tibble()
+nba_playoffs <- import("./data/NBA_2017-2018_Playoffs.RData") %>% as.tibble()
 
 nba_regular_season <- nba_regular_season %>%  
   # disregard all-star games

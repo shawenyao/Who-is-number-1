@@ -10,12 +10,11 @@ output:
 
 ```{r setup, include=FALSE}
 library(kableExtra)
-
 knitr::opts_chunk$set(echo = TRUE)
 
 # create myheader.html
 header_file <- file("myheader.html")
-writeLines('<link rel="shortcut icon" href="favicon.png" type="image/x-icon">', header_file)
+writeLines('<link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">', header_file)
 close(header_file)
 
 # format match results in a print-friendly way
@@ -29,7 +28,6 @@ print_match_results <- function(match_results){
   select(away_team, score, home_team)
 }
 
-setwd("C:/Users/Wenyao/Desktop/R/Who-is-number-1")
 source("./main_fifa.R")
 ```
 
