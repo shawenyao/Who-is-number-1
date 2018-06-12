@@ -12,9 +12,15 @@ output:
 library(kableExtra)
 knitr::opts_chunk$set(echo = TRUE)
 
-# create myheader.html
+# create myheader.html to include favicon and apple-touch-icon
 header_file <- file("myheader.html")
-writeLines('<link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">', header_file)
+writeLines(
+  c(
+    '<link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">',
+    '<link rel="apple-touch-icon" href="../images/apple-touch-icon.png" sizes="128x128">'
+  ), 
+  header_file
+)
 close(header_file)
 
 # format match results in a print-friendly way
