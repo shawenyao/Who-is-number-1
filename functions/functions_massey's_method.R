@@ -10,7 +10,7 @@ masseys_method <- function(scoreboard){
   # effectively disregarding the home/away distinction
   scoreboard_doubled <- duplicate_scoreboard(scoreboard)
 
-    
+  
   #==== calculate points scored and net points scored for each team ====
   team_performance <- scoreboard_doubled %>%
     rename(team = home_team) %>% 
