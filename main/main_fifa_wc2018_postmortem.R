@@ -18,4 +18,7 @@ tibble(
   `Massey's Method` = massey_ratings %>% format_ratings(),
   `Colley's Method` = colley_ratings %>% format_ratings()
 ) %>%
-  write.table("clipboard-128", row.names = FALSE, sep = "|")
+  add_row(Rank = "---", `Massey's Method` = "---", `Colley's Method` = "---", .before = 1) %>% 
+  mutate(Rank = paste0("|", Rank)) %>% 
+  rename(`|Rank` = Rank) %>% 
+  write.table("clipboard-128", row.names = FALSE, sep = "|", quote = FALSE, eol = "|\n")
