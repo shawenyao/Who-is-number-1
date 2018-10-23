@@ -15,7 +15,9 @@ source("./functions/functions_colley's_method.R")
 regular_season_2018_2019 <- scrape_nba_scoreboard(
   start_date = "2018-10-16",
   end_date = Sys.Date() %>% as.character()
-)
+) %>% 
+  # remove future games
+  na.omit()
 
 
 #==== apply Massey's method the rate team performance ====
