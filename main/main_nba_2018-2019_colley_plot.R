@@ -113,6 +113,6 @@ plot <- ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
 
 
 #==== output =====
-png("output/NBA_Ranking.png", width = 900, height = 1600)
+png("output/NBA_Ranking.png", width = 880, height = 1500)
 print(plot)
 dev.off()
