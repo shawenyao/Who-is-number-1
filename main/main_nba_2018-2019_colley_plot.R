@@ -55,7 +55,7 @@ plot <- ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
     minor_breaks = min(rankings$day):max(rankings$day), 
     expand = c(.05, .05),
     # labels = paste0("Day ", min(rankings$day):max(rankings$day))
-    labels = as_of_dates %>% format("%b %d, %Y")
+    labels = as_of_dates %>% format("%b %d")
   ) +
   scale_y_reverse(breaks = 1:30) +
   # the label background box on the left side
@@ -113,7 +113,7 @@ plot <- ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
 
 
 #==== output =====
-svg("output/NBA_Ranking.svg", width = 880, height = 1500)
+svg("output/NBA_Ranking.svg", width = 3 * 4, height = 5 * 4)
 print(plot)
 dev.off()
 
