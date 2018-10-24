@@ -7,6 +7,7 @@ source("./functions/functions_general.R")
 source("./functions/functions_massey's_method.R")
 source("./functions/functions_colley's_method.R")
 
+
 #==== load the historical scoreboard data ====
 fifa_wc2018_results <- import("./data/FIFA_WC2018.RData")
 
