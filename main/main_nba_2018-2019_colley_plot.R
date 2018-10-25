@@ -51,8 +51,8 @@ plot <- ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
   geom_point(aes(alpha = 1, color = team), size = 6) +
   geom_point(color = "white", size = 2) +
   scale_x_continuous(
-    breaks = min(rankings$day):max(rankings$day), 
-    minor_breaks = min(rankings$day):max(rankings$day), 
+    breaks = seq(from = min(rankings$day), to = max(rankings$day), by = 1), 
+    minor_breaks = seq(from = min(rankings$day), to = max(rankings$day), by = 1), 
     expand = c(.05, .05),
     # labels = paste0("Day ", min(rankings$day):max(rankings$day))
     labels = as_of_dates %>% format("%b %d")
@@ -116,10 +116,10 @@ plot <- ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
 print(plot)
 
 #==== output =====
-svg("output/NBA_Ranking.svg", width = 3 * 4, height = 5 * 4)
+svg("output/NBA_Ranking_2018-2019.svg", width = 3 * 4, height = 5 * 4)
 print(plot)
 dev.off()
 
-png("output/NBA_Ranking.png", width = 880, height = 1500)
+png("output/NBA_Ranking_2018-2019.png", width = 880, height = 1500)
 print(plot)
 dev.off()
