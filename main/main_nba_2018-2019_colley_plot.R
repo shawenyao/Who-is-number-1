@@ -105,12 +105,15 @@ plot <- ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
   theme_bw(base_size = 20) +
   theme(
     legend.position = "none",
+    plot.margin = margin(0.5, -1, 0, 0, "cm"),
+    axis.text.y = element_text(margin = margin(0, -1, 0, 0, "cm")),
+    axis.ticks = element_blank(),
     panel.grid.major.y = element_blank(),
     panel.grid.minor.y = element_blank(),
-    panel.border = element_blank(),
-    axis.ticks = element_blank()
+    panel.border = element_blank()
   )
 
+print(plot)
 
 #==== output =====
 svg("output/NBA_Ranking.svg", width = 3 * 4, height = 5 * 4)
@@ -120,4 +123,3 @@ dev.off()
 png("output/NBA_Ranking.png", width = 880, height = 1500)
 print(plot)
 dev.off()
-
