@@ -54,7 +54,6 @@ plot <- ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
     breaks = seq(from = min(rankings$day), to = max(rankings$day), by = 1), 
     minor_breaks = seq(from = min(rankings$day), to = max(rankings$day), by = 1), 
     expand = c(.05, .05),
-    # labels = paste0("Day ", min(rankings$day):max(rankings$day))
     labels = as_of_dates %>% format("%b %d")
   ) +
   scale_y_reverse(breaks = 1:30) +
