@@ -114,6 +114,7 @@ plot <- ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
 
 print(plot)
 
+
 #==== output =====
 svg("output/NBA_Ranking_2018-2019.svg", width = 3 * 4, height = 5 * 4)
 print(plot)
