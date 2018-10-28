@@ -105,7 +105,9 @@ plot <- ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
   theme_bw(base_size = 20) +
   theme(
     legend.position = "none",
-    plot.margin = margin(0.5, -0.5, 0, -0.5, "cm"),
+    plot.title = element_text(hjust = 0.04),
+    plot.subtitle = element_text(hjust = 0.03),
+    plot.margin = margin(0.5, -0.75, 0, -0.75, "cm"),
     axis.text.y.left = element_text(margin = margin(0, -1, 0, 0, "cm")),
     axis.text.y.right = element_text(margin = margin(0, 0, 0, -1, "cm")),
     axis.ticks = element_blank(),
