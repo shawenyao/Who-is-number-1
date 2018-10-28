@@ -22,7 +22,8 @@ regular_season_2018_2019 <- scrape_nba_scoreboard(
 #==== feed the match results incrementaly to the ranking algorithm
 # the first ranking can be produced after the 2nd day
 # when all teams have at least had one game
-as_of_dates <- seq(from = as.Date("2018-10-18"), to = Sys.Date(), by = 1)
+freqeuncy <- 1
+as_of_dates <- seq(from = as.Date("2018-10-18"), to = Sys.Date(), by = freqeuncy)
 
 # for each training window, find the Colley ranking
 rankings <- as_of_dates %>% 
@@ -51,40 +52,40 @@ plot <- ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
   geom_point(aes(alpha = 1, color = team), size = 6) +
   geom_point(color = "white", size = 2) +
   scale_x_continuous(
-    breaks = seq(from = min(rankings$day), to = max(rankings$day), by = 1), 
-    minor_breaks = seq(from = min(rankings$day), to = max(rankings$day), by = 1), 
+    breaks = seq(from = min(rankings$day), to = max(rankings$day), by = freqeuncy), 
+    minor_breaks = seq(from = min(rankings$day), to = max(rankings$day), by = freqeuncy), 
     expand = c(.05, .05),
     labels = as_of_dates %>% format("%b %d")
   ) +
-  scale_y_reverse(breaks = 1:30) +
+  scale_y_reverse(breaks = 1:30, sec.axis = dup_axis()) +
   # the label background box on the left side
   geom_tile(
     data = rankings %>% filter(day == min(rankings$day)), 
-    aes(x = min(rankings$day) - 0.5, y = rank, fill = team, color = team),
+    aes(x = min(rankings$day) - 0.6, y = rank, fill = team, color = team),
     height = 0.6, 
+    width = 0.6,
+    size = 1.3
+  ) + 
+  # the label background box on the right side
+  geom_tile(
+    data = rankings %>% filter(day == max(day)), 
+    aes(x = max(rankings$day) + 0.6, y = rank, fill = team, color = team),
+    height = 0.6,
     width = 0.6,
     size = 1.3
   ) + 
   # the label on the left side
   geom_text(
     data = rankings %>% filter(day == min(day)),
-    aes(label = team, x = min(rankings$day) - 0.5) , 
+    aes(label = team, x = min(rankings$day) - 0.6) , 
     fontface = "bold", 
     color = "white", 
     size = 5
   ) +
-  # the label background box on the right side
-  geom_tile(
-    data = rankings %>% filter(day == max(day)), 
-    aes(x = max(rankings$day) + 0.5, y = rank, fill = team, color = team),
-    height = 0.6,
-    width = 0.6,
-    size = 1.3
-  ) + 
   # the label on the right side
   geom_text(
     data = rankings %>% filter(day == max(day)),
-    aes(label = team, x = max(rankings$day) + 0.5) ,
+    aes(label = team, x = max(rankings$day) + 0.6) ,
     fontface = "bold",
     color = "white",
     size = 5
@@ -104,8 +105,9 @@ plot <- ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
   theme_bw(base_size = 20) +
   theme(
     legend.position = "none",
-    plot.margin = margin(0.5, -1, 0, 0, "cm"),
-    axis.text.y = element_text(margin = margin(0, -1, 0, 0, "cm")),
+    plot.margin = margin(0.5, -0.5, 0, -0.5, "cm"),
+    axis.text.y.left = element_text(margin = margin(0, -1, 0, 0, "cm")),
+    axis.text.y.right = element_text(margin = margin(0, 0, 0, -1, "cm")),
     axis.ticks = element_blank(),
     panel.grid.major.y = element_blank(),
     panel.grid.minor.y = element_blank(),
