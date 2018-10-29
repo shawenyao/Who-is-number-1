@@ -45,7 +45,7 @@ scrape_nba_scoreboard <- function(start_date, end_date){
       .,
       "/scoreboard.json"
     ) %>% 
-    map(readLines) %>% 
+    map(readLines, warn = FALSE) %>% 
     map(fromJSON) %>% 
     map(nba_json_to_df) %>% 
     bind_rows()
