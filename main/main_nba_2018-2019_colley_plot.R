@@ -4,13 +4,15 @@ library(tidyverse)
 library(magrittr)
 library(rio)
 
+
+#==== general setup ====
 setwd("C:/Users/Wenyao/Desktop/R/Who-is-number-1")
 source("./functions/functions_scrape_nba.R")
 source("./functions/functions_general.R")
 source("./functions/functions_colley's_method.R")
 
 
-#==== 2018 - 2019 Season ====
+#==== 2018 - 2019 Season game results ====
 regular_season_2018_2019 <- scrape_nba_scoreboard(
   start_date = "2018-10-16",
   end_date = Sys.Date() %>% as.character()
@@ -47,6 +49,8 @@ rankings <- as_of_dates %>%
 # load the NBA color palette
 nba_color_palette <- import("data/NBA_Color_Palette.csv")
 
+label_width <- 0.6
+
 plot <- ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
   geom_line(aes(alpha = 1, color = team), size = 2) +
   geom_point(aes(alpha = 1, color = team), size = 6) +
@@ -61,23 +65,23 @@ plot <- ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
   # the label background box on the left side
   geom_tile(
     data = rankings %>% filter(day == min(rankings$day)), 
-    aes(x = min(rankings$day) - 0.6, y = rank, fill = team, color = team),
+    aes(x = min(rankings$day) - label_width, y = rank, fill = team, color = team),
     height = 0.6, 
-    width = 0.6,
+    width = label_width,
     size = 1.3
   ) + 
   # the label background box on the right side
   geom_tile(
     data = rankings %>% filter(day == max(day)), 
-    aes(x = max(rankings$day) + 0.6, y = rank, fill = team, color = team),
+    aes(x = max(rankings$day) + label_width, y = rank, fill = team, color = team),
     height = 0.6,
-    width = 0.6,
+    width = label_width,
     size = 1.3
   ) + 
   # the label on the left side
   geom_text(
     data = rankings %>% filter(day == min(day)),
-    aes(label = team, x = min(rankings$day) - 0.6) , 
+    aes(label = team, x = min(rankings$day) - label_width) , 
     fontface = "bold", 
     color = "white", 
     size = 5
@@ -85,7 +89,7 @@ plot <- ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
   # the label on the right side
   geom_text(
     data = rankings %>% filter(day == max(day)),
-    aes(label = team, x = max(rankings$day) + 0.6) ,
+    aes(label = team, x = max(rankings$day) + label_width) ,
     fontface = "bold",
     color = "white",
     size = 5
