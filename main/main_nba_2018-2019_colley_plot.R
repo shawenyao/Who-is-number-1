@@ -3,6 +3,7 @@ library(zoo)
 library(tidyverse)
 library(magrittr)
 library(rio)
+library(beepr)
 
 
 #==== general setup ====
@@ -131,3 +132,6 @@ dev.off()
 png("output/NBA_Ranking_2018-2019.png", width = 880, height = 1500)
 print(plot)
 dev.off()
+
+# play sound when finished
+beep(sound = 2)
