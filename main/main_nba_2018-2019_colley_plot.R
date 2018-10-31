@@ -50,7 +50,7 @@ rankings <- as_of_dates %>%
 # load the NBA color palette
 nba_color_palette <- import("data/NBA_Color_Palette.csv")
 
-label_width <- 0.7
+label_width <- 0.9
 
 plot <- ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
   geom_line(aes(alpha = 1, color = team), size = 2) +
