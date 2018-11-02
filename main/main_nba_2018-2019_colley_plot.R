@@ -105,7 +105,7 @@ plot <- ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
     x = "",
     y = "",
     title = "NBA Power Ranking - Colley's Method",
-    subtitle = paste0("Last updated on ", Sys.Date() %>% format("%b %d, %Y"))
+    subtitle = paste0("Last updated on ", as_of_dates %>% tail(1) %>% format("%b %d, %Y"))
   ) +
   theme_bw(base_size = 20) +
   theme(
