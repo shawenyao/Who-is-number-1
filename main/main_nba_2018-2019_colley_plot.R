@@ -25,7 +25,7 @@ regular_season_2018_2019 <- scrape_nba_scoreboard(
 #==== feed the match results incrementaly to the ranking algorithm
 # the first ranking can be produced after the 2nd day
 # when all teams have at least had one game
-freqeuncy <- 3
+freqeuncy <- 4
 as_of_dates <- seq(from = as.Date("2018-10-18"), to = Sys.Date(), by = freqeuncy)
 
 # for each training window, find the Colley ranking
@@ -130,7 +130,7 @@ svg("output/NBA_Ranking_2018-2019.svg", width = 3 * 4, height = 5 * 4)
 print(plot)
 dev.off()
 
-png("output/NBA_Ranking_2018-2019.png", width = 880, height = 1500)
+png("output/NBA_Ranking_2018-2019.png", width = 880, height = 1500, type = "cairo")
 print(plot)
 dev.off()
 
