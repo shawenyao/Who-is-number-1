@@ -25,7 +25,7 @@ regular_season_2018_2019 <- scrape_nba_scoreboard(
 #==== feed the match results incrementaly to the ranking algorithm
 # the first ranking can be produced after the 2nd day
 # when all teams have at least had one game
-freqeuncy <- 4
+freqeuncy <- 5
 as_of_dates <- seq(from = as.Date("2018-10-18"), to = Sys.Date(), by = freqeuncy)
 
 # for each training window, find the Colley ranking
