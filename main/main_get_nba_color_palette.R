@@ -53,8 +53,8 @@ nba_team_color_palette <- tibble(
 ) %>% 
   # fix for the white color code
   mutate(
-    major_color = if_else(major_color == "#000", "#000000", major_color),
-    minor_color = if_else(minor_color == "#000", "#000000", minor_color)
+    major_color = if_else(major_color == "#000", "#000000", major_color) %>% toupper(),
+    minor_color = if_else(minor_color == "#000", "#000000", minor_color) %>% toupper()
   )
 
 
