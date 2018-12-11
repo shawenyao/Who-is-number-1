@@ -22,7 +22,7 @@ regular_season_2018_2019 <- scrape_nba_scoreboard(
   na.omit()
 
 
-#==== feed the match results incrementaly to the ranking algorithm
+#==== feed the match results incrementaly to the ranking algorithm ====
 # (the first ranking can be produced at least after the 2nd day
 # when all teams have at least had one game)
 # starting from the end of the first week
@@ -54,6 +54,7 @@ nba_color_palette <- import("data/NBA_Color_Palette.csv")
 # auto-adjust the width of team label
 label_width <- 0.07 * as.numeric(max(as_of_dates) - min(as_of_dates))
 
+#==== plot ====
 plot <- ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
   geom_line(aes(alpha = 1, color = team), size = 2) +
   geom_point(aes(alpha = 1, color = team), size = 6) +
