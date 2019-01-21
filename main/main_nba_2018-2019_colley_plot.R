@@ -54,6 +54,7 @@ nba_color_palette <- import("data/NBA_Color_Palette.csv")
 # auto-adjust the width of team label
 label_width <- 0.07 * as.numeric(max(as_of_dates) - min(as_of_dates))
 
+
 #==== plot ====
 plot <- ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
   geom_line(aes(alpha = 1, color = team), size = 2) +
@@ -63,7 +64,7 @@ plot <- ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
     breaks = seq(from = min(rankings$day), to = max(rankings$day), by = freqeuncy), 
     minor_breaks = seq(from = min(rankings$day), to = max(rankings$day), by = freqeuncy), 
     expand = c(.05, .05),
-    labels = as_of_dates %>% format("%b %d")
+    labels = as_of_dates %>% format("%m/%d")
   ) +
   scale_y_reverse(breaks = 1:30, sec.axis = dup_axis()) +
   # the label background box on the left side
