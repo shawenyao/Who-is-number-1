@@ -64,7 +64,7 @@ plot <- ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
     breaks = seq(from = min(rankings$day), to = max(rankings$day), by = freqeuncy), 
     minor_breaks = seq(from = min(rankings$day), to = max(rankings$day), by = freqeuncy), 
     expand = c(.05, .05),
-    labels = as_of_dates %>% format("%m/%d")
+    labels = as_of_dates %>% format("%b %d")
   ) +
   scale_y_reverse(breaks = 1:30, sec.axis = dup_axis()) +
   # the label background box on the left side
@@ -117,6 +117,7 @@ plot <- ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
     plot.title = element_text(hjust = 0.04),
     plot.subtitle = element_text(hjust = 0.03),
     plot.margin = margin(0.5, -0.75, 0, -0.75, "cm"),
+    axis.text.x = element_text(angle = 90),
     axis.text.y.left = element_text(margin = margin(0, -1.2, 0, 0, "cm")),
     axis.text.y.right = element_text(margin = margin(0, 0, 0, -1.2, "cm")),
     axis.ticks = element_blank(),
