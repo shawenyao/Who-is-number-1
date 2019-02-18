@@ -19,7 +19,11 @@ regular_season_2018_2019 <- scrape_nba_scoreboard(
   end_date = Sys.Date() %>% as.character()
 ) %>% 
   # remove future games
-  na.omit()
+  na.omit() %>% 
+  # remove all-star games
+  filter(
+    !home_team %in% c("USA", "GNS", "WST")
+  )
 
 
 #==== feed the match results incrementaly to the ranking algorithm ====
