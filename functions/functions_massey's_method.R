@@ -26,7 +26,7 @@ masseys_method <- function(scoreboard){
     select(home_team, away_team) %>% 
     # create dummies indicating whether two teams have played
     model.matrix( ~ away_team + 0, .) %>%
-    as.tibble() %>% 
+    as_tibble() %>% 
     bind_cols(
       scoreboard_doubled %>% select(home_team)
     ) %>% 
