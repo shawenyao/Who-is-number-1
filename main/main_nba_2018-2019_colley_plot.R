@@ -1,9 +1,9 @@
-library(jsonlite)
-library(zoo)
-library(tidyverse)
-library(magrittr)
-library(rio)
-library(beepr)
+suppressWarnings(library(jsonlite))
+suppressWarnings(library(zoo))
+suppressWarnings(library(tidyverse))
+suppressWarnings(library(magrittr))
+suppressWarnings(library(rio))
+suppressWarnings(library(beepr))
 
 
 #==== general setup ====
