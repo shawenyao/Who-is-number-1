@@ -121,7 +121,7 @@ plot <- ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
     plot.title = element_text(hjust = 0.04),
     plot.subtitle = element_text(hjust = 0.03),
     plot.margin = margin(0.5, -0.75, 0, -0.75, "cm"),
-    axis.text.x = element_text(angle = 45),
+    axis.text.x = element_text(angle = 50),
     axis.text.y.left = element_text(margin = margin(0, -1.2, 0, 0, "cm")),
     axis.text.y.right = element_text(margin = margin(0, 0, 0, -1.2, "cm")),
     axis.ticks = element_blank(),
