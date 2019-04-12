@@ -14,6 +14,10 @@ source("./functions/functions_colley's_method.R")
 source("./functions/functions_plot_nba_ranking.R")
 
 
+#==== NBA color palette ====
+nba_color_palette <- import("data/NBA_Color_Palette.csv")
+
+
 #==== 2018 - 2019 Season game results ====
 nba_2018_2019 <- scrape_nba_scoreboard(
   start_date = "2018-10-16",
@@ -21,13 +25,11 @@ nba_2018_2019 <- scrape_nba_scoreboard(
 ) %>% 
   # remove future games
   na.omit() %>% 
-  # remove all-star games
+  # keep only legitimate games
   filter(
-    !home_team %in% c("USA", "GNS", "WST")
+    home_team %in% unique(nba_color_palette$team_short_name),
+    away_team %in% unique(nba_color_palette$team_short_name)
   )
-
-#==== NBA color palette ====
-nba_color_palette <- import("data/NBA_Color_Palette.csv")
 
 
 #==== plot ====
