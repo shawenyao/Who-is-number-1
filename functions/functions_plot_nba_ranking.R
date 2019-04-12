@@ -2,15 +2,17 @@
 #' 
 #' @param ranking_start_date the first date of the ranking
 #' @param ranking_end_date the last date of the ranking
+#' @param frequency the time interval between two consecutive rankings
 #' @param scoreboard_full the complete scoreboard data.frame
 #' @param nba_color_palette the color palette data.frame
-#' @param title plot of the titl
+#' @param title plot of the title
 #' 
 #' @return a ggplot object
 #' 
 plot_nba_ranking <- function(
   ranking_start_date,
   ranking_end_date,
+  freqeuncy = 7,
   scoreboard_full,
   nba_color_palette,
   title
@@ -19,9 +21,7 @@ plot_nba_ranking <- function(
   #==== feed the match results incrementaly to the ranking algorithm ====
   # (the first ranking can be produced as early as the 2nd day
   # when all teams have at least had one game)
-  # starting from the end of the first week
-  freqeuncy <- 7
-  as_of_dates <- seq(from = ranking_start_date, to = ranking_end_date, by = freqeuncy)
+  as_of_dates <- seq(from = ranking_start_date, to = ranking_end_date, by = frequency)
   
   # for each training window, find the Colley ranking
   rankings <- as_of_dates %>% 
@@ -47,7 +47,7 @@ plot_nba_ranking <- function(
   
   
   #==== plot ====
-  plot <- ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
+  ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
     geom_line(aes(alpha = 1, color = team), size = 2) +
     geom_point(aes(alpha = 1, color = team), size = 6) +
     geom_point(color = "white", size = 2) +
