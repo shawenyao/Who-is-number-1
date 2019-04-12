@@ -27,7 +27,7 @@ regular_season_2018_2019 <- scrape_nba_scoreboard(
 
 
 #==== feed the match results incrementaly to the ranking algorithm ====
-# (the first ranking can be produced at least after the 2nd day
+# (the first ranking can be produced as early as the 2nd day
 # when all teams have at least had one game)
 # starting from the end of the first week
 freqeuncy <- 7
@@ -110,8 +110,6 @@ plot <- ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
     values = nba_color_palette$minor_color %>% set_names(nba_color_palette$team_short_name)
   ) +
   labs(
-    x = "",
-    y = "",
     title = "NBA Power Ranking - Colley's Method",
     subtitle = paste0("Last updated on ", as_of_dates %>% tail(1) %>% format("%b %d, %Y"))
   ) +
@@ -120,11 +118,12 @@ plot <- ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
     legend.position = "none",
     plot.title = element_text(hjust = 0.04),
     plot.subtitle = element_text(hjust = 0.03),
-    plot.margin = margin(0.5, -0.75, 0, -0.75, "cm"),
+    plot.margin = margin(0, -0.03, 0, -0.03, "cm"),
     axis.text.x = element_text(angle = 50),
     axis.text.y.left = element_text(margin = margin(0, -1.2, 0, 0, "cm")),
     axis.text.y.right = element_text(margin = margin(0, 0, 0, -1.2, "cm")),
     axis.ticks = element_blank(),
+    axis.title = element_blank(),
     panel.grid.major.y = element_blank(),
     panel.grid.minor.y = element_blank(),
     panel.border = element_blank()
@@ -144,3 +143,4 @@ dev.off()
 
 # play sound when finished
 beep(sound = 2)
+
