@@ -25,16 +25,16 @@ nba_json_to_df <- function(json){
 
 #' scrape NBA.com to extract scoreboard info
 #'
-#' @param start_date
-#' @param end_date
+#' @param start_date the first date to extract game score
+#' @param end_date the last date to extract game score
 #' 
 #' @return a data.frame
 #' 
 scrape_nba_scoreboard <- function(start_date, end_date){
   
   game_days <- seq(
-    from = start_date %>% as.Date(),
-    to = end_date %>% as.Date(),
+    from = start_date,
+    to = end_date,
     by = "day"
   ) %>% 
     format("%Y%m%d")

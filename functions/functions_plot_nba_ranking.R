@@ -1,7 +1,7 @@
 #' plot the evolution of nba power ranking
 #' 
-#' @param start_date the first date of the ranking
-#' @param end_date the last date of the ranking
+#' @param ranking_start_date the first date of the ranking
+#' @param ranking_end_date the last date of the ranking
 #' @param scoreboard_full the complete scoreboard data.frame
 #' @param nba_color_palette the color palette data.frame
 #' @param title plot of the titl
@@ -9,8 +9,8 @@
 #' @return a ggplot object
 #' 
 plot_nba_ranking <- function(
-  start_date,
-  end_date,
+  ranking_start_date,
+  ranking_end_date,
   scoreboard_full,
   nba_color_palette,
   title
@@ -21,7 +21,7 @@ plot_nba_ranking <- function(
   # when all teams have at least had one game)
   # starting from the end of the first week
   freqeuncy <- 7
-  as_of_dates <- seq(from = start_date, to = end_date, by = freqeuncy)
+  as_of_dates <- seq(from = ranking_start_date, to = ranking_end_date, by = freqeuncy)
   
   # for each training window, find the Colley ranking
   rankings <- as_of_dates %>% 
@@ -115,5 +115,4 @@ plot_nba_ranking <- function(
       panel.grid.minor.y = element_blank(),
       panel.border = element_blank()
     )
-  
 }

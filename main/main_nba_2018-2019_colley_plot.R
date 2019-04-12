@@ -18,10 +18,10 @@ source("./functions/functions_plot_nba_ranking.R")
 nba_color_palette <- import("data/NBA_Color_Palette.csv")
 
 
-#==== 2018 - 2019 Season game results ====
+#==== game results ====
 nba_2018_2019 <- scrape_nba_scoreboard(
-  start_date = "2018-10-16",
-  end_date = Sys.Date() %>% as.character()
+  start_date = as.Date("2018-10-16"),
+  end_date = Sys.Date()
 ) %>% 
   # remove future games
   na.omit() %>% 
@@ -34,8 +34,8 @@ nba_2018_2019 <- scrape_nba_scoreboard(
 
 #==== plot ====
 plot_2018_2019 <- plot_nba_ranking(
-  start_date = as.Date("2018-10-21"),
-  end_date = as.Date("2019-04-14"),
+  ranking_start_date = as.Date("2018-10-21"),
+  ranking_end_date = as.Date(Sys.Date()),
   scoreboard_full = nba_2018_2019,
   nba_color_palette = nba_color_palette,
   title = "NBA Power Ranking - Colley's Method"
@@ -44,11 +44,11 @@ plot_2018_2019 <- plot_nba_ranking(
 
 #==== output =====
 svg("output/NBA_Ranking_2018-2019.svg", width = 3 * 4, height = 5 * 4)
-print(plot)
+print(plot_2018_2019)
 dev.off()
 
 png("output/NBA_Ranking_2018-2019.png", width = 880, height = 1500, type = "cairo")
-print(plot)
+print(plot_2018_2019)
 dev.off()
 
 # play sound when finished
