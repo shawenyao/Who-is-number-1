@@ -5,6 +5,7 @@ suppressWarnings(library(magrittr))
 suppressWarnings(library(rio))
 suppressWarnings(library(beepr))
 
+set.seed(350)
 
 #==== general setup ====
 setwd("C:/Users/Wenyao/Desktop/R/Who-is-number-1")
