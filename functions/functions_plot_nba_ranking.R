@@ -12,7 +12,7 @@
 plot_nba_ranking <- function(
   ranking_start_date,
   ranking_end_date,
-  freqeuncy = 7,
+  frequency = 7,
   scoreboard_full,
   nba_color_palette,
   title
@@ -52,8 +52,8 @@ plot_nba_ranking <- function(
     geom_point(aes(alpha = 1, color = team), size = 6) +
     geom_point(color = "white", size = 2) +
     scale_x_continuous(
-      breaks = seq(from = min(rankings$day), to = max(rankings$day), by = freqeuncy), 
-      minor_breaks = seq(from = min(rankings$day), to = max(rankings$day), by = freqeuncy), 
+      breaks = seq(from = min(rankings$day), to = max(rankings$day), by = frequency), 
+      minor_breaks = seq(from = min(rankings$day), to = max(rankings$day), by = frequency), 
       expand = c(.05, .05),
       labels = as_of_dates %>% format("%b %d")
     ) +
