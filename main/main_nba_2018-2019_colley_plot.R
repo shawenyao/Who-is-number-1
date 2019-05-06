@@ -39,6 +39,7 @@ plot_2018_2019 <- plot_nba_ranking(
   ranking_start_date = as.Date("2018-10-21"),
   ranking_end_date = as.Date(Sys.Date()),
   scoreboard_full = nba_2018_2019,
+  frequency = 7,
   nba_color_palette = nba_color_palette,
   title = "NBA 2018-2019 Season Power Ranking - Colley's Method"
 )
