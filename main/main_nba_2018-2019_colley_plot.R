@@ -27,7 +27,7 @@ nba_2018_2019 <- scrape_nba_scoreboard(
 ) %>% 
   # remove future games
   na.omit() %>% 
-  # keep only legitimate games
+  # keep only legitimate games (i.e., remove all-stars)
   filter(
     home_team %in% unique(nba_color_palette$team_short_name),
     away_team %in% unique(nba_color_palette$team_short_name)
