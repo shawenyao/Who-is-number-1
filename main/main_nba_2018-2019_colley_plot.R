@@ -15,23 +15,31 @@ source("./functions/functions_general.R")
 source("./functions/functions_colley's_method.R")
 source("./functions/functions_plot_nba_ranking.R")
 
+# the match results
+scoreboard_file <- "data/nba_2018_2019.csv"
+
 
 #==== NBA color palette ====
 nba_color_palette <- import("data/NBA_Color_Palette.csv")
 
 
 #==== game results ====
-nba_2018_2019 <- scrape_nba_scoreboard(
-  start_date = as.Date("2018-10-16"),
-  end_date = Sys.Date()
-) %>% 
-  # remove future games
-  na.omit() %>% 
-  # keep only legitimate games (i.e., remove all-stars)
-  filter(
-    home_team %in% unique(nba_color_palette$team_short_name),
-    away_team %in% unique(nba_color_palette$team_short_name)
-  )
+if(file.exists(scoreboard_file)){
+  nba_2018_2019 <- import(scoreboard_file, colClasses = c("date" = "character"))
+}else{
+  nba_2018_2019 <- scrape_nba_scoreboard(
+    start_date = as.Date("2018-10-16"),
+    end_date = Sys.Date()
+  ) %>% 
+    # keep only legitimate games (i.e., remove all-stars)
+    filter(
+      home_team %in% unique(nba_color_palette$team_short_name),
+      away_team %in% unique(nba_color_palette$team_short_name)
+    )
+  
+  # stop if there is NA in the scoreboard scrape
+  stopifnot(all(!is.na(nba_2018_2019)))
+}
 
 
 #==== plot ====
