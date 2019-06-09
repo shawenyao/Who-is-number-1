@@ -25,8 +25,10 @@ nba_color_palette <- import("data/NBA_Color_Palette.csv")
 
 #==== game results ====
 if(file.exists(scoreboard_file)){
-  nba_2018_2019 <- import(scoreboard_file, colClasses = c("date" = "character"))
+  # read exisiting game results file
+  nba_2018_2019 <- scoreboard_file %>% import(colClasses = c("date" = "character"))
 }else{
+  # scrape NBA.com
   nba_2018_2019 <- scrape_nba_scoreboard(
     start_date = as.Date("2018-10-16"),
     end_date = Sys.Date()
