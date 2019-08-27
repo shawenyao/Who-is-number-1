@@ -6,7 +6,7 @@ library(magrittr)
 
 scrape_premier_league <- function(){
   
-  teams<-c(
+  teams <- c(
     "Arsenal",
     "Aston Villa",
     "Bournemouth",
