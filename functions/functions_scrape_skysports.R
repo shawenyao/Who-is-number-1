@@ -89,5 +89,5 @@ scrape_premier_league <- function(){
       date = paste0(month, " ", str_extract(day, "\\d+"), ", ", year) %>% as.Date("%B %d, %Y")
     ) %>% 
     select(date, home_team, away_team, home_team_score, away_team_score) %>% 
-    View()
+    arrange(date)
 }
