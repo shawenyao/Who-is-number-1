@@ -16,7 +16,7 @@ source("./functions/functions_colley's_method.R")
 source("./functions/functions_plot_nba_ranking.R")
 
 # the match results
-scoreboard_file <- "data/nba_2018_2019.csv"
+scoreboard_file <- "data/nba_2018-2019.csv"
 
 
 #==== NBA color palette ====
