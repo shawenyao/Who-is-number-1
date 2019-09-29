@@ -1,0 +1,543 @@
+league,date,home_team,home_team_score,away_team,away_team_score,home_team_full,away_team_full
+premier-league,2019-08-09,Liverpool,4,Norwich,1,Liverpool,Norwich City
+premier-league,2019-08-10,West Ham,0,Man City,5,West Ham United,Manchester City
+premier-league,2019-08-10,Bournemouth,1,Sheff Utd,1,AFC Bournemouth,Sheffield United
+premier-league,2019-08-10,Burnley,3,Southampton,0,Burnley,Southampton
+premier-league,2019-08-10,Crystal Palace,0,Everton,0,Crystal Palace,Everton
+premier-league,2019-08-10,Watford,0,Brighton,3,Watford,Brighton & Hove Albion
+premier-league,2019-08-10,Tottenham,3,Aston Villa,1,Tottenham Hotspur,Aston Villa
+premier-league,2019-08-11,Leicester,0,Wolves,0,Leicester City,Wolverhampton Wanderers
+premier-league,2019-08-11,Newcastle,0,Arsenal,1,Newcastle United,Arsenal
+premier-league,2019-08-11,Man Utd,4,Chelsea,0,Manchester United,Chelsea
+premier-league,2019-08-17,Arsenal,2,Burnley,1,Arsenal,Burnley
+premier-league,2019-08-17,Aston Villa,1,Bournemouth,2,Aston Villa,AFC Bournemouth
+premier-league,2019-08-17,Brighton,1,West Ham,1,Brighton & Hove Albion,West Ham United
+premier-league,2019-08-17,Everton,1,Watford,0,Everton,Watford
+premier-league,2019-08-17,Norwich,3,Newcastle,1,Norwich City,Newcastle United
+premier-league,2019-08-17,Southampton,1,Liverpool,2,Southampton,Liverpool
+premier-league,2019-08-17,Man City,2,Tottenham,2,Manchester City,Tottenham Hotspur
+premier-league,2019-08-18,Sheff Utd,1,Crystal Palace,0,Sheffield United,Crystal Palace
+premier-league,2019-08-18,Chelsea,1,Leicester,1,Chelsea,Leicester City
+premier-league,2019-08-19,Wolves,1,Man Utd,1,Wolverhampton Wanderers,Manchester United
+premier-league,2019-08-23,Aston Villa,2,Everton,0,Aston Villa,Everton
+premier-league,2019-08-24,Norwich,2,Chelsea,3,Norwich City,Chelsea
+premier-league,2019-08-24,Brighton,0,Southampton,2,Brighton & Hove Albion,Southampton
+premier-league,2019-08-24,Man Utd,1,Crystal Palace,2,Manchester United,Crystal Palace
+premier-league,2019-08-24,Sheff Utd,1,Leicester,2,Sheffield United,Leicester City
+premier-league,2019-08-24,Watford,1,West Ham,3,Watford,West Ham United
+premier-league,2019-08-24,Liverpool,3,Arsenal,1,Liverpool,Arsenal
+premier-league,2019-08-25,Bournemouth,1,Man City,3,AFC Bournemouth,Manchester City
+premier-league,2019-08-25,Tottenham,0,Newcastle,1,Tottenham Hotspur,Newcastle United
+premier-league,2019-08-25,Wolves,1,Burnley,1,Wolverhampton Wanderers,Burnley
+premier-league,2019-08-31,Southampton,1,Man Utd,1,Southampton,Manchester United
+premier-league,2019-08-31,Chelsea,2,Sheff Utd,2,Chelsea,Sheffield United
+premier-league,2019-08-31,Crystal Palace,1,Aston Villa,0,Crystal Palace,Aston Villa
+premier-league,2019-08-31,Leicester,3,Bournemouth,1,Leicester City,AFC Bournemouth
+premier-league,2019-08-31,Man City,4,Brighton,0,Manchester City,Brighton & Hove Albion
+premier-league,2019-08-31,Newcastle,1,Watford,1,Newcastle United,Watford
+premier-league,2019-08-31,West Ham,2,Norwich,0,West Ham United,Norwich City
+premier-league,2019-08-31,Burnley,0,Liverpool,3,Burnley,Liverpool
+premier-league,2019-09-01,Everton,3,Wolves,2,Everton,Wolverhampton Wanderers
+premier-league,2019-09-01,Arsenal,2,Tottenham,2,Arsenal,Tottenham Hotspur
+premier-league,2019-09-14,Liverpool,3,Newcastle,1,Liverpool,Newcastle United
+premier-league,2019-09-14,Brighton,1,Burnley,1,Brighton & Hove Albion,Burnley
+premier-league,2019-09-14,Man Utd,1,Leicester,0,Manchester United,Leicester City
+premier-league,2019-09-14,Sheff Utd,0,Southampton,1,Sheffield United,Southampton
+premier-league,2019-09-14,Tottenham,4,Crystal Palace,0,Tottenham Hotspur,Crystal Palace
+premier-league,2019-09-14,Wolves,2,Chelsea,5,Wolverhampton Wanderers,Chelsea
+premier-league,2019-09-14,Norwich,3,Man City,2,Norwich City,Manchester City
+premier-league,2019-09-15,Bournemouth,3,Everton,1,AFC Bournemouth,Everton
+premier-league,2019-09-15,Watford,2,Arsenal,2,Watford,Arsenal
+premier-league,2019-09-16,Aston Villa,0,West Ham,0,Aston Villa,West Ham United
+premier-league,2019-09-20,Southampton,1,Bournemouth,3,Southampton,AFC Bournemouth
+premier-league,2019-09-21,Leicester,2,Tottenham,1,Leicester City,Tottenham Hotspur
+premier-league,2019-09-21,Burnley,2,Norwich,0,Burnley,Norwich City
+premier-league,2019-09-21,Everton,0,Sheff Utd,2,Everton,Sheffield United
+premier-league,2019-09-21,Man City,8,Watford,0,Manchester City,Watford
+premier-league,2019-09-21,Newcastle,0,Brighton,0,Newcastle United,Brighton & Hove Albion
+premier-league,2019-09-22,Crystal Palace,1,Wolves,1,Crystal Palace,Wolverhampton Wanderers
+premier-league,2019-09-22,West Ham,2,Man Utd,0,West Ham United,Manchester United
+premier-league,2019-09-22,Arsenal,3,Aston Villa,2,Arsenal,Aston Villa
+premier-league,2019-09-22,Chelsea,1,Liverpool,2,Chelsea,Liverpool
+premier-league,2019-09-28,Sheff Utd,0,Liverpool,1,Sheffield United,Liverpool
+premier-league,2019-09-28,Aston Villa,2,Burnley,2,Aston Villa,Burnley
+premier-league,2019-09-28,Bournemouth,2,West Ham,2,AFC Bournemouth,West Ham United
+premier-league,2019-09-28,Chelsea,2,Brighton,0,Chelsea,Brighton & Hove Albion
+premier-league,2019-09-28,Crystal Palace,2,Norwich,0,Crystal Palace,Norwich City
+premier-league,2019-09-28,Tottenham,2,Southampton,1,Tottenham Hotspur,Southampton
+premier-league,2019-09-28,Wolves,2,Watford,0,Wolverhampton Wanderers,Watford
+premier-league,2019-09-28,Everton,1,Man City,3,Everton,Manchester City
+spanish-la-liga,2019-08-16,Ath Bilbao,1,Barcelona,0,Athletic Bilbao,Barcelona
+spanish-la-liga,2019-08-17,Celta Vigo,1,Real Madrid,3,Celta Vigo,Real Madrid
+spanish-la-liga,2019-08-17,Valencia,1,Real Sociedad,1,Valencia,Real Sociedad
+spanish-la-liga,2019-08-17,Mallorca,2,Eibar,1,Mallorca,Eibar
+spanish-la-liga,2019-08-17,Leganés,0,Osasuna,1,Leganés,Osasuna
+spanish-la-liga,2019-08-17,Villarreal,4,Granada,4,Villarreal,Granada
+spanish-la-liga,2019-08-18,Alavés,1,Levante,0,Alavés,Levante
+spanish-la-liga,2019-08-18,Espanyol,0,Sevilla,2,Espanyol,Sevilla
+spanish-la-liga,2019-08-18,Real Betis,1,Real Valladolid,2,Real Betis,Real Valladolid
+spanish-la-liga,2019-08-18,Atl Madrid,1,Getafe,0,Atlético Madrid,Getafe
+spanish-la-liga,2019-08-23,Granada,0,Sevilla,1,Granada,Sevilla
+spanish-la-liga,2019-08-23,Levante,2,Villarreal,1,Levante,Villarreal
+spanish-la-liga,2019-08-24,Osasuna,0,Eibar,0,Osasuna,Eibar
+spanish-la-liga,2019-08-24,Real Madrid,1,Real Valladolid,1,Real Madrid,Real Valladolid
+spanish-la-liga,2019-08-24,Celta Vigo,1,Valencia,0,Celta Vigo,Valencia
+spanish-la-liga,2019-08-24,Getafe,1,Ath Bilbao,1,Getafe,Athletic Bilbao
+spanish-la-liga,2019-08-25,Alavés,0,Espanyol,0,Alavés,Espanyol
+spanish-la-liga,2019-08-25,Mallorca,0,Real Sociedad,1,Mallorca,Real Sociedad
+spanish-la-liga,2019-08-25,Leganés,0,Atl Madrid,1,Leganés,Atlético Madrid
+spanish-la-liga,2019-08-25,Barcelona,5,Real Betis,2,Barcelona,Real Betis
+spanish-la-liga,2019-08-30,Sevilla,1,Celta Vigo,1,Sevilla,Celta Vigo
+spanish-la-liga,2019-08-30,Ath Bilbao,2,Real Sociedad,0,Athletic Bilbao,Real Sociedad
+spanish-la-liga,2019-08-31,Osasuna,2,Barcelona,2,Osasuna,Barcelona
+spanish-la-liga,2019-08-31,Getafe,1,Alavés,1,Getafe,Alavés
+spanish-la-liga,2019-08-31,Levante,2,Real Valladolid,0,Levante,Real Valladolid
+spanish-la-liga,2019-08-31,Real Betis,2,Leganés,1,Real Betis,Leganés
+spanish-la-liga,2019-09-01,Valencia,2,Mallorca,0,Valencia,Mallorca
+spanish-la-liga,2019-09-01,Atl Madrid,3,Eibar,2,Atlético Madrid,Eibar
+spanish-la-liga,2019-09-01,Espanyol,0,Granada,3,Espanyol,Granada
+spanish-la-liga,2019-09-01,Villarreal,2,Real Madrid,2,Villarreal,Real Madrid
+spanish-la-liga,2019-09-13,Mallorca,0,Ath Bilbao,0,Mallorca,Athletic Bilbao
+spanish-la-liga,2019-09-14,Real Madrid,3,Levante,2,Real Madrid,Levante
+spanish-la-liga,2019-09-14,Leganés,0,Villarreal,3,Leganés,Villarreal
+spanish-la-liga,2019-09-14,Real Sociedad,2,Atl Madrid,0,Real Sociedad,Atlético Madrid
+spanish-la-liga,2019-09-14,Barcelona,5,Valencia,2,Barcelona,Valencia
+spanish-la-liga,2019-09-15,Eibar,1,Espanyol,2,Eibar,Espanyol
+spanish-la-liga,2019-09-15,Alavés,0,Sevilla,1,Alavés,Sevilla
+spanish-la-liga,2019-09-15,Celta Vigo,0,Granada,2,Celta Vigo,Granada
+spanish-la-liga,2019-09-15,Real Valladolid,1,Osasuna,1,Real Valladolid,Osasuna
+spanish-la-liga,2019-09-15,Real Betis,1,Getafe,1,Real Betis,Getafe
+spanish-la-liga,2019-09-20,Osasuna,0,Real Betis,0,Osasuna,Real Betis
+spanish-la-liga,2019-09-21,Villarreal,2,Real Valladolid,0,Villarreal,Real Valladolid
+spanish-la-liga,2019-09-21,Levante,0,Eibar,0,Levante,Eibar
+spanish-la-liga,2019-09-21,Atl Madrid,0,Celta Vigo,0,Atlético Madrid,Celta Vigo
+spanish-la-liga,2019-09-21,Granada,2,Barcelona,0,Granada,Barcelona
+spanish-la-liga,2019-09-22,Getafe,4,Mallorca,2,Getafe,Mallorca
+spanish-la-liga,2019-09-22,Espanyol,1,Real Sociedad,3,Espanyol,Real Sociedad
+spanish-la-liga,2019-09-22,Valencia,1,Leganés,1,Valencia,Leganés
+spanish-la-liga,2019-09-22,Ath Bilbao,2,Alavés,0,Athletic Bilbao,Alavés
+spanish-la-liga,2019-09-22,Sevilla,0,Real Madrid,1,Sevilla,Real Madrid
+spanish-la-liga,2019-09-24,Real Valladolid,1,Granada,1,Real Valladolid,Granada
+spanish-la-liga,2019-09-24,Real Betis,3,Levante,1,Real Betis,Levante
+spanish-la-liga,2019-09-24,Barcelona,2,Villarreal,1,Barcelona,Villarreal
+spanish-la-liga,2019-09-25,Leganés,1,Ath Bilbao,1,Leganés,Athletic Bilbao
+spanish-la-liga,2019-09-25,Mallorca,0,Atl Madrid,2,Mallorca,Atlético Madrid
+spanish-la-liga,2019-09-25,Valencia,3,Getafe,3,Valencia,Getafe
+spanish-la-liga,2019-09-25,Real Madrid,2,Osasuna,0,Real Madrid,Osasuna
+spanish-la-liga,2019-09-26,Eibar,3,Sevilla,2,Eibar,Sevilla
+spanish-la-liga,2019-09-26,Celta Vigo,1,Espanyol,1,Celta Vigo,Espanyol
+spanish-la-liga,2019-09-26,Real Sociedad,3,Alavés,0,Real Sociedad,Alavés
+spanish-la-liga,2019-09-27,Villarreal,5,Real Betis,1,Villarreal,Real Betis
+spanish-la-liga,2019-09-28,Ath Bilbao,0,Valencia,1,Athletic Bilbao,Valencia
+spanish-la-liga,2019-09-28,Getafe,0,Barcelona,2,Getafe,Barcelona
+spanish-la-liga,2019-09-28,Granada,1,Leganés,0,Granada,Leganés
+spanish-la-liga,2019-09-28,Atl Madrid,0,Real Madrid,0,Atlético Madrid,Real Madrid
+italian-serie-a,2019-08-24,Parma,0,Juventus,1,Parma,Juventus
+italian-serie-a,2019-08-24,Fiorentina,3,Napoli,4,Fiorentina,Napoli
+italian-serie-a,2019-08-25,Udinese,1,AC Milan,0,Udinese,AC Milan
+italian-serie-a,2019-08-25,Cagliari,0,Brescia,1,Cagliari,Brescia
+italian-serie-a,2019-08-25,Roma,3,Genoa,3,Roma,Genoa
+italian-serie-a,2019-08-25,Sampdoria,0,Lazio,3,Sampdoria,Lazio
+italian-serie-a,2019-08-25,SPAL,2,Atalanta,3,SPAL,Atalanta
+italian-serie-a,2019-08-25,Torino,2,Sassuolo,1,Torino,Sassuolo
+italian-serie-a,2019-08-25,Hellas Verona,1,Bologna,1,Hellas Verona,Bologna
+italian-serie-a,2019-08-26,Inter Milan,4,Lecce,0,Inter Milan,Lecce
+italian-serie-a,2019-08-30,Bologna,1,SPAL,0,Bologna,SPAL
+italian-serie-a,2019-08-31,AC Milan,1,Brescia,0,AC Milan,Brescia
+italian-serie-a,2019-08-31,Juventus,4,Napoli,3,Juventus,Napoli
+italian-serie-a,2019-09-01,Lazio,1,Roma,1,Lazio,Roma
+italian-serie-a,2019-09-01,Atalanta,2,Torino,3,Atalanta,Torino
+italian-serie-a,2019-09-01,Cagliari,1,Inter Milan,2,Cagliari,Inter Milan
+italian-serie-a,2019-09-01,Genoa,2,Fiorentina,1,Genoa,Fiorentina
+italian-serie-a,2019-09-01,Lecce,0,Hellas Verona,1,Lecce,Hellas Verona
+italian-serie-a,2019-09-01,Sassuolo,4,Sampdoria,1,Sassuolo,Sampdoria
+italian-serie-a,2019-09-01,Udinese,1,Parma,3,Udinese,Parma
+italian-serie-a,2019-09-14,Fiorentina,0,Juventus,0,Fiorentina,Juventus
+italian-serie-a,2019-09-14,Napoli,2,Sampdoria,0,Napoli,Sampdoria
+italian-serie-a,2019-09-14,Inter Milan,1,Udinese,0,Inter Milan,Udinese
+italian-serie-a,2019-09-15,Genoa,1,Atalanta,2,Genoa,Atalanta
+italian-serie-a,2019-09-15,Brescia,3,Bologna,4,Brescia,Bologna
+italian-serie-a,2019-09-15,Parma,1,Cagliari,3,Parma,Cagliari
+italian-serie-a,2019-09-15,SPAL,2,Lazio,1,SPAL,Lazio
+italian-serie-a,2019-09-15,Roma,4,Sassuolo,2,Roma,Sassuolo
+italian-serie-a,2019-09-15,Hellas Verona,0,AC Milan,1,Hellas Verona,AC Milan
+italian-serie-a,2019-09-16,Torino,1,Lecce,2,Torino,Lecce
+italian-serie-a,2019-09-20,Cagliari,3,Genoa,1,Cagliari,Genoa
+italian-serie-a,2019-09-21,Udinese,0,Brescia,1,Udinese,Brescia
+italian-serie-a,2019-09-21,Juventus,2,Hellas Verona,1,Juventus,Hellas Verona
+italian-serie-a,2019-09-21,AC Milan,0,Inter Milan,2,AC Milan,Inter Milan
+italian-serie-a,2019-09-22,Sassuolo,3,SPAL,0,Sassuolo,SPAL
+italian-serie-a,2019-09-22,Bologna,1,Roma,2,Bologna,Roma
+italian-serie-a,2019-09-22,Lecce,1,Napoli,4,Lecce,Napoli
+italian-serie-a,2019-09-22,Sampdoria,1,Torino,0,Sampdoria,Torino
+italian-serie-a,2019-09-22,Atalanta,2,Fiorentina,2,Atalanta,Fiorentina
+italian-serie-a,2019-09-22,Lazio,2,Parma,0,Lazio,Parma
+italian-serie-a,2019-09-24,Hellas Verona,0,Udinese,0,Hellas Verona,Udinese
+italian-serie-a,2019-09-24,Brescia,1,Juventus,2,Brescia,Juventus
+italian-serie-a,2019-09-25,Roma,0,Atalanta,2,Roma,Atalanta
+italian-serie-a,2019-09-25,Fiorentina,2,Sampdoria,1,Fiorentina,Sampdoria
+italian-serie-a,2019-09-25,Genoa,0,Bologna,0,Genoa,Bologna
+italian-serie-a,2019-09-25,Inter Milan,1,Lazio,0,Inter Milan,Lazio
+italian-serie-a,2019-09-25,Napoli,0,Cagliari,1,Napoli,Cagliari
+italian-serie-a,2019-09-25,Parma,1,Sassuolo,0,Parma,Sassuolo
+italian-serie-a,2019-09-25,SPAL,1,Lecce,3,SPAL,Lecce
+italian-serie-a,2019-09-26,Torino,2,AC Milan,1,Torino,AC Milan
+italian-serie-a,2019-09-28,Juventus,2,SPAL,0,Juventus,SPAL
+italian-serie-a,2019-09-28,Sampdoria,1,Inter Milan,3,Sampdoria,Inter Milan
+italian-serie-a,2019-09-28,Sassuolo,1,Atalanta,4,Sassuolo,Atalanta
+german-bundesliga,2019-08-16,Bayern Munich,2,Hertha Berlin,2,Bayern Munich,Hertha Berlin
+german-bundesliga,2019-08-17,B Leverkusen,3,Paderborn,2,Bayer 04 Leverkusen,SC Paderborn 07
+german-bundesliga,2019-08-17,B Dortmund,5,Augsburg,1,Borussia Dortmund,FC Augsburg
+german-bundesliga,2019-08-17,Freiburg,3,Mainz,0,SC Freiburg,Mainz 05
+german-bundesliga,2019-08-17,Werder Bremen,1,Düsseldorf,3,Werder Bremen,Fortuna Düsseldorf
+german-bundesliga,2019-08-17,Wolfsburg,2,Köln,1,VfL Wolfsburg,1. FC Köln
+german-bundesliga,2019-08-17,B Mgladbach,0,Schalke,0,Borussia Mönchengladbach,FC Schalke 04
+german-bundesliga,2019-08-18,Frankfurt,1,Hoffenheim,0,Eintracht Frankfurt,1899 Hoffenheim
+german-bundesliga,2019-08-18,Union Berlin,0,RB Leipzig,4,1. FC Union Berlin,RB Leipzig
+german-bundesliga,2019-08-23,Köln,1,B Dortmund,3,1. FC Köln,Borussia Dortmund
+german-bundesliga,2019-08-24,Mainz,1,B Mgladbach,3,Mainz 05,Borussia Mönchengladbach
+german-bundesliga,2019-08-24,Augsburg,1,Union Berlin,1,FC Augsburg,1. FC Union Berlin
+german-bundesliga,2019-08-24,Düsseldorf,1,B Leverkusen,3,Fortuna Düsseldorf,Bayer 04 Leverkusen
+german-bundesliga,2019-08-24,Paderborn,1,Freiburg,3,SC Paderborn 07,SC Freiburg
+german-bundesliga,2019-08-24,Hoffenheim,3,Werder Bremen,2,1899 Hoffenheim,Werder Bremen
+german-bundesliga,2019-08-24,Schalke,0,Bayern Munich,3,FC Schalke 04,Bayern Munich
+german-bundesliga,2019-08-25,RB Leipzig,2,Frankfurt,1,RB Leipzig,Eintracht Frankfurt
+german-bundesliga,2019-08-25,Hertha Berlin,0,Wolfsburg,3,Hertha Berlin,VfL Wolfsburg
+german-bundesliga,2019-08-30,B Mgladbach,1,RB Leipzig,3,Borussia Mönchengladbach,RB Leipzig
+german-bundesliga,2019-08-31,B Leverkusen,0,Hoffenheim,0,Bayer 04 Leverkusen,1899 Hoffenheim
+german-bundesliga,2019-08-31,Bayern Munich,6,Mainz,1,Bayern Munich,Mainz 05
+german-bundesliga,2019-08-31,Schalke,3,Hertha Berlin,0,FC Schalke 04,Hertha Berlin
+german-bundesliga,2019-08-31,Freiburg,1,Köln,2,SC Freiburg,1. FC Köln
+german-bundesliga,2019-08-31,Wolfsburg,1,Paderborn,1,VfL Wolfsburg,SC Paderborn 07
+german-bundesliga,2019-08-31,Union Berlin,3,B Dortmund,1,1. FC Union Berlin,Borussia Dortmund
+german-bundesliga,2019-09-01,Werder Bremen,3,Augsburg,2,Werder Bremen,FC Augsburg
+german-bundesliga,2019-09-01,Frankfurt,2,Düsseldorf,1,Eintracht Frankfurt,Fortuna Düsseldorf
+german-bundesliga,2019-09-13,Düsseldorf,1,Wolfsburg,1,Fortuna Düsseldorf,VfL Wolfsburg
+german-bundesliga,2019-09-14,Köln,0,B Mgladbach,1,1. FC Köln,Borussia Mönchengladbach
+german-bundesliga,2019-09-14,Union Berlin,1,Werder Bremen,2,1. FC Union Berlin,Werder Bremen
+german-bundesliga,2019-09-14,Mainz,2,Hertha Berlin,1,Mainz 05,Hertha Berlin
+german-bundesliga,2019-09-14,B Dortmund,4,B Leverkusen,0,Borussia Dortmund,Bayer 04 Leverkusen
+german-bundesliga,2019-09-14,Augsburg,2,Frankfurt,1,FC Augsburg,Eintracht Frankfurt
+german-bundesliga,2019-09-14,RB Leipzig,1,Bayern Munich,1,RB Leipzig,Bayern Munich
+german-bundesliga,2019-09-15,Hoffenheim,0,Freiburg,3,1899 Hoffenheim,SC Freiburg
+german-bundesliga,2019-09-15,Paderborn,1,Schalke,5,SC Paderborn 07,FC Schalke 04
+german-bundesliga,2019-09-20,Schalke,2,Mainz,1,FC Schalke 04,Mainz 05
+german-bundesliga,2019-09-21,B Leverkusen,2,Union Berlin,0,Bayer 04 Leverkusen,1. FC Union Berlin
+german-bundesliga,2019-09-21,Bayern Munich,4,Köln,0,Bayern Munich,1. FC Köln
+german-bundesliga,2019-09-21,Hertha Berlin,2,Paderborn,1,Hertha Berlin,SC Paderborn 07
+german-bundesliga,2019-09-21,Freiburg,1,Augsburg,1,SC Freiburg,FC Augsburg
+german-bundesliga,2019-09-21,Werder Bremen,0,RB Leipzig,3,Werder Bremen,RB Leipzig
+german-bundesliga,2019-09-22,B Mgladbach,2,Düsseldorf,1,Borussia Mönchengladbach,Fortuna Düsseldorf
+german-bundesliga,2019-09-22,Frankfurt,2,B Dortmund,2,Eintracht Frankfurt,Borussia Dortmund
+german-bundesliga,2019-09-23,Wolfsburg,1,Hoffenheim,1,VfL Wolfsburg,1899 Hoffenheim
+german-bundesliga,2019-09-27,Union Berlin,1,Frankfurt,2,1. FC Union Berlin,Eintracht Frankfurt
+german-bundesliga,2019-09-28,Mainz,0,Wolfsburg,1,Mainz 05,VfL Wolfsburg
+german-bundesliga,2019-09-28,Augsburg,0,B Leverkusen,3,FC Augsburg,Bayer 04 Leverkusen
+german-bundesliga,2019-09-28,RB Leipzig,1,Schalke,3,RB Leipzig,FC Schalke 04
+german-bundesliga,2019-09-28,Paderborn,2,Bayern Munich,3,SC Paderborn 07,Bayern Munich
+german-bundesliga,2019-09-28,Hoffenheim,0,B Mgladbach,3,1899 Hoffenheim,Borussia Mönchengladbach
+german-bundesliga,2019-09-28,B Dortmund,2,Werder Bremen,2,Borussia Dortmund,Werder Bremen
+french-ligue-one,2019-08-09,Monaco,0,Lyon,3,Monaco,Lyon
+french-ligue-one,2019-08-10,Marseille,0,Reims,2,Marseille,Reims
+french-ligue-one,2019-08-10,Angers,3,Bordeaux,1,Angers,Bordeaux
+french-ligue-one,2019-08-10,Brest,1,Toulouse,1,Brest,Toulouse
+french-ligue-one,2019-08-10,Dijon,1,Saint-Étienne,2,Dijon,Saint-Étienne
+french-ligue-one,2019-08-10,Montpellier,0,Rennes,1,Montpellier,Rennes
+french-ligue-one,2019-08-10,Nice,2,Amiens,1,Nice,Amiens
+french-ligue-one,2019-08-11,Lille,2,Nantes,1,Lille,Nantes
+french-ligue-one,2019-08-11,Strasbourg,1,Metz,1,Strasbourg,Metz
+french-ligue-one,2019-08-11,PSG,3,Nîmes,0,Paris Saint Germain,Nîmes
+french-ligue-one,2019-08-16,Lyon,6,Angers,0,Lyon,Angers
+french-ligue-one,2019-08-17,Nantes,0,Marseille,0,Nantes,Marseille
+french-ligue-one,2019-08-17,Amiens,1,Lille,0,Amiens,Lille
+french-ligue-one,2019-08-17,Bordeaux,1,Montpellier,1,Bordeaux,Montpellier
+french-ligue-one,2019-08-17,Metz,3,Monaco,0,Metz,Monaco
+french-ligue-one,2019-08-17,Nîmes,1,Nice,2,Nîmes,Nice
+french-ligue-one,2019-08-17,Toulouse,1,Dijon,0,Toulouse,Dijon
+french-ligue-one,2019-08-18,Saint-Étienne,1,Brest,1,Saint-Étienne,Brest
+french-ligue-one,2019-08-18,Reims,0,Strasbourg,0,Reims,Strasbourg
+french-ligue-one,2019-08-18,Rennes,2,PSG,1,Rennes,Paris Saint Germain
+french-ligue-one,2019-08-24,Amiens,1,Nantes,2,Amiens,Nantes
+french-ligue-one,2019-08-24,Angers,3,Metz,0,Angers,Metz
+french-ligue-one,2019-08-24,Brest,1,Reims,0,Brest,Reims
+french-ligue-one,2019-08-24,Dijon,0,Bordeaux,2,Dijon,Bordeaux
+french-ligue-one,2019-08-25,Monaco,2,Nîmes,2,Monaco,Nîmes
+french-ligue-one,2019-08-25,Strasbourg,0,Rennes,2,Strasbourg,Rennes
+french-ligue-one,2019-08-25,PSG,4,Toulouse,0,Paris Saint Germain,Toulouse
+french-ligue-one,2019-08-27,Montpellier,1,Lyon,0,Montpellier,Lyon
+french-ligue-one,2019-08-28,Lille,3,Saint-Étienne,0,Lille,Saint-Étienne
+french-ligue-one,2019-08-28,Nice,1,Marseille,2,Nice,Marseille
+french-ligue-one,2019-08-30,Metz,0,PSG,2,Metz,Paris Saint Germain
+french-ligue-one,2019-08-31,Lyon,1,Bordeaux,1,Lyon,Bordeaux
+french-ligue-one,2019-08-31,Angers,2,Dijon,0,Angers,Dijon
+french-ligue-one,2019-08-31,Nantes,1,Montpellier,0,Nantes,Montpellier
+french-ligue-one,2019-08-31,Nîmes,3,Brest,0,Nîmes,Brest
+french-ligue-one,2019-08-31,Toulouse,2,Amiens,0,Toulouse,Amiens
+french-ligue-one,2019-09-01,Reims,2,Lille,0,Reims,Lille
+french-ligue-one,2019-09-01,Rennes,1,Nice,2,Rennes,Nice
+french-ligue-one,2019-09-01,Strasbourg,2,Monaco,2,Strasbourg,Monaco
+french-ligue-one,2019-09-01,Marseille,1,Saint-Étienne,0,Marseille,Saint-Étienne
+french-ligue-one,2019-09-13,Lille,2,Angers,1,Lille,Angers
+french-ligue-one,2019-09-13,Amiens,2,Lyon,2,Amiens,Lyon
+french-ligue-one,2019-09-14,PSG,1,Strasbourg,0,Paris Saint Germain,Strasbourg
+french-ligue-one,2019-09-14,Bordeaux,2,Metz,0,Bordeaux,Metz
+french-ligue-one,2019-09-14,Brest,0,Rennes,0,Brest,Rennes
+french-ligue-one,2019-09-14,Dijon,0,Nîmes,0,Dijon,Nîmes
+french-ligue-one,2019-09-14,Montpellier,2,Nice,1,Montpellier,Nice
+french-ligue-one,2019-09-15,Nantes,1,Reims,0,Nantes,Reims
+french-ligue-one,2019-09-15,Saint-Étienne,2,Toulouse,2,Saint-Étienne,Toulouse
+french-ligue-one,2019-09-15,Monaco,3,Marseille,4,Monaco,Marseille
+french-ligue-one,2019-09-20,Strasbourg,2,Nantes,1,Strasbourg,Nantes
+french-ligue-one,2019-09-21,Marseille,1,Montpellier,1,Marseille,Montpellier
+french-ligue-one,2019-09-21,Bordeaux,2,Brest,2,Bordeaux,Brest
+french-ligue-one,2019-09-21,Metz,1,Amiens,2,Metz,Amiens
+french-ligue-one,2019-09-21,Nice,2,Dijon,1,Nice,Dijon
+french-ligue-one,2019-09-21,Nîmes,1,Toulouse,0,Nîmes,Toulouse
+french-ligue-one,2019-09-21,Reims,0,Monaco,0,Reims,Monaco
+french-ligue-one,2019-09-22,Rennes,1,Lille,1,Rennes,Lille
+french-ligue-one,2019-09-22,Angers,4,Saint-Étienne,1,Angers,Saint-Étienne
+french-ligue-one,2019-09-22,Lyon,0,PSG,1,Lyon,Paris Saint Germain
+french-ligue-one,2019-09-24,Dijon,0,Marseille,0,Dijon,Marseille
+french-ligue-one,2019-09-24,Monaco,3,Nice,1,Monaco,Nice
+french-ligue-one,2019-09-25,Amiens,1,Bordeaux,3,Amiens,Bordeaux
+french-ligue-one,2019-09-25,Brest,2,Lyon,2,Brest,Lyon
+french-ligue-one,2019-09-25,Lille,2,Strasbourg,0,Lille,Strasbourg
+french-ligue-one,2019-09-25,Montpellier,1,Nîmes,0,Montpellier,Nîmes
+french-ligue-one,2019-09-25,Nantes,1,Rennes,0,Nantes,Rennes
+french-ligue-one,2019-09-25,Saint-Étienne,0,Metz,1,Saint-Étienne,Metz
+french-ligue-one,2019-09-25,Toulouse,0,Angers,2,Toulouse,Angers
+french-ligue-one,2019-09-25,PSG,0,Reims,2,Paris Saint Germain,Reims
+french-ligue-one,2019-09-28,Lyon,0,Nantes,1,Lyon,Nantes
+french-ligue-one,2019-09-28,Bordeaux,0,PSG,1,Bordeaux,Paris Saint Germain
+french-ligue-one,2019-09-28,Angers,1,Amiens,1,Angers,Amiens
+french-ligue-one,2019-09-28,Metz,2,Toulouse,2,Metz,Toulouse
+french-ligue-one,2019-09-28,Monaco,4,Brest,1,Monaco,Brest
+french-ligue-one,2019-09-28,Nice,1,Lille,1,Nice,Lille
+french-ligue-one,2019-09-28,Reims,1,Dijon,2,Reims,Dijon
+champions-league,2019-08-06,Apoel Nicosia,1,FK Qarabag,2,Apoel Nicosia,FK Qarabag
+champions-league,2019-08-06,PAOK Salonika,2,Ajax,2,PAOK Salonika,Ajax
+champions-league,2019-08-06,Dinamo Zagreb,1,Ferencvárosi TC,1,Dinamo Zagreb,Ferencvárosi TC
+champions-league,2019-08-06,Club Bruges,1,Dynamo Kiev,0,Club Bruges,Dynamo Kiev
+champions-league,2019-08-06,Red Star Belgrade,1,FC Copenhagen,1,Red Star Belgrade,FC Copenhagen
+champions-league,2019-08-07,FK Krasnodar,0,FC Porto,1,FK Krasnodar,FC Porto
+champions-league,2019-08-07,Istanbul Basaksehir,0,Olympiakos,1,Istanbul Basaksehir,Olympiakos
+champions-league,2019-08-07,FC Basel,1,LASK,2,FC Basel,LASK
+champions-league,2019-08-07,CFR Cluj,1,Celtic,1,CFR Cluj,Celtic
+champions-league,2019-08-07,NK Maribor,1,Rosenborg,3,NK Maribor,Rosenborg
+champions-league,2019-08-13,FK Qarabag,0,Apoel Nicosia,2,FK Qarabag,Apoel Nicosia
+champions-league,2019-08-13,Rosenborg,3,NK Maribor,1,Rosenborg,NK Maribor
+champions-league,2019-08-13,Dynamo Kiev,3,Club Bruges,3,Dynamo Kiev,Club Bruges
+champions-league,2019-08-13,FC Copenhagen,1,Red Star Belgrade,1,FC Copenhagen,Red Star Belgrade
+champions-league,2019-08-13,Ferencvárosi TC,0,Dinamo Zagreb,4,Ferencvárosi TC,Dinamo Zagreb
+champions-league,2019-08-13,Ajax,3,PAOK Salonika,2,Ajax,PAOK Salonika
+champions-league,2019-08-13,LASK,3,FC Basel,1,LASK,FC Basel
+champions-league,2019-08-13,Olympiakos,2,Istanbul Basaksehir,0,Olympiakos,Istanbul Basaksehir
+champions-league,2019-08-13,Celtic,3,CFR Cluj,4,Celtic,CFR Cluj
+champions-league,2019-08-13,FC Porto,2,FK Krasnodar,3,FC Porto,FK Krasnodar
+champions-league,2019-08-20,Apoel Nicosia,0,Ajax,0,Apoel Nicosia,Ajax
+champions-league,2019-08-20,CFR Cluj,0,Slavia Prague,1,CFR Cluj,Slavia Prague
+champions-league,2019-08-20,LASK,0,Club Bruges,1,LASK,Club Bruges
+champions-league,2019-08-21,Dinamo Zagreb,2,Rosenborg,0,Dinamo Zagreb,Rosenborg
+champions-league,2019-08-21,Olympiakos,4,FK Krasnodar,0,Olympiakos,FK Krasnodar
+champions-league,2019-08-21,Young Boys,2,Red Star Belgrade,2,Young Boys,Red Star Belgrade
+champions-league,2019-08-27,Red Star Belgrade,1,Young Boys,1,Red Star Belgrade,Young Boys
+champions-league,2019-08-27,FK Krasnodar,1,Olympiakos,2,FK Krasnodar,Olympiakos
+champions-league,2019-08-27,Rosenborg,1,Dinamo Zagreb,1,Rosenborg,Dinamo Zagreb
+champions-league,2019-08-28,Ajax,2,Apoel Nicosia,0,Ajax,Apoel Nicosia
+champions-league,2019-08-28,Club Bruges,2,LASK,1,Club Bruges,LASK
+champions-league,2019-08-28,Slavia Prague,1,CFR Cluj,0,Slavia Prague,CFR Cluj
+champions-league,2019-09-17,RB Salzburg,6,KRC Genk,2,FC Red Bull Salzburg,KRC Genk
+champions-league,2019-09-17,Napoli,2,Liverpool,0,Napoli,Liverpool
+champions-league,2019-09-17,Inter Milan,1,Slavia Prague,1,Inter Milan,Slavia Prague
+champions-league,2019-09-17,B Dortmund,0,Barcelona,0,Borussia Dortmund,Barcelona
+champions-league,2019-09-17,Lyon,1,Zenit St Petersburg,1,Lyon,Zenit St Petersburg
+champions-league,2019-09-17,Benfica,1,RB Leipzig,2,Benfica,RB Leipzig
+champions-league,2019-09-17,Ajax,3,Lille,0,Ajax,Lille
+champions-league,2019-09-17,Chelsea,0,Valencia,1,Chelsea,Valencia
+champions-league,2019-09-18,Club Bruges,0,Galatasaray,0,Club Bruges,Galatasaray
+champions-league,2019-09-18,PSG,3,Real Madrid,0,Paris Saint Germain,Real Madrid
+champions-league,2019-09-18,Olympiakos,2,Tottenham,2,Olympiakos,Tottenham Hotspur
+champions-league,2019-09-18,Bayern Munich,3,Red Star Belgrade,0,Bayern Munich,Red Star Belgrade
+champions-league,2019-09-18,Dinamo Zagreb,4,Atalanta,0,Dinamo Zagreb,Atalanta
+champions-league,2019-09-18,Shakhtar Donetsk,0,Man City,3,Shakhtar Donetsk,Manchester City
+champions-league,2019-09-18,Atl Madrid,2,Juventus,2,Atlético Madrid,Juventus
+champions-league,2019-09-18,B Leverkusen,1,Lokomotiv Moscow,2,Bayer 04 Leverkusen,Lokomotiv Moscow
+europa-league,2019-08-01,FC Astana,4,FC Santa Coloma,1,FC Astana,FC Santa Coloma
+europa-league,2019-08-01,Ordabasy,2,Mladá Boleslav,3,Ordabasy,Mladá Boleslav
+europa-league,2019-08-01,Kairat,1,Hapoel Be'er Sheva,1,Kairat,Hapoel Be'er Sheva
+europa-league,2019-08-01,Viitorul Constanta,2,KAA Gent,1,Viitorul Constanta,KAA Gent
+europa-league,2019-08-01,KuPS Kuopio,0,Legia Warsaw,0,KuPS Kuopio,Legia Warsaw
+europa-league,2019-08-01,Zorya Luhansk,1,Buducnost Podgorica,0,Zorya Luhansk,Buducnost Podgorica
+europa-league,2019-08-01,Universitatea Craiova,0,Budapest Honvéd,0,Universitatea Craiova,Budapest Honvéd
+europa-league,2019-08-01,BK Häcken,0,AZ Alkmaar,3,BK Häcken,AZ Alkmaar
+europa-league,2019-08-01,Debreceni VSC,1,Torino,4,Debreceni VSC,Torino
+europa-league,2019-08-01,Levski Sofia,0,AEK Larnaca,4,Levski Sofia,AEK Larnaca
+europa-league,2019-08-01,Riga FC,2,Piast Gliwice,1,Riga FC,Piast Gliwice
+europa-league,2019-08-01,AEL Limassol,0,Aris,1,AEL Limassol,Aris
+europa-league,2019-08-01,Apollon Limassol,3,Shamrock Rovers,1,Apollon Limassol,Shamrock Rovers
+europa-league,2019-08-01,Atromitos Athens,3,DAC Dunajská Streda,2,Atromitos Athens,DAC Dunajská Streda
+europa-league,2019-08-01,Dinamo Tbilisi,3,FK Qabala,0,Dinamo Tbilisi,FK Qabala
+europa-league,2019-08-01,FC Vaduz,2,Fehérvár,0,FC Vaduz,Fehérvár
+europa-league,2019-08-01,FK Jablonec,0,Pyunik,0,FK Jablonec,Pyunik
+europa-league,2019-08-01,FK Liepaja,0,IFK Norrköping,1,FK Liepaja,IFK Norrköping
+europa-league,2019-08-01,KI Klaksvík,0,Luzern,1,KI Klaksvík,Luzern
+europa-league,2019-08-01,Maccabi Haifa,2,Strasbourg,1,Maccabi Haifa,Strasbourg
+europa-league,2019-08-01,Malmö FF,3,Domzale,2,Malmö FF,Domzale
+europa-league,2019-08-01,Neftchi Baku,3,Arsenal Tula,0,Neftchi Baku,Arsenal Tula
+europa-league,2019-08-01,Sheriff Tiraspol,1,Partizani Tirana,1,Sheriff Tiraspol,Partizani Tirana
+europa-league,2019-08-01,Zrinjski Mostar,2,FC Utrecht,1,Zrinjski Mostar,FC Utrecht
+europa-league,2019-08-01,Brøndby IF,4,Lechia Gdansk,1,Brøndby IF,Lechia Gdansk
+europa-league,2019-08-01,Ludogorets,4,Valur Reykjavík,0,Ludogorets Razgrad,Valur Reykjavík
+europa-league,2019-08-01,Progrès Niederkorn,0,Rangers,0,Progrès Niederkorn,Rangers
+europa-league,2019-08-01,Esbjerg fB,0,Shakhtyor Soligorsk,0,Esbjerg fB,Shakhtyor Soligorsk
+europa-league,2019-08-01,Gzira United,2,Ventspils,2,Gzira United,Ventspils
+europa-league,2019-08-01,Olimpija Ljubljana,0,Yeni Malatyaspor,1,Olimpija Ljubljana,Yeni Malatyaspor
+europa-league,2019-08-01,Frankfurt,2,Flora,1,Eintracht Frankfurt,Flora
+europa-league,2019-08-01,Steaua Bucharest,2,Alashkert,3,Steaua Bucharest,Alashkert
+europa-league,2019-08-01,SK Sturm Graz,2,FK Haugesund,1,SK Sturm Graz,FK Haugesund
+europa-league,2019-08-01,Aberdeen,5,Chikhura Sachkhere,0,Aberdeen,Chikhura Sachkhere
+europa-league,2019-08-01,Linfield,1,HB Tórshavn,0,Linfield,HB Tórshavn
+europa-league,2019-08-01,NK Osijek,1,CSKA Sofia,0,NK Osijek,CSKA Sofia
+europa-league,2019-08-01,Spartak Trnava,3,Lokomotiv Plovdiv,1,Spartak Trnava,Lokomotiv Plovdiv
+europa-league,2019-08-01,Crusaders,1,Wolves,4,Crusaders,Wolverhampton Wanderers
+europa-league,2019-08-01,Partizan Belgrade,3,Connah's Quay Nomads,0,Partizan Belgrade,Connah's Quay Nomads
+europa-league,2019-08-01,Vitória Guimarães,4,Jeunesse Esch,0,Vitória Guimarães,Jeunesse Esch
+europa-league,2019-08-01,Stjarnan,1,Espanyol,3,Stjarnan,Espanyol
+europa-league,2019-08-06,Ararat-Armenia,1,Saburtalo,2,Ararat-Armenia,Saburtalo
+europa-league,2019-08-06,Riga FC,1,HJK Helsinki,1,Riga FC,HJK Helsinki
+europa-league,2019-08-06,Sutjeska Niksic,1,Linfield,2,Sutjeska Niksic,Linfield
+europa-league,2019-08-07,Slovan Bratislava,1,Dundalk,0,Slovan Bratislava,Dundalk
+europa-league,2019-08-08,FC Astana,5,Valletta FC,1,FC Astana,Valletta FC
+europa-league,2019-08-08,AEK Larnaca,1,KAA Gent,1,AEK Larnaca,KAA Gent
+europa-league,2019-08-08,Pyunik,0,Wolves,4,Pyunik,Wolverhampton Wanderers
+europa-league,2019-08-08,Sparta Prague,2,Trabzonspor,2,Sparta Prague,Trabzonspor
+europa-league,2019-08-08,Universitatea Craiova,0,AEK Athens,2,Universitatea Craiova,AEK Athens
+europa-league,2019-08-08,Brøndby IF,2,Sporting Braga,4,Brøndby IF,Sporting Braga
+europa-league,2019-08-08,Ventspils,0,Vitória Guimarães,3,Ventspils,Vitória Guimarães
+europa-league,2019-08-08,FK Haugesund,0,PSV Eindhoven,1,FK Haugesund,PSV Eindhoven
+europa-league,2019-08-08,Malmö FF,3,Zrinjski Mostar,0,Malmö FF,Zrinjski Mostar
+europa-league,2019-08-08,Mariupol,0,AZ Alkmaar,0,Mariupol,AZ Alkmaar
+europa-league,2019-08-08,Molde,3,Aris,0,Molde,Aris
+europa-league,2019-08-08,Neftchi Baku,2,Bnei Yehuda Tel Aviv,2,Neftchi Baku,Bnei Yehuda Tel Aviv
+europa-league,2019-08-08,Sheriff Tiraspol,1,AIK,2,Sheriff Tiraspol,AIK
+europa-league,2019-08-08,Thun,2,Spartak Moscow,3,Thun,Spartak Moscow
+europa-league,2019-08-08,CSKA Sofia,1,Zorya Luhansk,1,CSKA Sofia,Zorya Luhansk
+europa-league,2019-08-08,Feyenoord,4,Dinamo Tbilisi,0,Feyenoord,Dinamo Tbilisi
+europa-league,2019-08-08,Lokomotiv Plovdiv,0,Strasbourg,1,Lokomotiv Plovdiv,Strasbourg
+europa-league,2019-08-08,Ludogorets,5,The New Saints,0,Ludogorets Razgrad,The New Saints
+europa-league,2019-08-08,Maccabi Tel-Aviv,1,Suduva,2,Maccabi Tel-Aviv,Suduva
+europa-league,2019-08-08,Royal Antwerp,1,Viktoria Plzen,0,Royal Antwerp,Viktoria Plzen
+europa-league,2019-08-08,FK Sarajevo,1,BATE Borisov,2,FK Sarajevo,BATE Borisov
+europa-league,2019-08-08,F91 Dudelange,3,Nomme Kalju,1,F91 Dudelange,Nomme Kalju
+europa-league,2019-08-08,FC Midtjylland,2,Rangers,4,FC Midtjylland,Rangers
+europa-league,2019-08-08,HNK Rijeka,2,Aberdeen,0,HNK Rijeka,Aberdeen
+europa-league,2019-08-08,IFK Norrköping,1,Hapoel Be'er Sheva,1,IFK Norrköping,Hapoel Be'er Sheva
+europa-league,2019-08-08,FC Vaduz,0,Frankfurt,5,FC Vaduz,Eintracht Frankfurt
+europa-league,2019-08-08,Steaua Bucharest,0,Mladá Boleslav,0,Steaua Bucharest,Mladá Boleslav
+europa-league,2019-08-08,Austria Vienna,1,Apollon Limassol,2,Austria Vienna,Apollon Limassol
+europa-league,2019-08-08,Legia Warsaw,0,Atromitos Athens,0,Legia Warsaw,Atromitos Athens
+europa-league,2019-08-08,Luzern,0,Espanyol,3,Luzern,Espanyol
+europa-league,2019-08-08,Partizan Belgrade,3,Yeni Malatyaspor,1,Partizan Belgrade,Yeni Malatyaspor
+europa-league,2019-08-08,Torino,5,Shakhtyor Soligorsk,0,Torino,Shakhtyor Soligorsk
+europa-league,2019-08-13,Nomme Kalju,0,F91 Dudelange,1,Nomme Kalju,F91 Dudelange
+europa-league,2019-08-13,Linfield,3,Sutjeska Niksic,2,Linfield,Sutjeska Niksic
+europa-league,2019-08-13,Dundalk,1,Slovan Bratislava,3,Dundalk,Slovan Bratislava
+europa-league,2019-08-14,Atromitos Athens,0,Legia Warsaw,2,Atromitos Athens,Legia Warsaw
+europa-league,2019-08-14,Saburtalo,0,Ararat-Armenia,2,Saburtalo,Ararat-Armenia
+europa-league,2019-08-14,Vitória Guimarães,6,Ventspils,0,Vitória Guimarães,Ventspils
+europa-league,2019-08-15,HJK Helsinki,2,Riga FC,2,HJK Helsinki,Riga FC
+europa-league,2019-08-15,Dinamo Tbilisi,1,Feyenoord,1,Dinamo Tbilisi,Feyenoord
+europa-league,2019-08-15,Spartak Moscow,2,Thun,1,Spartak Moscow,Thun
+europa-league,2019-08-15,AIK,1,Sheriff Tiraspol,1,AIK,Sheriff Tiraspol
+europa-league,2019-08-15,Apollon Limassol,3,Austria Vienna,1,Apollon Limassol,Austria Vienna
+europa-league,2019-08-15,BATE Borisov,0,FK Sarajevo,0,BATE Borisov,FK Sarajevo
+europa-league,2019-08-15,Bnei Yehuda Tel Aviv,2,Neftchi Baku,1,Bnei Yehuda Tel Aviv,Neftchi Baku
+europa-league,2019-08-15,Mladá Boleslav,0,Steaua Bucharest,1,Mladá Boleslav,Steaua Bucharest
+europa-league,2019-08-15,Shakhtyor Soligorsk,1,Torino,1,Shakhtyor Soligorsk,Torino
+europa-league,2019-08-15,Suduva,2,Maccabi Tel-Aviv,1,Suduva,Maccabi Tel-Aviv
+europa-league,2019-08-15,Yeni Malatyaspor,1,Partizan Belgrade,0,Yeni Malatyaspor,Partizan Belgrade
+europa-league,2019-08-15,Zorya Luhansk,1,CSKA Sofia,0,Zorya Luhansk,CSKA Sofia
+europa-league,2019-08-15,Zrinjski Mostar,1,Malmö FF,0,Zrinjski Mostar,Malmö FF
+europa-league,2019-08-15,Hapoel Be'er Sheva,3,IFK Norrköping,1,Hapoel Be'er Sheva,IFK Norrköping
+europa-league,2019-08-15,The New Saints,0,Ludogorets,4,The New Saints,Ludogorets Razgrad
+europa-league,2019-08-15,Trabzonspor,2,Sparta Prague,1,Trabzonspor,Sparta Prague
+europa-league,2019-08-15,AEK Athens,1,Universitatea Craiova,1,AEK Athens,Universitatea Craiova
+europa-league,2019-08-15,Valletta FC,0,FC Astana,4,Valletta FC,FC Astana
+europa-league,2019-08-15,Viktoria Plzen,2,Royal Antwerp,1,Viktoria Plzen,Royal Antwerp
+europa-league,2019-08-15,Aris,3,Molde,1,Aris,Molde
+europa-league,2019-08-15,AZ Alkmaar,4,Mariupol,0,AZ Alkmaar,Mariupol
+europa-league,2019-08-15,Frankfurt,1,FC Vaduz,0,Eintracht Frankfurt,FC Vaduz
+europa-league,2019-08-15,KAA Gent,3,AEK Larnaca,0,KAA Gent,AEK Larnaca
+europa-league,2019-08-15,PSV Eindhoven,0,FK Haugesund,0,PSV Eindhoven,FK Haugesund
+europa-league,2019-08-15,Strasbourg,1,Lokomotiv Plovdiv,0,Strasbourg,Lokomotiv Plovdiv
+europa-league,2019-08-15,Aberdeen,0,HNK Rijeka,2,Aberdeen,HNK Rijeka
+europa-league,2019-08-15,Rangers,3,FC Midtjylland,1,Rangers,FC Midtjylland
+europa-league,2019-08-15,Sporting Braga,3,Brøndby IF,1,Sporting Braga,Brøndby IF
+europa-league,2019-08-15,Wolves,4,Pyunik,0,Wolverhampton Wanderers,Pyunik
+europa-league,2019-08-15,Espanyol,3,Luzern,0,Espanyol,Luzern
+europa-league,2019-08-22,FC Astana,3,BATE Borisov,0,FC Astana,BATE Borisov
+europa-league,2019-08-22,Ararat-Armenia,2,F91 Dudelange,1,Ararat-Armenia,F91 Dudelange
+europa-league,2019-08-22,Malmö FF,3,Bnei Yehuda Tel Aviv,0,Malmö FF,Bnei Yehuda Tel Aviv
+europa-league,2019-08-22,Suduva,0,Ferencvárosi TC,0,Suduva,Ferencvárosi TC
+europa-league,2019-08-22,Feyenoord,3,Hapoel Be'er Sheva,0,Feyenoord,Hapoel Be'er Sheva
+europa-league,2019-08-22,Ludogorets,0,NK Maribor,0,Ludogorets Razgrad,NK Maribor
+europa-league,2019-08-22,FC Copenhagen,3,Riga FC,1,FC Copenhagen,Riga FC
+europa-league,2019-08-22,AEK Athens,1,Trabzonspor,3,AEK Athens,Trabzonspor
+europa-league,2019-08-22,Legia Warsaw,0,Rangers,0,Legia Warsaw,Rangers
+europa-league,2019-08-22,AZ Alkmaar,1,Royal Antwerp,1,AZ Alkmaar,Royal Antwerp
+europa-league,2019-08-22,Steaua Bucharest,0,Vitória Guimarães,0,Steaua Bucharest,Vitória Guimarães
+europa-league,2019-08-22,KAA Gent,2,HNK Rijeka,1,KAA Gent,HNK Rijeka
+europa-league,2019-08-22,PSV Eindhoven,3,Apollon Limassol,0,PSV Eindhoven,Apollon Limassol
+europa-league,2019-08-22,Strasbourg,1,Frankfurt,0,Strasbourg,Eintracht Frankfurt
+europa-league,2019-08-22,Celtic,2,AIK,0,Celtic,AIK
+europa-league,2019-08-22,Linfield,3,FK Qarabag,2,Linfield,FK Qarabag
+europa-league,2019-08-22,Sporting Braga,1,Spartak Moscow,0,Sporting Braga,Spartak Moscow
+europa-league,2019-08-22,Espanyol,3,Zorya Luhansk,1,Espanyol,Zorya Luhansk
+europa-league,2019-08-22,Partizan Belgrade,2,Molde,1,Partizan Belgrade,Molde
+europa-league,2019-08-22,Slovan Bratislava,1,PAOK Salonika,0,Slovan Bratislava,PAOK Salonika
+europa-league,2019-08-22,Torino,2,Wolves,3,Torino,Wolverhampton Wanderers
+europa-league,2019-08-29,FK Qarabag,2,Linfield,1,FK Qarabag,Linfield
+europa-league,2019-08-29,Riga FC,1,FC Copenhagen,0,Riga FC,FC Copenhagen
+europa-league,2019-08-29,AIK,1,Celtic,4,AIK,Celtic
+europa-league,2019-08-29,Apollon Limassol,0,PSV Eindhoven,4,Apollon Limassol,PSV Eindhoven
+europa-league,2019-08-29,BATE Borisov,2,FC Astana,0,BATE Borisov,FC Astana
+europa-league,2019-08-29,Bnei Yehuda Tel Aviv,0,Malmö FF,1,Bnei Yehuda Tel Aviv,Malmö FF
+europa-league,2019-08-29,Molde,1,Partizan Belgrade,1,Molde,Partizan Belgrade
+europa-league,2019-08-29,PAOK Salonika,3,Slovan Bratislava,2,PAOK Salonika,Slovan Bratislava
+europa-league,2019-08-29,Zorya Luhansk,2,Espanyol,2,Zorya Luhansk,Espanyol
+europa-league,2019-08-29,Spartak Moscow,1,Sporting Braga,2,Spartak Moscow,Sporting Braga
+europa-league,2019-08-29,Hapoel Be'er Sheva,0,Feyenoord,3,Hapoel Be'er Sheva,Feyenoord
+europa-league,2019-08-29,Royal Antwerp,1,AZ Alkmaar,4,Royal Antwerp,AZ Alkmaar
+europa-league,2019-08-29,Trabzonspor,0,AEK Athens,2,Trabzonspor,AEK Athens
+europa-league,2019-08-29,F91 Dudelange,2,Ararat-Armenia,1,F91 Dudelange,Ararat-Armenia
+europa-league,2019-08-29,Ferencvárosi TC,4,Suduva,2,Ferencvárosi TC,Suduva
+europa-league,2019-08-29,HNK Rijeka,1,KAA Gent,1,HNK Rijeka,KAA Gent
+europa-league,2019-08-29,NK Maribor,2,Ludogorets,2,NK Maribor,Ludogorets Razgrad
+europa-league,2019-08-29,Frankfurt,3,Strasbourg,0,Eintracht Frankfurt,Strasbourg
+europa-league,2019-08-29,Rangers,1,Legia Warsaw,0,Rangers,Legia Warsaw
+europa-league,2019-08-29,Wolves,2,Torino,1,Wolverhampton Wanderers,Torino
+europa-league,2019-08-29,Vitória Guimarães,1,Steaua Bucharest,0,Vitória Guimarães,Steaua Bucharest
+europa-league,2019-09-19,Apoel Nicosia,3,F91 Dudelange,4,Apoel Nicosia,F91 Dudelange
+europa-league,2019-09-19,FK Qarabag,0,Sevilla,3,FK Qarabag,Sevilla
+europa-league,2019-09-19,B Mgladbach,0,RZ Pellets WAC,4,Borussia Mönchengladbach,RZ Pellets WAC
+europa-league,2019-09-19,Roma,4,Istanbul Basaksehir,0,Roma,Istanbul Basaksehir
+europa-league,2019-09-19,Slovan Bratislava,4,Besiktas,2,Slovan Bratislava,Besiktas
+europa-league,2019-09-19,Wolves,0,Sporting Braga,1,Wolverhampton Wanderers,Sporting Braga
+europa-league,2019-09-19,Man Utd,1,FC Astana,0,Manchester United,FC Astana
+europa-league,2019-09-19,Partizan Belgrade,2,AZ Alkmaar,2,Partizan Belgrade,AZ Alkmaar
+europa-league,2019-09-19,Dynamo Kiev,1,Malmö FF,0,Dynamo Kiev,Malmö FF
+europa-league,2019-09-19,FC Copenhagen,1,Lugano,0,FC Copenhagen,Lugano
+europa-league,2019-09-19,FC Basel,5,FK Krasnodar,0,FC Basel,FK Krasnodar
+europa-league,2019-09-19,Getafe,1,Trabzonspor,0,Getafe,Trabzonspor
+europa-league,2019-09-19,LASK,1,Rosenborg,0,LASK,Rosenborg
+europa-league,2019-09-19,PSV Eindhoven,3,Sporting,2,PSV Eindhoven,Sporting Lisbon
+europa-league,2019-09-19,CFR Cluj,2,Lazio,1,CFR Cluj,Lazio
+europa-league,2019-09-19,Rennes,1,Celtic,1,Rennes,Celtic
+europa-league,2019-09-19,Frankfurt,0,Arsenal,3,Eintracht Frankfurt,Arsenal
+europa-league,2019-09-19,Standard Liege,2,Vitória Guimarães,0,Standard Liege,Vitória Guimarães
+europa-league,2019-09-19,FC Porto,2,Young Boys,1,FC Porto,Young Boys
+europa-league,2019-09-19,Rangers,1,Feyenoord,0,Rangers,Feyenoord
+europa-league,2019-09-19,Espanyol,1,Ferencvárosi TC,1,Espanyol,Ferencvárosi TC
+europa-league,2019-09-19,Ludogorets,5,CSKA Moscow,1,Ludogorets Razgrad,CSKA Moscow
+europa-league,2019-09-19,KAA Gent,3,Saint-Étienne,2,KAA Gent,Saint-Étienne
+europa-league,2019-09-19,Wolfsburg,3,Oleksandria,1,VfL Wolfsburg,Oleksandria
