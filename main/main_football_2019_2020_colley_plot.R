@@ -4,6 +4,7 @@ suppressWarnings(library(rvest))
 suppressWarnings(library(magrittr))
 suppressWarnings(library(rio))
 suppressWarnings(library(beepr))
+suppressWarnings(library(png))
 
 set.seed(350)
 
@@ -15,11 +16,18 @@ source("functions/functions_general.R")
 source("functions/functions_colley's_method.R")
 source("functions/functions_plot_football_ranking.R")
 
-# the match results
+# the list of football clubs (for plotting logos)
+fc_logos_file <- "data/european_football_clubs.csv"
+
+# the match results file
 scoreboard_file <- "data/football_2019_2020.csv"
 
 
-#==== game results ====
+#==== input ====
+# the logo files
+fc_logos <- import(fc_logos_file, encoding = "UTF-8")
+
+# the match results
 if(file.exists(scoreboard_file)){
   
   # read exisiting game results file
@@ -73,8 +81,9 @@ scoreboard <- scoreboard %>%
 plot_2019_2020 <- plot_football_ranking(
   ranking_start_date = as.Date("2019-09-08"),
   ranking_end_date = as.Date("2019-09-29"),
-  scoreboard_full = scoreboard,
   frequency = 7,
+  scoreboard_full = scoreboard,
+  fc_logos = fc_logos,
   title = "European Football Club 2019-20 Season Power Rankings"
 )
 

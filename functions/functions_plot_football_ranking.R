@@ -4,6 +4,7 @@
 #' @param ranking_end_date the last date of the ranking
 #' @param frequency the time interval between two consecutive rankings
 #' @param scoreboard_full the complete scoreboard data.frame
+#' @param fc_logos the football club logo file list
 #' @param title plot of the title
 #' 
 #' @return a ggplot object
@@ -13,8 +14,35 @@ plot_football_ranking <- function(
   ranking_end_date,
   frequency = 7,
   scoreboard_full,
+  fc_logos,
   title
 ){
+  
+  #==== team logos ====
+  fc_logo_img_list <- paste0("icons/small/", fc_logos$id, ".png") %>% 
+    map(readPNG)
+  
+  find_mode <- function(x) {
+    ux <- unique(x %>% as.vector() %>% na.omit())
+    ux[which.max(tabulate(match(x, ux)))]
+  }
+  
+  main_color <- fc_logo_img_list %>% 
+    map(function(color_matrix){
+      
+      # exclude white and black color
+      color_matrix[color_matrix > 0.99 | color_matrix < 0.01] <- NA
+      
+      # find the average color in the logo
+      rgb(
+        find_mode(color_matrix[,,1]),
+        find_mode(color_matrix[,,2]),
+        find_mode(color_matrix[,,3])
+      )
+    }) %>% 
+    unlist() %>% 
+    set_names(fc_logos$team)
+  
   
   #==== feed the match results incrementaly to the ranking algorithm ====
   # (the first ranking can be produced as early as the 2nd day
@@ -76,6 +104,9 @@ plot_football_ranking <- function(
       color = "black",
       size = 5
     ) +
+    scale_color_manual(
+      values = main_color
+    ) + 
     labs(
       title = title,
       subtitle = paste0("Last updated on ", as_of_dates %>% tail(1) %>% format("%b %d, %Y"))
