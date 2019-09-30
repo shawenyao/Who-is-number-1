@@ -22,11 +22,6 @@ plot_football_ranking <- function(
   fc_logo_img_list <- paste0("icons/small/", fc_logos$id, ".png") %>% 
     map(readPNG)
   
-  find_mode <- function(x) {
-    ux <- unique(x %>% as.vector() %>% na.omit())
-    ux[which.max(tabulate(match(x, ux)))]
-  }
-  
   main_color <- fc_logo_img_list %>% 
     map(function(color_matrix){
       
@@ -126,4 +121,16 @@ plot_football_ranking <- function(
       panel.grid.minor.y = element_blank(),
       panel.border = element_blank()
     )
+}
+
+
+#' find the mode of a matrix
+#' 
+#' @param x a matrix
+#' 
+#' @return the mode of the matrix, excluding NAs
+#' 
+find_mode <- function(x) {
+  ux <- x %>% as.vector() %>% na.omit() %>% unique()
+  ux[which.max(tabulate(match(x, ux)))]
 }
