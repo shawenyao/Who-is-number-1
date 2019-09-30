@@ -48,7 +48,7 @@ if(file.exists(scoreboard_file)){
     map(
       scrape_bbc,
       start = as.yearmon("2019-08-01"), 
-      end = as.yearmon("2019-09-01")
+      end = as.yearmon(Sys.Date())
     ) %>% 
     bind_rows()
   
