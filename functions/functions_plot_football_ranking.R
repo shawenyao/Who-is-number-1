@@ -25,15 +25,13 @@ plot_football_ranking <- function(
   main_color <- fc_logo_img_list %>% 
     map(function(color_matrix){
       
-      # exclude white and black color
-      color_matrix[color_matrix > 0.99 | color_matrix < 0.01] <- NA
+      color <- rgb(color_matrix[,,1], color_matrix[,,2], color_matrix[,,3])
       
-      # find the average color in the logo
-      rgb(
-        find_mode(color_matrix[,,1]),
-        find_mode(color_matrix[,,2]),
-        find_mode(color_matrix[,,3])
-      )
+      # exclude white and black color
+      color[color == "#FFFFFF" | color == "#000000"] <- NA
+      
+      # find the most popular color in the logo
+      find_mode(color)
     }) %>% 
     unlist() %>% 
     set_names(fc_logos$team)
@@ -126,11 +124,12 @@ plot_football_ranking <- function(
 
 #' find the mode of a matrix
 #' 
-#' @param x a matrix
+#' @param x a vector
 #' 
-#' @return the mode of the matrix, excluding NAs
+#' @return the mode of the vector, excluding NAs
 #' 
 find_mode <- function(x) {
-  ux <- x %>% as.vector() %>% na.omit() %>% unique()
+  
+  ux <- x %>% na.omit() %>% unique()
   ux[which.max(tabulate(match(x, ux)))]
 }
