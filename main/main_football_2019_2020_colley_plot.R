@@ -10,9 +10,10 @@ set.seed(350)
 
 #==== general setup ====
 setwd("C:/Users/Wenyao/Desktop/R/Who-is-number-1")
-source("./functions/functions_scrape_football.R")
-source("./functions/functions_general.R")
-source("./functions/functions_colley's_method.R")
+source("functions/functions_scrape_football.R")
+source("functions/functions_general.R")
+source("functions/functions_colley's_method.R")
+source("functions/functions_plot_football_ranking.R")
 
 # the match results
 scoreboard_file <- "data/football_2019_2020.csv"
@@ -22,8 +23,7 @@ scoreboard_file <- "data/football_2019_2020.csv"
 if(file.exists(scoreboard_file)){
   
   # read exisiting game results file
-  premier_2019_2020 <- scoreboard_file %>% 
-    import(colClasses = c("date" = "character"))
+  scoreboard <- scoreboard_file %>% import(encoding = "UTF-8")
   
 }else{
   
@@ -52,22 +52,39 @@ if(file.exists(scoreboard_file)){
 }
 
 
+# the team names in the big 5 leagues
+big_5_teams <- scoreboard %>% 
+  filter(
+    !league %in% c("champions-league", "europa-league")
+  ) %>% 
+  select(home_team, away_team) %>% 
+  unlist() %>% 
+  unique()
+
+# only include teams in the big 5 leagues
+scoreboard <- scoreboard %>% 
+  filter(
+    home_team %in% big_5_teams,
+    away_team %in% big_5_teams
+  )
+
+
 #==== plot ====
-plot_2019_2020 <- plot_nba_ranking(
-  ranking_start_date = as.Date("2018-10-21"),
-  ranking_end_date = as.Date("2019-06-16"),
-  scoreboard_full = nba_2018_2019,
+plot_2019_2020 <- plot_football_ranking(
+  ranking_start_date = as.Date("2019-09-08"),
+  ranking_end_date = as.Date("2019-09-29"),
+  scoreboard_full = scoreboard,
   frequency = 7,
-  title = "NBA 2018-2019 Season Power Ranking - Colley's Method"
+  title = "European Football Club 2019-20 Season Power Rankings"
 )
 
 
 #==== output =====
-svg("output/Premier_League_Ranking_2019-2020.svg", width = 3 * 4, height = 5 * 4)
+svg(paste0("output/footbal_2019_2020/European_Football_Club_2019_20_Season_Power_Rankings.svg"), width = 3 * 4, height = 10 * 4)
 print(plot_2019_2020)
 dev.off()
 
-png("output/Premier_League_Ranking_2019-2020.png", width = 880, height = 1500, type = "cairo")
+png(paste0("output/footbal_2019_2020/European_Football_Club_2019_20_Season_Power_Rankings.png"), width = 880, height = 3000, type = "cairo")
 print(plot_2019_2020)
 dev.off()
 

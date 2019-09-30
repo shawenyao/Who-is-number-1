@@ -1,20 +1,18 @@
-#' plot the evolution of nba power ranking
+#' plot the evolution of football power ranking
 #' 
 #' @param ranking_start_date the first date of the ranking
 #' @param ranking_end_date the last date of the ranking
 #' @param frequency the time interval between two consecutive rankings
 #' @param scoreboard_full the complete scoreboard data.frame
-#' @param nba_color_palette the color palette data.frame
 #' @param title plot of the title
 #' 
 #' @return a ggplot object
 #' 
-plot_nba_ranking <- function(
+plot_football_ranking <- function(
   ranking_start_date,
   ranking_end_date,
   frequency = 7,
   scoreboard_full,
-  nba_color_palette,
   title
 ){
   
@@ -27,23 +25,23 @@ plot_nba_ranking <- function(
   rankings <- as_of_dates %>% 
     map(function(as_of_date){
       tibble(
-        rank = 1:30,
         team = colleys_method(
           scoreboard = scoreboard_full %>% 
-            filter(as.Date(date, "%Y%m%d") <= as_of_date)
+            filter(as.Date(date) <= as_of_date)
         ) %>% 
           format_ratings()
-      )
+      ) %>% 
+        mutate(rank = row_number())
     }) %>% 
     set_names(as_of_dates) %>% 
     bind_rows(.id = "as_of_date") %>% 
     mutate(
       as_of_date = as.Date(as_of_date),
-      day = as.numeric(as_of_date - as.Date(min(scoreboard_full$date), "%Y%m%d") + 1)
+      day = as.numeric(as_of_date - as_of_dates[1] + 1)
     )
   
   # auto-adjust the width of team label
-  label_width <- 0.07 * as.numeric(max(as_of_dates) - min(as_of_dates))
+  label_width <- 0.15 * as.numeric(max(as_of_dates) - min(as_of_dates))
   
   
   #==== plot ====
@@ -54,47 +52,29 @@ plot_nba_ranking <- function(
     scale_x_continuous(
       breaks = seq(from = min(rankings$day), to = max(rankings$day), by = frequency), 
       minor_breaks = seq(from = min(rankings$day), to = max(rankings$day), by = frequency), 
-      expand = c(.05, .05),
+      expand = c(.1, .1),
       labels = as_of_dates %>% format("%b %d")
     ) +
-    scale_y_reverse(breaks = 1:30, sec.axis = dup_axis()) +
-    # the label background box on the left side
-    geom_tile(
-      data = rankings %>% filter(day == min(rankings$day)), 
-      aes(x = min(rankings$day) - label_width, y = rank, fill = team, color = team),
-      height = 0.6, 
-      width = label_width,
-      size = 1.3
-    ) + 
-    # the label background box on the right side
-    geom_tile(
-      data = rankings %>% filter(day == max(day)), 
-      aes(x = max(rankings$day) + label_width, y = rank, fill = team, color = team),
-      height = 0.6,
-      width = label_width,
-      size = 1.3
-    ) + 
+    scale_y_reverse(
+      breaks = seq_along(unique(rankings$team)),
+      sec.axis = dup_axis(),
+      expand = c(.015, .015)
+    ) +
     # the label on the left side
     geom_text(
       data = rankings %>% filter(day == min(day)),
       aes(label = team, x = min(rankings$day) - label_width) , 
-      fontface = "bold", 
-      color = "white", 
+      # fontface = "bold", 
+      color = "black", 
       size = 5
     ) +
     # the label on the right side
     geom_text(
       data = rankings %>% filter(day == max(day)),
       aes(label = team, x = max(rankings$day) + label_width) ,
-      fontface = "bold",
-      color = "white",
+      # fontface = "bold",
+      color = "black",
       size = 5
-    ) +
-    scale_fill_manual(
-      values = nba_color_palette$major_color %>% set_names(nba_color_palette$team_short_name)
-    ) +
-    scale_color_manual(
-      values = nba_color_palette$minor_color %>% set_names(nba_color_palette$team_short_name)
     ) +
     labs(
       title = title,
@@ -103,12 +83,12 @@ plot_nba_ranking <- function(
     theme_bw(base_size = 20) +
     theme(
       legend.position = "none",
-      plot.title = element_text(hjust = 0.04),
-      plot.subtitle = element_text(hjust = 0.03),
+      # plot.title = element_text(hjust = 0.04),
+      # plot.subtitle = element_text(hjust = 0.03),
       plot.margin = margin(0, 0, 0, 0, "cm"),
-      axis.text.x = element_text(angle = 60),
-      axis.text.y.left = element_text(margin = margin(0, -1.2, 0, 0, "cm")),
-      axis.text.y.right = element_text(margin = margin(0, 0, 0, -1.2, "cm")),
+      axis.text.x = element_text(angle = 0),
+      axis.text.y.left = element_text(size = 15, margin = margin(0, 0, 0, 0, "cm")),
+      axis.text.y.right = element_text(size = 15, margin = margin(0, 0, 0, 0, "cm")),
       axis.ticks = element_blank(),
       axis.title = element_blank(),
       panel.grid.major.y = element_blank(),
