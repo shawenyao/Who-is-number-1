@@ -3,7 +3,7 @@
 #' @param ranking_start_date the first date of the ranking
 #' @param ranking_end_date the last date of the ranking
 #' @param frequency the time interval between two consecutive rankings
-#' @param scoreboard_full the complete scoreboard data.frame
+#' @param scoreboard the complete scoreboard data.frame
 #' @param fc_logos the football club logo file list
 #' @param title plot of the title
 #' 
@@ -13,14 +13,15 @@ plot_football_ranking <- function(
   ranking_start_date,
   ranking_end_date,
   frequency = 7,
-  scoreboard_full,
+  scoreboard,
   fc_logos,
   title
 ){
   
   #==== team logos ====
   fc_logo_img_list <- paste0("icons/small/", fc_logos$id, ".png") %>% 
-    map(readPNG)
+    map(readPNG) %>% 
+    set_names(fc_logos$team)
   
   main_color <- fc_logo_img_list %>% 
     map(function(color_matrix){
@@ -47,7 +48,7 @@ plot_football_ranking <- function(
     map(function(as_of_date){
       tibble(
         team = colleys_method(
-          scoreboard = scoreboard_full %>% 
+          scoreboard = scoreboard %>% 
             filter(as.Date(date) <= as_of_date)
         ) %>% 
           format_ratings()
@@ -62,25 +63,32 @@ plot_football_ranking <- function(
     )
   
   # auto-adjust the width of team label
-  label_width <- 0.15 * as.numeric(max(as_of_dates) - min(as_of_dates))
+  label_width <- 0.20 * as.numeric(max(as_of_dates) - min(as_of_dates))
   
   
   #==== plot ====
-  ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
+  output_plot <- ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
+    
+    # the geoms
     geom_line(aes(alpha = 1, color = team), size = 2) +
     geom_point(aes(alpha = 1, color = team), size = 6) +
     geom_point(color = "white", size = 2) +
+    
+    # format x axis
     scale_x_continuous(
       breaks = seq(from = min(rankings$day), to = max(rankings$day), by = frequency), 
       minor_breaks = seq(from = min(rankings$day), to = max(rankings$day), by = frequency), 
       expand = c(.1, .1),
       labels = as_of_dates %>% format("%b %d")
     ) +
+    
+    # format y axis
     scale_y_reverse(
       breaks = seq_along(unique(rankings$team)),
       sec.axis = dup_axis(),
       expand = c(.015, .015)
     ) +
+    
     # the label on the left side
     geom_text(
       data = rankings %>% filter(day == min(day)),
@@ -89,6 +97,7 @@ plot_football_ranking <- function(
       color = "black", 
       size = 5.5
     ) +
+    
     # the label on the right side
     geom_text(
       data = rankings %>% filter(day == max(day)),
@@ -97,13 +106,19 @@ plot_football_ranking <- function(
       color = "black",
       size = 5.5
     ) +
+    
+    # assign one color for each team
     scale_color_manual(
       values = main_color
     ) + 
+    
+    # the title
     labs(
       title = title,
       subtitle = paste0("Last updated on ", as_of_dates %>% tail(1) %>% format("%b %d, %Y"))
     ) +
+    
+    # other aesthetics
     theme_bw(base_size = 20) +
     theme(
       legend.position = "none",
@@ -119,6 +134,40 @@ plot_football_ranking <- function(
       panel.grid.minor.y = element_blank(),
       panel.border = element_blank()
     )
+  
+  
+  #==== add team logo to the plot ====
+  # auto-adjust the width of team label
+  logo_width <- 0.04 * as.numeric(max(as_of_dates) - min(as_of_dates))
+  
+  for(i in seq_along(unique(rankings$team))){
+    
+    output_plot <- output_plot +
+      
+      # the team logo on the left side
+      annotation_custom(
+        grob = rasterGrob(
+          fc_logo_img_list[[rankings %>% filter(day == min(day)) %>% pull(team) %>% extract(i)]],
+          interpolate = FALSE
+        ),
+        xmin = min(rankings$day) - 1.25 - logo_width / 2,
+        xmax = min(rankings$day) - 1.25 + logo_width / 2,
+        ymax = 99.9 - i * 2 - logo_width / 2
+      ) +
+      
+      # the team logo on the right side
+      annotation_custom(
+        grob = rasterGrob(
+          fc_logo_img_list[[rankings %>% filter(day == max(day)) %>% pull(team) %>% extract(i)]],
+          interpolate = FALSE
+        ),
+        xmin = max(rankings$day) + 1.25 - logo_width / 2,
+        xmax = max(rankings$day) + 1.25 + logo_width / 2,
+        ymax = 99.9 - i * 2 - logo_width / 2
+      )
+  }
+  
+  output_plot
 }
 
 

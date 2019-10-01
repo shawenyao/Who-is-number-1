@@ -5,6 +5,7 @@ suppressWarnings(library(magrittr))
 suppressWarnings(library(rio))
 suppressWarnings(library(beepr))
 suppressWarnings(library(png))
+suppressWarnings(library(grid))
 
 set.seed(350)
 
@@ -83,7 +84,7 @@ plot_2019_2020 <- plot_football_ranking(
   ranking_start_date = as.Date("2019-09-08"),
   ranking_end_date = as.Date("2019-09-29"),
   frequency = 7,
-  scoreboard_full = scoreboard,
+  scoreboard = scoreboard,
   fc_logos = fc_logos,
   title = "European Football Club 2019-20 Season Power Rankings"
 )
