@@ -95,7 +95,7 @@ plot_football_ranking <- function(
       aes(label = team, x = min(rankings$day) - label_width) , 
       # fontface = "bold", 
       color = "black", 
-      size = 5
+      size = 5.5
     ) +
     
     # the label on the right side
@@ -104,7 +104,7 @@ plot_football_ranking <- function(
       aes(label = team, x = max(rankings$day) + label_width) ,
       # fontface = "bold",
       color = "black",
-      size = 5
+      size = 5.5
     ) +
     
     # assign one color for each team
