@@ -63,7 +63,7 @@ plot_football_ranking <- function(
     )
   
   # auto-adjust the width of team label
-  label_width <- 0.20 * as.numeric(max(as_of_dates) - min(as_of_dates))
+  label_width <- 0.125 * as.numeric(max(as_of_dates) - min(as_of_dates))
   
   
   #==== plot ====
@@ -78,7 +78,7 @@ plot_football_ranking <- function(
     scale_x_continuous(
       breaks = seq(from = min(rankings$day), to = max(rankings$day), by = frequency), 
       minor_breaks = seq(from = min(rankings$day), to = max(rankings$day), by = frequency), 
-      expand = c(.1, .1),
+      expand = c(.115, .115),
       labels = as_of_dates %>% format("%b %d")
     ) +
     
@@ -150,8 +150,8 @@ plot_football_ranking <- function(
           fc_logo_img_list[[rankings %>% filter(day == min(day)) %>% pull(team) %>% extract(i)]],
           interpolate = FALSE
         ),
-        xmin = min(rankings$day) - 1.25 - logo_width / 2,
-        xmax = min(rankings$day) - 1.25 + logo_width / 2,
+        xmin = min(rankings$day) - 5.25 - logo_width / 2,
+        xmax = min(rankings$day) - 5.25 + logo_width / 2,
         ymax = 99.9 - i * 2 - logo_width / 2
       ) +
       
@@ -161,8 +161,8 @@ plot_football_ranking <- function(
           fc_logo_img_list[[rankings %>% filter(day == max(day)) %>% pull(team) %>% extract(i)]],
           interpolate = FALSE
         ),
-        xmin = max(rankings$day) + 1.25 - logo_width / 2,
-        xmax = max(rankings$day) + 1.25 + logo_width / 2,
+        xmin = max(rankings$day) + 5.25 - logo_width / 2,
+        xmax = max(rankings$day) + 5.25 + logo_width / 2,
         ymax = 99.9 - i * 2 - logo_width / 2
       )
   }
