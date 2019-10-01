@@ -160,7 +160,7 @@ plot_football_ranking <- function(
       annotation_custom(
         grob = rasterGrob(
           fc_logo_img_list[[rankings %>% filter(day == max(day)) %>% pull(team) %>% extract(i)]],
-          interpolate = TRUE
+          interpolate = FALSE
         ),
         xmin = max(rankings$day) + 5.25 - logo_width / 2,
         xmax = max(rankings$day) + 5.25 + logo_width / 2,
