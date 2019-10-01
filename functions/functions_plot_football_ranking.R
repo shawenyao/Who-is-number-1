@@ -140,6 +140,7 @@ plot_football_ranking <- function(
   # auto-adjust the width of team label
   logo_width <- 0.04 * as.numeric(max(as_of_dates) - min(as_of_dates))
   
+  # loop over each team
   for(i in seq_along(unique(rankings$team))){
     
     output_plot <- output_plot +
@@ -159,7 +160,7 @@ plot_football_ranking <- function(
       annotation_custom(
         grob = rasterGrob(
           fc_logo_img_list[[rankings %>% filter(day == max(day)) %>% pull(team) %>% extract(i)]],
-          interpolate = FALSE
+          interpolate = TRUE
         ),
         xmin = max(rankings$day) + 5.25 - logo_width / 2,
         xmax = max(rankings$day) + 5.25 + logo_width / 2,
