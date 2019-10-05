@@ -13,7 +13,7 @@ set.seed(350)
 #==== general setup ====
 setwd("C:/Users/Wenyao/Desktop/R/Who-is-number-1")
 
-source("functions/functions_scrape_football.R")
+source("functions/functions_scrape_bbc.R")
 source("functions/functions_general.R")
 source("functions/functions_colley's_method.R")
 source("functions/functions_plot_football_ranking.R")
