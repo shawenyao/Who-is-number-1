@@ -26,7 +26,7 @@ scrape_bbc <- function(start, end, league){
 #' 
 scrape_one_month <- function(year_month, league){
   
-  # print(paste0(league, " ", year_month))
+  print(paste0(league, " ", year_month))
   
   year <- year_month %>% format("%Y")
   month <- year_month %>% format("%m")
