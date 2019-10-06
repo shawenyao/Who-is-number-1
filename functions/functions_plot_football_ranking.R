@@ -78,7 +78,7 @@ plot_football_ranking <- function(
     scale_x_continuous(
       breaks = seq(from = min(rankings$day), to = max(rankings$day), by = frequency), 
       minor_breaks = seq(from = min(rankings$day), to = max(rankings$day), by = frequency), 
-      expand = c(.115, .115),
+      expand = c(.114, .114),
       labels = as_of_dates %>% format("%b %d")
     ) +
     
@@ -150,7 +150,7 @@ plot_football_ranking <- function(
         ),
         xmin = min(rankings$day) - 0.25 * scale_multiplier - 0.04 * scale_multiplier / 2,
         xmax = min(rankings$day) - 0.25 * scale_multiplier + 0.04 * scale_multiplier / 2,
-        ymax = 99.9 - i * 2 - 0.04 * scale_multiplier / 2
+        ymax = 99.9 - i * 2 - 0.83 / 2
       ) +
       
       # the team logo on the right side
@@ -161,7 +161,7 @@ plot_football_ranking <- function(
         ),
         xmin = max(rankings$day) + 0.25 * scale_multiplier - 0.04 * scale_multiplier / 2,
         xmax = max(rankings$day) + 0.25 * scale_multiplier + 0.04 * scale_multiplier / 2,
-        ymax = 99.9 - i * 2 - 0.04 * scale_multiplier / 2
+        ymax = 99.9 - i * 2 - 0.83 / 2
       )
   }
   
