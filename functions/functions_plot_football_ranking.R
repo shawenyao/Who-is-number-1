@@ -92,7 +92,7 @@ plot_football_ranking <- function(
     # the label on the left side
     geom_text(
       data = rankings %>% filter(day == min(day)),
-      aes(label = team, x = min(rankings$day) - 0.125 * scale_multiplier) , 
+      aes(label = team, x = min(rankings$day) - 0.125 * scale_multiplier), 
       # fontface = "bold", 
       color = "black", 
       size = 5.2
@@ -101,7 +101,7 @@ plot_football_ranking <- function(
     # the label on the right side
     geom_text(
       data = rankings %>% filter(day == max(day)),
-      aes(label = team, x = max(rankings$day) + 0.125 * scale_multiplier) ,
+      aes(label = team, x = max(rankings$day) + 0.125 * scale_multiplier),
       # fontface = "bold",
       color = "black",
       size = 5.2

@@ -13,7 +13,7 @@ set.seed(350)
 #==== general setup ====
 
 # whether to scrape the scoreboard from web or load existing scoreboard
-refresh_scoreboard <- FALSE
+refresh_scoreboard <- TRUE
 
 setwd("C:/Users/Wenyao/Desktop/R/Who-is-number-1")
 
@@ -34,12 +34,7 @@ scoreboard_file <- "data/football_2019_2020.csv"
 fc_logos <- import(fc_logos_file, encoding = "UTF-8")
 
 # the match results
-if(!isTRUE(refresh_scoreboard)){
-  
-  # read exisiting game results file
-  scoreboard <- scoreboard_file %>% import(encoding = "UTF-8")
-  
-}else{
+if(isTRUE(refresh_scoreboard)){
   
   scoreboard <- c(
     "premier-league",
@@ -63,6 +58,12 @@ if(!isTRUE(refresh_scoreboard)){
   
   # save a copy
   export(scoreboard, scoreboard_file)
+  
+}else{
+  
+  # read exisiting game results file
+  scoreboard <- scoreboard_file %>% import(encoding = "UTF-8")
+  
 }
 
 
