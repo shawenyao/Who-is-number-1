@@ -62,11 +62,11 @@ plot_football_ranking <- function(
       day = as.numeric(as_of_date - as_of_dates[1] + 1)
     )
   
-  # auto-adjust the width of team label
-  label_width <- 0.125 * as.numeric(max(as_of_dates) - min(as_of_dates))
-  
   
   #==== plot ====
+  # auto-adjust the scale based on the range of x axis
+  scale_multiplier <- as.numeric(max(as_of_dates) - min(as_of_dates))
+  
   output_plot <- ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
     
     # the geoms
@@ -92,7 +92,7 @@ plot_football_ranking <- function(
     # the label on the left side
     geom_text(
       data = rankings %>% filter(day == min(day)),
-      aes(label = team, x = min(rankings$day) - label_width) , 
+      aes(label = team, x = min(rankings$day) - 0.125 * scale_multiplier) , 
       # fontface = "bold", 
       color = "black", 
       size = 5.2
@@ -101,7 +101,7 @@ plot_football_ranking <- function(
     # the label on the right side
     geom_text(
       data = rankings %>% filter(day == max(day)),
-      aes(label = team, x = max(rankings$day) + label_width) ,
+      aes(label = team, x = max(rankings$day) + 0.125 * scale_multiplier) ,
       # fontface = "bold",
       color = "black",
       size = 5.2
@@ -137,9 +137,6 @@ plot_football_ranking <- function(
   
   
   #==== add team logo to the plot ====
-  # auto-adjust the width of team label
-  logo_width <- 0.04 * as.numeric(max(as_of_dates) - min(as_of_dates))
-  
   # loop over each team
   for(i in seq_along(unique(rankings$team))){
     
@@ -151,9 +148,9 @@ plot_football_ranking <- function(
           fc_logo_img_list[[rankings %>% filter(day == min(day)) %>% pull(team) %>% extract(i)]],
           interpolate = FALSE
         ),
-        xmin = min(rankings$day) - 5.25 - logo_width / 2,
-        xmax = min(rankings$day) - 5.25 + logo_width / 2,
-        ymax = 99.9 - i * 2 - logo_width / 2
+        xmin = min(rankings$day) - 0.25 * scale_multiplier - 0.04 * scale_multiplier / 2,
+        xmax = min(rankings$day) - 0.25 * scale_multiplier + 0.04 * scale_multiplier / 2,
+        ymax = 99.9 - i * 2 - 0.04 * scale_multiplier / 2
       ) +
       
       # the team logo on the right side
@@ -162,9 +159,9 @@ plot_football_ranking <- function(
           fc_logo_img_list[[rankings %>% filter(day == max(day)) %>% pull(team) %>% extract(i)]],
           interpolate = FALSE
         ),
-        xmin = max(rankings$day) + 5.25 - logo_width / 2,
-        xmax = max(rankings$day) + 5.25 + logo_width / 2,
-        ymax = 99.9 - i * 2 - logo_width / 2
+        xmin = max(rankings$day) + 0.25 * scale_multiplier - 0.04 * scale_multiplier / 2,
+        xmax = max(rankings$day) + 0.25 * scale_multiplier + 0.04 * scale_multiplier / 2,
+        ymax = 99.9 - i * 2 - 0.04 * scale_multiplier / 2
       )
   }
   

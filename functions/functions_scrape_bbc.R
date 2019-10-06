@@ -101,8 +101,3 @@ scrape_one_month <- function(year_month, league){
       home_team_full, away_team_full
     )
 }
-
-
-
-
-

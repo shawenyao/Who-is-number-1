@@ -13,7 +13,7 @@ set.seed(350)
 #==== general setup ====
 
 # whether to scrape the scoreboard from web or load existing scoreboard
-refresh_scoreboard <- FALSE
+refresh_scoreboard <- TRUE
 
 setwd("C:/Users/Wenyao/Desktop/R/Who-is-number-1")
 
@@ -86,7 +86,7 @@ scoreboard <- scoreboard %>%
 #==== plot ====
 plot_2019_2020 <- plot_football_ranking(
   ranking_start_date = as.Date("2019-09-08"),
-  ranking_end_date = as.Date("2019-09-29"),
+  ranking_end_date = as.Date("2019-10-06"),
   frequency = 7,
   scoreboard = scoreboard,
   fc_logos = fc_logos,
