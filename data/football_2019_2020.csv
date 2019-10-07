@@ -75,6 +75,10 @@ premier-league,2019-10-05,Liverpool,2,Leicester,1,Liverpool,Leicester City
 premier-league,2019-10-05,Norwich,1,Aston Villa,5,Norwich City,Aston Villa
 premier-league,2019-10-05,Watford,0,Sheff Utd,0,Watford,Sheffield United
 premier-league,2019-10-05,West Ham,1,Crystal Palace,2,West Ham United,Crystal Palace
+premier-league,2019-10-06,Arsenal,1,Bournemouth,0,Arsenal,AFC Bournemouth
+premier-league,2019-10-06,Man City,0,Wolves,2,Manchester City,Wolverhampton Wanderers
+premier-league,2019-10-06,Southampton,1,Chelsea,4,Southampton,Chelsea
+premier-league,2019-10-06,Newcastle,1,Man Utd,0,Newcastle United,Manchester United
 spanish-la-liga,2019-08-16,Ath Bilbao,1,Barcelona,0,Athletic Bilbao,Barcelona
 spanish-la-liga,2019-08-17,Celta Vigo,1,Real Madrid,3,Celta Vigo,Real Madrid
 spanish-la-liga,2019-08-17,Valencia,1,Real Sociedad,1,Valencia,Real Sociedad
@@ -150,6 +154,11 @@ spanish-la-liga,2019-10-05,Leganés,1,Levante,2,Leganés,Levante
 spanish-la-liga,2019-10-05,Real Madrid,4,Granada,2,Real Madrid,Granada
 spanish-la-liga,2019-10-05,Valencia,2,Alavés,1,Valencia,Alavés
 spanish-la-liga,2019-10-05,Osasuna,2,Villarreal,1,Osasuna,Villarreal
+spanish-la-liga,2019-10-06,Mallorca,2,Espanyol,0,Mallorca,Espanyol
+spanish-la-liga,2019-10-06,Celta Vigo,1,Ath Bilbao,0,Celta Vigo,Athletic Bilbao
+spanish-la-liga,2019-10-06,Real Valladolid,0,Atl Madrid,0,Real Valladolid,Atlético Madrid
+spanish-la-liga,2019-10-06,Real Sociedad,1,Getafe,2,Real Sociedad,Getafe
+spanish-la-liga,2019-10-06,Barcelona,4,Sevilla,0,Barcelona,Sevilla
 italian-serie-a,2019-08-24,Parma,0,Juventus,1,Parma,Juventus
 italian-serie-a,2019-08-24,Fiorentina,3,Napoli,4,Fiorentina,Napoli
 italian-serie-a,2019-08-25,Udinese,1,AC Milan,0,Udinese,AC Milan
@@ -213,6 +222,12 @@ italian-serie-a,2019-09-30,Parma,3,Torino,2,Parma,Torino
 italian-serie-a,2019-10-05,SPAL,1,Parma,0,SPAL,Parma
 italian-serie-a,2019-10-05,Hellas Verona,2,Sampdoria,0,Hellas Verona,Sampdoria
 italian-serie-a,2019-10-05,Genoa,1,AC Milan,2,Genoa,AC Milan
+italian-serie-a,2019-10-06,Fiorentina,1,Udinese,0,Fiorentina,Udinese
+italian-serie-a,2019-10-06,Atalanta,3,Lecce,1,Atalanta,Lecce
+italian-serie-a,2019-10-06,Bologna,2,Lazio,2,Bologna,Lazio
+italian-serie-a,2019-10-06,Roma,1,Cagliari,1,Roma,Cagliari
+italian-serie-a,2019-10-06,Torino,0,Napoli,0,Torino,Napoli
+italian-serie-a,2019-10-06,Inter Milan,1,Juventus,2,Inter Milan,Juventus
 german-bundesliga,2019-08-16,Bayern Munich,2,Hertha Berlin,2,Bayern Munich,Hertha Berlin
 german-bundesliga,2019-08-17,B Leverkusen,3,Paderborn,2,Bayer 04 Leverkusen,SC Paderborn 07
 german-bundesliga,2019-08-17,B Dortmund,5,Augsburg,1,Borussia Dortmund,FC Augsburg
@@ -273,6 +288,9 @@ german-bundesliga,2019-10-05,Bayern Munich,1,Hoffenheim,2,Bayern Munich,1899 Hof
 german-bundesliga,2019-10-05,Paderborn,1,Mainz,2,SC Paderborn 07,Mainz 05
 german-bundesliga,2019-10-05,Freiburg,2,B Dortmund,2,SC Freiburg,Borussia Dortmund
 german-bundesliga,2019-10-05,Schalke,1,Köln,1,FC Schalke 04,1. FC Köln
+german-bundesliga,2019-10-06,B Mgladbach,5,Augsburg,1,Borussia Mönchengladbach,FC Augsburg
+german-bundesliga,2019-10-06,Wolfsburg,1,Union Berlin,0,VfL Wolfsburg,1. FC Union Berlin
+german-bundesliga,2019-10-06,Frankfurt,2,Werder Bremen,2,Eintracht Frankfurt,Werder Bremen
 french-ligue-one,2019-08-09,Monaco,0,Lyon,3,Monaco,Lyon
 french-ligue-one,2019-08-10,Marseille,0,Reims,2,Marseille,Reims
 french-ligue-one,2019-08-10,Angers,3,Bordeaux,1,Angers,Bordeaux
@@ -360,6 +378,9 @@ french-ligue-one,2019-10-05,Dijon,1,Strasbourg,0,Dijon,Strasbourg
 french-ligue-one,2019-10-05,Montpellier,3,Monaco,1,Montpellier,Monaco
 french-ligue-one,2019-10-05,Nantes,1,Nice,0,Nantes,Nice
 french-ligue-one,2019-10-05,Toulouse,1,Bordeaux,3,Toulouse,Bordeaux
+french-ligue-one,2019-10-06,Lille,2,Nîmes,2,Lille,Nîmes
+french-ligue-one,2019-10-06,Rennes,0,Reims,1,Rennes,Reims
+french-ligue-one,2019-10-06,Saint-Étienne,1,Lyon,0,Saint-Étienne,Lyon
 champions-league,2019-08-06,Apoel Nicosia,1,FK Qarabag,2,Apoel Nicosia,FK Qarabag
 champions-league,2019-08-06,PAOK Salonika,2,Ajax,2,PAOK Salonika,Ajax
 champions-league,2019-08-06,Dinamo Zagreb,1,Ferencvárosi TC,1,Dinamo Zagreb,Ferencvárosi TC

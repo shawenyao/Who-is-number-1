@@ -63,7 +63,6 @@ if(isTRUE(refresh_scoreboard)){
   
   # read exisiting game results file
   scoreboard <- scoreboard_file %>% import(encoding = "UTF-8")
-  
 }
 
 
@@ -76,7 +75,7 @@ big_5_teams <- scoreboard %>%
   unlist() %>% 
   unique()
 
-# only include teams in the big 5 leagues
+# only include matches of which both teams belong to the big 5 leagues
 scoreboard <- scoreboard %>% 
   filter(
     home_team %in% big_5_teams,
