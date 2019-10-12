@@ -30,9 +30,6 @@ scoreboard_file <- "data/football_2019_2020.csv"
 
 
 #==== input ====
-# the logo files
-fc_logos <- import(fc_logos_file, encoding = "UTF-8")
-
 # the match results
 if(isTRUE(refresh_scoreboard)){
   
@@ -81,6 +78,9 @@ scoreboard <- scoreboard %>%
     home_team %in% big_5_teams,
     away_team %in% big_5_teams
   )
+
+# the logo files
+fc_logos <- import(fc_logos_file, encoding = "UTF-8")
 
 
 #==== plot ====
