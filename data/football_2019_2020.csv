@@ -79,6 +79,14 @@ premier-league,2019-10-06,Arsenal,1,Bournemouth,0,Arsenal,AFC Bournemouth
 premier-league,2019-10-06,Man City,0,Wolves,2,Manchester City,Wolverhampton Wanderers
 premier-league,2019-10-06,Southampton,1,Chelsea,4,Southampton,Chelsea
 premier-league,2019-10-06,Newcastle,1,Man Utd,0,Newcastle United,Manchester United
+premier-league,2019-10-19,Everton,2,West Ham,0,Everton,West Ham United
+premier-league,2019-10-19,Aston Villa,2,Brighton,1,Aston Villa,Brighton & Hove Albion
+premier-league,2019-10-19,Bournemouth,0,Norwich,0,AFC Bournemouth,Norwich City
+premier-league,2019-10-19,Chelsea,1,Newcastle,0,Chelsea,Newcastle United
+premier-league,2019-10-19,Leicester,2,Burnley,1,Leicester City,Burnley
+premier-league,2019-10-19,Tottenham,1,Watford,1,Tottenham Hotspur,Watford
+premier-league,2019-10-19,Wolves,1,Southampton,1,Wolverhampton Wanderers,Southampton
+premier-league,2019-10-19,Crystal Palace,0,Man City,2,Crystal Palace,Manchester City
 spanish-la-liga,2019-08-16,Ath Bilbao,1,Barcelona,0,Athletic Bilbao,Barcelona
 spanish-la-liga,2019-08-17,Celta Vigo,1,Real Madrid,3,Celta Vigo,Real Madrid
 spanish-la-liga,2019-08-17,Valencia,1,Real Sociedad,1,Valencia,Real Sociedad
@@ -159,6 +167,11 @@ spanish-la-liga,2019-10-06,Celta Vigo,1,Ath Bilbao,0,Celta Vigo,Athletic Bilbao
 spanish-la-liga,2019-10-06,Real Valladolid,0,Atl Madrid,0,Real Valladolid,Atlético Madrid
 spanish-la-liga,2019-10-06,Real Sociedad,1,Getafe,2,Real Sociedad,Getafe
 spanish-la-liga,2019-10-06,Barcelona,4,Sevilla,0,Barcelona,Sevilla
+spanish-la-liga,2019-10-18,Granada,1,Osasuna,0,Granada,Osasuna
+spanish-la-liga,2019-10-19,Eibar,0,Barcelona,3,Eibar,Barcelona
+spanish-la-liga,2019-10-19,Atl Madrid,1,Valencia,1,Atlético Madrid,Valencia
+spanish-la-liga,2019-10-19,Getafe,2,Leganés,0,Getafe,Leganés
+spanish-la-liga,2019-10-19,Mallorca,1,Real Madrid,0,Mallorca,Real Madrid
 italian-serie-a,2019-08-24,Parma,0,Juventus,1,Parma,Juventus
 italian-serie-a,2019-08-24,Fiorentina,3,Napoli,4,Fiorentina,Napoli
 italian-serie-a,2019-08-25,Udinese,1,AC Milan,0,Udinese,AC Milan
@@ -228,6 +241,9 @@ italian-serie-a,2019-10-06,Bologna,2,Lazio,2,Bologna,Lazio
 italian-serie-a,2019-10-06,Roma,1,Cagliari,1,Roma,Cagliari
 italian-serie-a,2019-10-06,Torino,0,Napoli,0,Torino,Napoli
 italian-serie-a,2019-10-06,Inter Milan,1,Juventus,2,Inter Milan,Juventus
+italian-serie-a,2019-10-19,Lazio,3,Atalanta,3,Lazio,Atalanta
+italian-serie-a,2019-10-19,Napoli,2,Hellas Verona,0,Napoli,Hellas Verona
+italian-serie-a,2019-10-19,Juventus,2,Bologna,1,Juventus,Bologna
 german-bundesliga,2019-08-16,Bayern Munich,2,Hertha Berlin,2,Bayern Munich,Hertha Berlin
 german-bundesliga,2019-08-17,B Leverkusen,3,Paderborn,2,Bayer 04 Leverkusen,SC Paderborn 07
 german-bundesliga,2019-08-17,B Dortmund,5,Augsburg,1,Borussia Dortmund,FC Augsburg
@@ -291,6 +307,13 @@ german-bundesliga,2019-10-05,Schalke,1,Köln,1,FC Schalke 04,1. FC Köln
 german-bundesliga,2019-10-06,B Mgladbach,5,Augsburg,1,Borussia Mönchengladbach,FC Augsburg
 german-bundesliga,2019-10-06,Wolfsburg,1,Union Berlin,0,VfL Wolfsburg,1. FC Union Berlin
 german-bundesliga,2019-10-06,Frankfurt,2,Werder Bremen,2,Eintracht Frankfurt,Werder Bremen
+german-bundesliga,2019-10-18,Frankfurt,3,B Leverkusen,0,Eintracht Frankfurt,Bayer 04 Leverkusen
+german-bundesliga,2019-10-19,Union Berlin,2,Freiburg,0,1. FC Union Berlin,SC Freiburg
+german-bundesliga,2019-10-19,Augsburg,2,Bayern Munich,2,FC Augsburg,Bayern Munich
+german-bundesliga,2019-10-19,Düsseldorf,1,Mainz,0,Fortuna Düsseldorf,Mainz 05
+german-bundesliga,2019-10-19,RB Leipzig,1,Wolfsburg,1,RB Leipzig,VfL Wolfsburg
+german-bundesliga,2019-10-19,Werder Bremen,1,Hertha Berlin,1,Werder Bremen,Hertha Berlin
+german-bundesliga,2019-10-19,B Dortmund,1,B Mgladbach,0,Borussia Dortmund,Borussia Mönchengladbach
 french-ligue-one,2019-08-09,Monaco,0,Lyon,3,Monaco,Lyon
 french-ligue-one,2019-08-10,Marseille,0,Reims,2,Marseille,Reims
 french-ligue-one,2019-08-10,Angers,3,Bordeaux,1,Angers,Bordeaux
@@ -381,6 +404,13 @@ french-ligue-one,2019-10-05,Toulouse,1,Bordeaux,3,Toulouse,Bordeaux
 french-ligue-one,2019-10-06,Lille,2,Nîmes,2,Lille,Nîmes
 french-ligue-one,2019-10-06,Rennes,0,Reims,1,Rennes,Reims
 french-ligue-one,2019-10-06,Saint-Étienne,1,Lyon,0,Saint-Étienne,Lyon
+french-ligue-one,2019-10-18,Nice,1,PSG,4,Nice,Paris Saint Germain
+french-ligue-one,2019-10-19,Lyon,0,Dijon,0,Lyon,Dijon
+french-ligue-one,2019-10-19,Angers,0,Brest,1,Angers,Brest
+french-ligue-one,2019-10-19,Metz,1,Nantes,0,Metz,Nantes
+french-ligue-one,2019-10-19,Nîmes,1,Amiens,1,Nîmes,Amiens
+french-ligue-one,2019-10-19,Reims,1,Montpellier,0,Reims,Montpellier
+french-ligue-one,2019-10-19,Toulouse,2,Lille,1,Toulouse,Lille
 champions-league,2019-08-06,Apoel Nicosia,1,FK Qarabag,2,Apoel Nicosia,FK Qarabag
 champions-league,2019-08-06,PAOK Salonika,2,Ajax,2,PAOK Salonika,Ajax
 champions-league,2019-08-06,Dinamo Zagreb,1,Ferencvárosi TC,1,Dinamo Zagreb,Ferencvárosi TC
