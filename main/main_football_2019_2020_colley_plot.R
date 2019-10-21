@@ -87,7 +87,7 @@ fc_logos <- import(fc_logos_file, encoding = "UTF-8")
 plot_2019_2020 <- plot_football_ranking(
   ranking_start_date = as.Date("2019-09-08"),
   ranking_end_date = Sys.Date(),
-  frequency = 7,
+  frequency = 14,
   scoreboard = scoreboard,
   fc_logos = fc_logos,
   title = "European Football Club 2019-20 Season Power Rankings"
