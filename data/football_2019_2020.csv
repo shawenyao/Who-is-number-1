@@ -88,6 +88,7 @@ premier-league,2019-10-19,Tottenham,1,Watford,1,Tottenham Hotspur,Watford
 premier-league,2019-10-19,Wolves,1,Southampton,1,Wolverhampton Wanderers,Southampton
 premier-league,2019-10-19,Crystal Palace,0,Man City,2,Crystal Palace,Manchester City
 premier-league,2019-10-20,Man Utd,1,Liverpool,1,Manchester United,Liverpool
+premier-league,2019-10-21,Sheff Utd,1,Arsenal,0,Sheffield United,Arsenal
 spanish-la-liga,2019-08-16,Ath Bilbao,1,Barcelona,0,Athletic Bilbao,Barcelona
 spanish-la-liga,2019-08-17,Celta Vigo,1,Real Madrid,3,Celta Vigo,Real Madrid
 spanish-la-liga,2019-08-17,Valencia,1,Real Sociedad,1,Valencia,Real Sociedad
@@ -256,6 +257,7 @@ italian-serie-a,2019-10-20,Sampdoria,0,Roma,0,Sampdoria,Roma
 italian-serie-a,2019-10-20,Udinese,1,Torino,0,Udinese,Torino
 italian-serie-a,2019-10-20,Parma,5,Genoa,1,Parma,Genoa
 italian-serie-a,2019-10-20,AC Milan,2,Lecce,2,AC Milan,Lecce
+italian-serie-a,2019-10-21,Brescia,0,Fiorentina,0,Brescia,Fiorentina
 german-bundesliga,2019-08-16,Bayern Munich,2,Hertha Berlin,2,Bayern Munich,Hertha Berlin
 german-bundesliga,2019-08-17,B Leverkusen,3,Paderborn,2,Bayer 04 Leverkusen,SC Paderborn 07
 german-bundesliga,2019-08-17,B Dortmund,5,Augsburg,1,Borussia Dortmund,FC Augsburg
@@ -492,6 +494,14 @@ champions-league,2019-10-02,RB Leipzig,0,Lyon,2,RB Leipzig,Lyon
 champions-league,2019-10-02,Zenit St Petersburg,3,Benfica,1,Zenit St Petersburg,Benfica
 champions-league,2019-10-02,Lille,1,Chelsea,2,Lille,Chelsea
 champions-league,2019-10-02,Valencia,0,Ajax,3,Valencia,Ajax
+champions-league,2019-10-22,Club Bruges,0,PSG,5,Club Bruges,Paris Saint Germain
+champions-league,2019-10-22,Galatasaray,0,Real Madrid,1,Galatasaray,Real Madrid
+champions-league,2019-10-22,Olympiakos,2,Bayern Munich,3,Olympiakos,Bayern Munich
+champions-league,2019-10-22,Tottenham,5,Red Star Belgrade,0,Tottenham Hotspur,Red Star Belgrade
+champions-league,2019-10-22,Shakhtar Donetsk,2,Dinamo Zagreb,2,Shakhtar Donetsk,Dinamo Zagreb
+champions-league,2019-10-22,Man City,5,Atalanta,1,Manchester City,Atalanta
+champions-league,2019-10-22,Atl Madrid,1,B Leverkusen,0,Atlético Madrid,Bayer 04 Leverkusen
+champions-league,2019-10-22,Juventus,2,Lokomotiv Moscow,1,Juventus,Lokomotiv Moscow
 europa-league,2019-08-01,FC Astana,4,FC Santa Coloma,1,FC Astana,FC Santa Coloma
 europa-league,2019-08-01,Ordabasy,2,Mladá Boleslav,3,Ordabasy,Mladá Boleslav
 europa-league,2019-08-01,Kairat,1,Hapoel Be'er Sheva,1,Kairat,Hapoel Be'er Sheva
