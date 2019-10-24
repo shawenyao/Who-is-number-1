@@ -103,6 +103,8 @@ plot_nba_ranking <- function(
     theme_bw(base_size = 20) +
     theme(
       legend.position = "none",
+      plot.title = element_text(hjust = 0.09),
+      plot.subtitle = element_text(hjust = 0.04),
       plot.margin = margin(0, 0, 0, 0, "cm"),
       axis.text.x = element_text(angle = 60),
       axis.text.y.left = element_text(margin = margin(0, -1.2, 0, 0, "cm")),
