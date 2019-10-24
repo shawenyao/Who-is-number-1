@@ -11,7 +11,6 @@ set.seed(350)
 
 
 #==== general setup ====
-
 # whether to scrape the scoreboard from web or load existing scoreboard
 refresh_scoreboard <- TRUE
 
@@ -95,11 +94,11 @@ plot_2019_2020 <- plot_football_ranking(
 
 
 #==== output =====
-svg(paste0("output/footbal_2019_2020/European_Football_Club_2019_20_Season_Power_Rankings.svg"), width = 3 * 4, height = 10 * 4)
+svg(paste0("output/footbal_2019_20/European_Football_Club_2019_20_Season_Power_Rankings.svg"), width = 3 * 4, height = 10 * 4)
 print(plot_2019_2020)
 dev.off()
 
-png(paste0("output/footbal_2019_2020/European_Football_Club_2019_20_Season_Power_Rankings.png"), width = 880, height = 3000, type = "cairo")
+png(paste0("output/footbal_2019_20/European_Football_Club_2019_20_Season_Power_Rankings.png"), width = 880, height = 3000, type = "cairo")
 print(plot_2019_2020)
 dev.off()
 
