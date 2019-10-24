@@ -16,10 +16,10 @@ source("./functions/functions_colley's_method.R")
 source("./functions/functions_plot_nba_ranking.R")
 
 # whether to scrape the scoreboard from web or load existing scoreboard
-refresh_scoreboard <- FALSE
+refresh_scoreboard <- TRUE
 
 # the match results
-scoreboard_file <- "data/nba_2018-2019.csv"
+scoreboard_file <- "data/nba_2019-2020.csv"
 
 
 #==== NBA color palette ====
@@ -31,7 +31,7 @@ if(isTRUE(refresh_scoreboard)){
   
   # scrape NBA.com
   scoreboard <- scrape_nba_scoreboard(
-    start_date = as.Date("2018-10-16"),
+    start_date = as.Date("2019-10-22"),
     end_date = Sys.Date()
   ) %>% 
     # keep only legitimate games (i.e., remove all-stars)
@@ -56,21 +56,21 @@ if(isTRUE(refresh_scoreboard)){
 
 #==== plot ====
 plot <- plot_nba_ranking(
-  ranking_start_date = as.Date("2018-10-21"),
-  ranking_end_date = as.Date("2019-06-16"),
+  ranking_start_date = as.Date("2019-10-22"),
+  ranking_end_date = Sys.Date(),
   scoreboard_full = scoreboard,
-  frequency = 7,
+  frequency = 1,
   nba_color_palette = nba_color_palette,
-  title = "NBA 2018-2019 Season Power Ranking - Colley's Method"
+  title = "NBA 2019-2020 Season Power Ranking - Colley's Method"
 )
 
 
 #==== output =====
-svg("output/nba_2018-2019/NBA_Rankings_2018-2019.svg", width = 3 * 4, height = 5 * 4)
+svg("output/nba_2019-2020/NBA_Rankings_2019-2020.svg", width = 3 * 4, height = 5 * 4)
 print(plot)
 dev.off()
 
-png("output/nba_2018-2019/NBA_Rankings_2018-2019.png", width = 880, height = 1500, type = "cairo")
+png("output/nba_2019_2020/NBA_Rankings_2018-2020.png", width = 880, height = 1500, type = "cairo")
 print(plot)
 dev.off()
 

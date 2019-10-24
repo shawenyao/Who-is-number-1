@@ -83,23 +83,23 @@ fc_logos <- import(fc_logos_file, encoding = "UTF-8")
 
 
 #==== plot ====
-plot_2019_2020 <- plot_football_ranking(
+plot <- plot_football_ranking(
   ranking_start_date = as.Date("2019-09-08"),
   ranking_end_date = Sys.Date(),
   frequency = 14,
   scoreboard = scoreboard,
   fc_logos = fc_logos,
-  title = "European Football Club 2019-20 Season Power Rankings"
+  title = "European Football Club 2019-2020 Season Power Rankings"
 )
 
 
 #==== output =====
-svg(paste0("output/footbal_2019_20/European_Football_Club_2019_20_Season_Power_Rankings.svg"), width = 3 * 4, height = 10 * 4)
-print(plot_2019_2020)
+svg(paste0("output/footbal_2019-2020/European_Football_Club_Rankings_2019-2020.svg"), width = 3 * 4, height = 10 * 4)
+print(plot)
 dev.off()
 
-png(paste0("output/footbal_2019_20/European_Football_Club_2019_20_Season_Power_Rankings.png"), width = 880, height = 3000, type = "cairo")
-print(plot_2019_2020)
+png(paste0("output/footbal_2019-2020/European_Football_Club_Rankings_2019-2020.png"), width = 880, height = 3000, type = "cairo")
+print(plot)
 dev.off()
 
 # play sound when finished
