@@ -89,6 +89,7 @@ premier-league,2019-10-19,Wolves,1,Southampton,1,Wolverhampton Wanderers,Southam
 premier-league,2019-10-19,Crystal Palace,0,Man City,2,Crystal Palace,Manchester City
 premier-league,2019-10-20,Man Utd,1,Liverpool,1,Manchester United,Liverpool
 premier-league,2019-10-21,Sheff Utd,1,Arsenal,0,Sheffield United,Arsenal
+premier-league,2019-10-25,Southampton,0,Leicester,9,Southampton,Leicester City
 spanish-la-liga,2019-08-16,Ath Bilbao,1,Barcelona,0,Athletic Bilbao,Barcelona
 spanish-la-liga,2019-08-17,Celta Vigo,1,Real Madrid,3,Celta Vigo,Real Madrid
 spanish-la-liga,2019-08-17,Valencia,1,Real Sociedad,1,Valencia,Real Sociedad
@@ -179,6 +180,7 @@ spanish-la-liga,2019-10-20,Real Sociedad,3,Real Betis,1,Real Sociedad,Real Betis
 spanish-la-liga,2019-10-20,Espanyol,0,Villarreal,1,Espanyol,Villarreal
 spanish-la-liga,2019-10-20,Ath Bilbao,1,Real Valladolid,1,Athletic Bilbao,Real Valladolid
 spanish-la-liga,2019-10-20,Sevilla,1,Levante,0,Sevilla,Levante
+spanish-la-liga,2019-10-25,Villarreal,4,Alavés,1,Villarreal,Alavés
 italian-serie-a,2019-08-24,Parma,0,Juventus,1,Parma,Juventus
 italian-serie-a,2019-08-24,Fiorentina,3,Napoli,4,Fiorentina,Napoli
 italian-serie-a,2019-08-25,Udinese,1,AC Milan,0,Udinese,AC Milan
@@ -258,6 +260,7 @@ italian-serie-a,2019-10-20,Udinese,1,Torino,0,Udinese,Torino
 italian-serie-a,2019-10-20,Parma,5,Genoa,1,Parma,Genoa
 italian-serie-a,2019-10-20,AC Milan,2,Lecce,2,AC Milan,Lecce
 italian-serie-a,2019-10-21,Brescia,0,Fiorentina,0,Brescia,Fiorentina
+italian-serie-a,2019-10-25,Hellas Verona,0,Sassuolo,1,Hellas Verona,Sassuolo
 german-bundesliga,2019-08-16,Bayern Munich,2,Hertha Berlin,2,Bayern Munich,Hertha Berlin
 german-bundesliga,2019-08-17,B Leverkusen,3,Paderborn,2,Bayer 04 Leverkusen,SC Paderborn 07
 german-bundesliga,2019-08-17,B Dortmund,5,Augsburg,1,Borussia Dortmund,FC Augsburg
@@ -330,6 +333,7 @@ german-bundesliga,2019-10-19,Werder Bremen,1,Hertha Berlin,1,Werder Bremen,Herth
 german-bundesliga,2019-10-19,B Dortmund,1,B Mgladbach,0,Borussia Dortmund,Borussia Mönchengladbach
 german-bundesliga,2019-10-20,Köln,3,Paderborn,0,1. FC Köln,SC Paderborn 07
 german-bundesliga,2019-10-20,Hoffenheim,2,Schalke,0,1899 Hoffenheim,FC Schalke 04
+german-bundesliga,2019-10-25,Mainz,3,Köln,1,Mainz 05,1. FC Köln
 french-ligue-one,2019-08-09,Monaco,0,Lyon,3,Monaco,Lyon
 french-ligue-one,2019-08-10,Marseille,0,Reims,2,Marseille,Reims
 french-ligue-one,2019-08-10,Angers,3,Bordeaux,1,Angers,Bordeaux
@@ -430,6 +434,7 @@ french-ligue-one,2019-10-19,Toulouse,2,Lille,1,Toulouse,Lille
 french-ligue-one,2019-10-20,Bordeaux,0,Saint-Étienne,1,Bordeaux,Saint-Étienne
 french-ligue-one,2019-10-20,Monaco,3,Rennes,2,Monaco,Rennes
 french-ligue-one,2019-10-20,Marseille,2,Strasbourg,0,Marseille,Strasbourg
+french-ligue-one,2019-10-25,Nantes,0,Monaco,1,Nantes,Monaco
 champions-league,2019-08-06,Apoel Nicosia,1,FK Qarabag,2,Apoel Nicosia,FK Qarabag
 champions-league,2019-08-06,PAOK Salonika,2,Ajax,2,PAOK Salonika,Ajax
 champions-league,2019-08-06,Dinamo Zagreb,1,Ferencvárosi TC,1,Dinamo Zagreb,Ferencvárosi TC
