@@ -56,7 +56,7 @@ if(isTRUE(refresh_scoreboard)){
 
 #==== plot ====
 plot <- plot_nba_ranking(
-  ranking_start_date = as.Date("2019-10-22"),
+  ranking_start_date = as.Date("2019-10-24"),
   ranking_end_date = Sys.Date(),
   scoreboard_full = scoreboard,
   frequency = 1,
@@ -70,7 +70,7 @@ svg("output/nba_2019-2020/NBA_Rankings_2019-2020.svg", width = 3 * 4, height = 5
 print(plot)
 dev.off()
 
-png("output/nba_2019_2020/NBA_Rankings_2018-2020.png", width = 880, height = 1500, type = "cairo")
+png("output/nba_2019-2020/NBA_Rankings_2018-2020.png", width = 880, height = 1500, type = "cairo")
 print(plot)
 dev.off()
 
