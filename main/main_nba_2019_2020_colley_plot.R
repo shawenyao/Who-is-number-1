@@ -32,7 +32,7 @@ if(isTRUE(refresh_scoreboard)){
   # scrape NBA.com
   scoreboard <- scrape_nba_scoreboard(
     start_date = as.Date("2019-10-22"),
-    end_date = Sys.Date()
+    end_date = Sys.Date() - 1
   ) %>% 
     # keep only legitimate games (i.e., remove all-stars)
     filter(
