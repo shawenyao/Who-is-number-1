@@ -95,6 +95,10 @@ premier-league,2019-10-26,Brighton,3,Everton,2,Brighton & Hove Albion,Everton
 premier-league,2019-10-26,Watford,0,Bournemouth,0,Watford,AFC Bournemouth
 premier-league,2019-10-26,West Ham,1,Sheff Utd,1,West Ham United,Sheffield United
 premier-league,2019-10-26,Burnley,2,Chelsea,4,Burnley,Chelsea
+premier-league,2019-10-27,Newcastle,1,Wolves,1,Newcastle United,Wolverhampton Wanderers
+premier-league,2019-10-27,Arsenal,2,Crystal Palace,2,Arsenal,Crystal Palace
+premier-league,2019-10-27,Liverpool,2,Tottenham,1,Liverpool,Tottenham Hotspur
+premier-league,2019-10-27,Norwich,1,Man Utd,3,Norwich City,Manchester United
 spanish-la-liga,2019-08-16,Ath Bilbao,1,Barcelona,0,Athletic Bilbao,Barcelona
 spanish-la-liga,2019-08-17,Celta Vigo,1,Real Madrid,3,Celta Vigo,Real Madrid
 spanish-la-liga,2019-08-17,Valencia,1,Real Sociedad,1,Valencia,Real Sociedad
@@ -189,6 +193,11 @@ spanish-la-liga,2019-10-25,Villarreal,4,Alavés,1,Villarreal,Alavés
 spanish-la-liga,2019-10-26,Leganés,1,Mallorca,0,Leganés,Mallorca
 spanish-la-liga,2019-10-26,Real Valladolid,2,Eibar,0,Real Valladolid,Eibar
 spanish-la-liga,2019-10-26,Atl Madrid,2,Ath Bilbao,0,Atlético Madrid,Athletic Bilbao
+spanish-la-liga,2019-10-27,Celta Vigo,0,Real Sociedad,1,Celta Vigo,Real Sociedad
+spanish-la-liga,2019-10-27,Granada,1,Real Betis,0,Granada,Real Betis
+spanish-la-liga,2019-10-27,Levante,0,Espanyol,1,Levante,Espanyol
+spanish-la-liga,2019-10-27,Sevilla,2,Getafe,0,Sevilla,Getafe
+spanish-la-liga,2019-10-27,Osasuna,3,Valencia,1,Osasuna,Valencia
 italian-serie-a,2019-08-24,Parma,0,Juventus,1,Parma,Juventus
 italian-serie-a,2019-08-24,Fiorentina,3,Napoli,4,Fiorentina,Napoli
 italian-serie-a,2019-08-25,Udinese,1,AC Milan,0,Udinese,AC Milan
@@ -272,6 +281,12 @@ italian-serie-a,2019-10-25,Hellas Verona,0,Sassuolo,1,Hellas Verona,Sassuolo
 italian-serie-a,2019-10-26,Lecce,1,Juventus,1,Lecce,Juventus
 italian-serie-a,2019-10-26,Inter Milan,2,Parma,2,Inter Milan,Parma
 italian-serie-a,2019-10-26,Genoa,3,Brescia,1,Genoa,Brescia
+italian-serie-a,2019-10-27,Bologna,2,Sampdoria,1,Bologna,Sampdoria
+italian-serie-a,2019-10-27,Atalanta,7,Udinese,1,Atalanta,Udinese
+italian-serie-a,2019-10-27,SPAL,1,Napoli,1,SPAL,Napoli
+italian-serie-a,2019-10-27,Torino,1,Cagliari,1,Torino,Cagliari
+italian-serie-a,2019-10-27,Roma,2,AC Milan,1,Roma,AC Milan
+italian-serie-a,2019-10-27,Fiorentina,1,Lazio,2,Fiorentina,Lazio
 german-bundesliga,2019-08-16,Bayern Munich,2,Hertha Berlin,2,Bayern Munich,Hertha Berlin
 german-bundesliga,2019-08-17,B Leverkusen,3,Paderborn,2,Bayer 04 Leverkusen,SC Paderborn 07
 german-bundesliga,2019-08-17,B Dortmund,5,Augsburg,1,Borussia Dortmund,FC Augsburg
@@ -351,6 +366,8 @@ german-bundesliga,2019-10-26,Hertha Berlin,2,Hoffenheim,3,Hertha Berlin,1899 Hof
 german-bundesliga,2019-10-26,Paderborn,2,Düsseldorf,0,SC Paderborn 07,Fortuna Düsseldorf
 german-bundesliga,2019-10-26,Freiburg,2,RB Leipzig,1,SC Freiburg,RB Leipzig
 german-bundesliga,2019-10-26,B Leverkusen,2,Werder Bremen,2,Bayer 04 Leverkusen,Werder Bremen
+german-bundesliga,2019-10-27,Wolfsburg,0,Augsburg,0,VfL Wolfsburg,FC Augsburg
+german-bundesliga,2019-10-27,B Mgladbach,4,Frankfurt,2,Borussia Mönchengladbach,Eintracht Frankfurt
 french-ligue-one,2019-08-09,Monaco,0,Lyon,3,Monaco,Lyon
 french-ligue-one,2019-08-10,Marseille,0,Reims,2,Marseille,Reims
 french-ligue-one,2019-08-10,Angers,3,Bordeaux,1,Angers,Bordeaux
@@ -458,6 +475,9 @@ french-ligue-one,2019-10-26,Lyon,2,Metz,0,Lyon,Metz
 french-ligue-one,2019-10-26,Montpellier,0,Angers,0,Montpellier,Angers
 french-ligue-one,2019-10-26,Reims,0,Nîmes,0,Reims,Nîmes
 french-ligue-one,2019-10-26,Strasbourg,1,Nice,0,Strasbourg,Nice
+french-ligue-one,2019-10-27,Rennes,3,Toulouse,2,Rennes,Toulouse
+french-ligue-one,2019-10-27,Saint-Étienne,2,Amiens,2,Saint-Étienne,Amiens
+french-ligue-one,2019-10-27,PSG,4,Marseille,0,Paris Saint Germain,Marseille
 champions-league,2019-08-06,Apoel Nicosia,1,FK Qarabag,2,Apoel Nicosia,FK Qarabag
 champions-league,2019-08-06,PAOK Salonika,2,Ajax,2,PAOK Salonika,Ajax
 champions-league,2019-08-06,Dinamo Zagreb,1,Ferencvárosi TC,1,Dinamo Zagreb,Ferencvárosi TC
