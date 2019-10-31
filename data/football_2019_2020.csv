@@ -200,6 +200,11 @@ spanish-la-liga,2019-10-27,Sevilla,2,Getafe,0,Sevilla,Getafe
 spanish-la-liga,2019-10-27,Osasuna,3,Valencia,1,Osasuna,Valencia
 spanish-la-liga,2019-10-29,Alavés,1,Atl Madrid,1,Alavés,Atlético Madrid
 spanish-la-liga,2019-10-29,Barcelona,5,Real Valladolid,1,Barcelona,Real Valladolid
+spanish-la-liga,2019-10-30,Real Sociedad,1,Levante,2,Real Sociedad,Levante
+spanish-la-liga,2019-10-30,Valencia,1,Sevilla,1,Valencia,Sevilla
+spanish-la-liga,2019-10-30,Ath Bilbao,3,Espanyol,0,Athletic Bilbao,Espanyol
+spanish-la-liga,2019-10-30,Real Betis,2,Celta Vigo,1,Real Betis,Celta Vigo
+spanish-la-liga,2019-10-30,Real Madrid,5,Leganés,0,Real Madrid,Leganés
 italian-serie-a,2019-08-24,Parma,0,Juventus,1,Parma,Juventus
 italian-serie-a,2019-08-24,Fiorentina,3,Napoli,4,Fiorentina,Napoli
 italian-serie-a,2019-08-25,Udinese,1,AC Milan,0,Udinese,AC Milan
@@ -291,6 +296,13 @@ italian-serie-a,2019-10-27,Roma,2,AC Milan,1,Roma,AC Milan
 italian-serie-a,2019-10-27,Fiorentina,1,Lazio,2,Fiorentina,Lazio
 italian-serie-a,2019-10-29,Parma,0,Hellas Verona,1,Parma,Hellas Verona
 italian-serie-a,2019-10-29,Brescia,1,Inter Milan,2,Brescia,Inter Milan
+italian-serie-a,2019-10-30,Napoli,2,Atalanta,2,Napoli,Atalanta
+italian-serie-a,2019-10-30,Cagliari,3,Bologna,2,Cagliari,Bologna
+italian-serie-a,2019-10-30,Juventus,2,Genoa,1,Juventus,Genoa
+italian-serie-a,2019-10-30,Lazio,4,Torino,0,Lazio,Torino
+italian-serie-a,2019-10-30,Sampdoria,1,Lecce,1,Sampdoria,Lecce
+italian-serie-a,2019-10-30,Sassuolo,1,Fiorentina,2,Sassuolo,Fiorentina
+italian-serie-a,2019-10-30,Udinese,0,Roma,4,Udinese,Roma
 german-bundesliga,2019-08-16,Bayern Munich,2,Hertha Berlin,2,Bayern Munich,Hertha Berlin
 german-bundesliga,2019-08-17,B Leverkusen,3,Paderborn,2,Bayer 04 Leverkusen,SC Paderborn 07
 german-bundesliga,2019-08-17,B Dortmund,5,Augsburg,1,Borussia Dortmund,FC Augsburg
