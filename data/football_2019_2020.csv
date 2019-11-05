@@ -1,4 +1,4 @@
-﻿league,date,home_team,home_team_score,away_team,away_team_score,home_team_full,away_team_full
+league,date,home_team,home_team_score,away_team,away_team_score,home_team_full,away_team_full
 premier-league,2019-08-09,Liverpool,4,Norwich,1,Liverpool,Norwich City
 premier-league,2019-08-10,West Ham,0,Man City,5,West Ham United,Manchester City
 premier-league,2019-08-10,Bournemouth,1,Sheff Utd,1,AFC Bournemouth,Sheffield United
@@ -336,6 +336,7 @@ italian-serie-a,2019-11-03,Lecce,2,Sassuolo,2,Lecce,Sassuolo
 italian-serie-a,2019-11-03,Hellas Verona,2,Brescia,1,Hellas Verona,Brescia
 italian-serie-a,2019-11-03,Fiorentina,1,Parma,1,Fiorentina,Parma
 italian-serie-a,2019-11-03,AC Milan,1,Lazio,2,AC Milan,Lazio
+italian-serie-a,2019-11-04,SPAL,0,Sampdoria,1,SPAL,Sampdoria
 german-bundesliga,2019-08-16,Bayern Munich,2,Hertha Berlin,2,Bayern Munich,Hertha Berlin
 german-bundesliga,2019-08-17,B Leverkusen,3,Paderborn,2,Bayer 04 Leverkusen,SC Paderborn 07
 german-bundesliga,2019-08-17,B Dortmund,5,Augsburg,1,Borussia Dortmund,FC Augsburg
