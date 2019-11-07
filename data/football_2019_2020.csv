@@ -626,6 +626,22 @@ champions-league,2019-10-23,RB Leipzig,2,Zenit St Petersburg,1,RB Leipzig,Zenit 
 champions-league,2019-10-23,Benfica,2,Lyon,1,Benfica,Lyon
 champions-league,2019-10-23,Ajax,0,Chelsea,1,Ajax,Chelsea
 champions-league,2019-10-23,Lille,1,Valencia,1,Lille,Valencia
+champions-league,2019-11-05,Liverpool,2,KRC Genk,1,Liverpool,KRC Genk
+champions-league,2019-11-05,Napoli,1,RB Salzburg,1,Napoli,FC Red Bull Salzburg
+champions-league,2019-11-05,Barcelona,0,Slavia Prague,0,Barcelona,Slavia Prague
+champions-league,2019-11-05,B Dortmund,3,Inter Milan,2,Borussia Dortmund,Inter Milan
+champions-league,2019-11-05,Zenit St Petersburg,0,RB Leipzig,2,Zenit St Petersburg,RB Leipzig
+champions-league,2019-11-05,Lyon,3,Benfica,1,Lyon,Benfica
+champions-league,2019-11-05,Chelsea,4,Ajax,4,Chelsea,Ajax
+champions-league,2019-11-05,Valencia,4,Lille,1,Valencia,Lille
+champions-league,2019-11-06,PSG,1,Club Bruges,0,Paris Saint Germain,Club Bruges
+champions-league,2019-11-06,Real Madrid,6,Galatasaray,0,Real Madrid,Galatasaray
+champions-league,2019-11-06,Bayern Munich,2,Olympiakos,0,Bayern Munich,Olympiakos
+champions-league,2019-11-06,Red Star Belgrade,0,Tottenham,4,Red Star Belgrade,Tottenham Hotspur
+champions-league,2019-11-06,Atalanta,1,Man City,1,Atalanta,Manchester City
+champions-league,2019-11-06,Dinamo Zagreb,3,Shakhtar Donetsk,3,Dinamo Zagreb,Shakhtar Donetsk
+champions-league,2019-11-06,Lokomotiv Moscow,1,Juventus,2,Lokomotiv Moscow,Juventus
+champions-league,2019-11-06,B Leverkusen,2,Atl Madrid,1,Bayer 04 Leverkusen,Atlético Madrid
 europa-league,2019-08-01,FC Astana,4,FC Santa Coloma,1,FC Astana,FC Santa Coloma
 europa-league,2019-08-01,Ordabasy,2,Mladá Boleslav,3,Ordabasy,Mladá Boleslav
 europa-league,2019-08-01,Kairat,1,Hapoel Be'er Sheva,1,Kairat,Hapoel Be'er Sheva
@@ -853,3 +869,4 @@ europa-league,2019-10-24,CSKA Moscow,0,Ferencvárosi TC,1,CSKA Moscow,Ferencvár
 europa-league,2019-10-24,Ludogorets,0,Espanyol,1,Ludogorets Razgrad,Espanyol
 europa-league,2019-10-24,KAA Gent,2,Wolfsburg,2,KAA Gent,VfL Wolfsburg
 europa-league,2019-10-24,Saint-Étienne,1,Oleksandria,1,Saint-Étienne,Oleksandria
+europa-league,2019-11-06,Vitória Guimarães,1,Arsenal,1,Vitória Guimarães,Arsenal
