@@ -10,10 +10,10 @@ set.seed(350)
 
 #==== general setup ====
 setwd("C:/Users/Wenyao/Desktop/R/Who-is-number-1")
-source("./functions/functions_scrape_nba.R")
-source("./functions/functions_general.R")
-source("./functions/functions_colley's_method.R")
-source("./functions/functions_plot_nba_ranking.R")
+source("functions/functions_scrape_nba.R")
+source("functions/functions_general.R")
+source("functions/functions_colley's_method.R")
+source("functions/functions_plot_nba_ranking.R")
 
 # whether to scrape the scoreboard from web or load existing scoreboard
 refresh_scoreboard <- FALSE
