@@ -51,6 +51,7 @@ if(isTRUE(refresh_scoreboard)){
   
   # stop if there is NA in the scoreboard scrape
   stopifnot(all(!is.na(scoreboard)))
+  sum(is.na(scoreboard))
   scoreboard <- scoreboard %>% na.omit()
   
   # save a copy
