@@ -16,7 +16,7 @@ source("functions/functions_colley's_method.R")
 source("functions/functions_plot_nba_ranking.R")
 
 # whether to scrape the scoreboard from web or load existing scoreboard
-refresh_scoreboard <- FALSE
+refresh_scoreboard <- TRUE
 
 # the match results
 scoreboard_file <- "data/nba_2019-2020.csv"
