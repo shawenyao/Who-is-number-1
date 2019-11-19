@@ -3,7 +3,7 @@
 #' @param start start date in yearmon format
 #' @param end end date in yearmon format
 #' @param league name of the league
-#' @param no_cores enable parallel scraping if greater than 1
+#' @param no_threads enable parallel scraping if greater than 1
 #' 
 #' @return a data.frame of match results
 #' 
