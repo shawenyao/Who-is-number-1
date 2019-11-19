@@ -3,6 +3,7 @@ suppressWarnings(library(tidyverse))
 suppressWarnings(library(rvest))
 suppressWarnings(library(magrittr))
 suppressWarnings(library(rio))
+suppressWarnings(library(parallel))
 suppressWarnings(library(beepr))
 suppressWarnings(library(png))
 suppressWarnings(library(grid))
@@ -45,7 +46,8 @@ if(isTRUE(refresh_scoreboard)){
     map(
       scrape_bbc,
       start = as.yearmon("2019-08-01"), 
-      end = as.yearmon(Sys.Date())
+      end = as.yearmon(Sys.Date()),
+      no_threads = 10
     ) %>% 
     bind_rows()
   

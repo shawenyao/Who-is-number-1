@@ -3,33 +3,51 @@
 #' @param start start date in yearmon format
 #' @param end end date in yearmon format
 #' @param league name of the league
+#' @param no_cores enable parallel scraping if greater than 1
 #' 
 #' @return a data.frame of match results
 #' 
-scrape_bbc <- function(start, end, league){
+scrape_bbc <- function(start, end, league, no_threads = 1){
   
-  year_months <- seq(start, end, by = 1/12)
+  print(paste0("==== Now scraping ", league, " ===="))
   
-  year_months %>% 
-    map(scrape_one_month, league = league) %>% 
-    bind_rows()
+  game_months <- seq(start, end, by = 1/12)
+
+  if(no_threads == 1){
+    # single-core scraping
+    scoreboard <- map(game_months, scrape_one_month, league = league) 
+  }else{
+    # parallel scraping
+    cl <- makeCluster(no_threads)
+    clusterEvalQ(cl, library(dplyr))
+    clusterEvalQ(cl, library(stringr))
+    clusterEvalQ(cl, library(rvest))
+    clusterEvalQ(cl, library(zoo))
+    scoreboard <- parLapply(cl, game_months, scrape_one_month, league = league)
+    stopCluster(cl)
+  }
   
+  print(paste0("==== Finished scraping ", league, " ===="))
+  
+  scoreboard %>% 
+    bind_rows() %>% 
+    arrange(date)
 }
 
 
 #' query match results for one league for one month
 #' 
-#' @param year_month the month to query in yearmon format
+#' @param game_month the month to query in yearmon format
 #' @param league name of the league
 #' 
 #' @return a data.frame of match results of the month
 #' 
-scrape_one_month <- function(year_month, league){
+scrape_one_month <- function(game_month, league){
   
-  print(paste0(league, " @ ", year_month))
+  print(paste0(league, " @ ", game_month))
   
-  year <- year_month %>% format("%Y")
-  month <- year_month %>% format("%m")
+  year <- game_month %>% format("%Y")
+  month <- game_month %>% format("%m")
   
   # read the match results page from bbc.com
   page <- paste0("https://www.bbc.com/sport/football/", league, "/scores-fixtures/", year, "-", month, "?filter=results") %>% 
