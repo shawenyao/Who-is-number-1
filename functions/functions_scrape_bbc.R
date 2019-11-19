@@ -58,7 +58,7 @@ scrape_one_month <- function(game_month, league){
     html_nodes(".sp-c-fixture__team-name--home .sp-c-fixture__team-name-trunc , .sp-c-match-list-heading") %>% 
     html_text()
   away_team <- page %>% 
-    html_nodes(".sp-c-match-list-heading , .sp-c-fixture__team-name--away .sp-c-fixture__team-name-trunc") %>% 
+    html_nodes(".sp-c-match-list-heading , .sp-c-fixture__team-name--away .sp-c-fixture__team-name-trunc") %>%
     html_text()
   
   # numeric vectors of home/away team scores
