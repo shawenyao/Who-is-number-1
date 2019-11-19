@@ -51,7 +51,7 @@ if(isTRUE(refresh_scoreboard)){
     ) %>% 
     bind_rows()
   
-  # stop if there is more than 2 NAs in the scoreboard scrape (one match is rescheduled due to weatherl)
+  # stop if there is more than 2 NAs in the scoreboard scrape (one match is rescheduled due to weather)
   stopifnot(sum(is.na(scoreboard)) == 2)
   
   scoreboard <- scoreboard %>% na.omit()
