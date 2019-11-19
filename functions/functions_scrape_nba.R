@@ -27,10 +27,11 @@ nba_json_to_df <- function(json){
 #'
 #' @param start_date the first date to extract game score
 #' @param end_date the last date to extract game score
+#' @param no_cores enable parallel scraping if greater than 1
 #' 
 #' @return a data.frame
 #' 
-scrape_nba_scoreboard <- function(start_date, end_date){
+scrape_nba_scoreboard <- function(start_date, end_date, no_cores = 1){
   
   game_days <- seq(
     from = start_date,
@@ -39,14 +40,29 @@ scrape_nba_scoreboard <- function(start_date, end_date){
   ) %>% 
     format("%Y%m%d")
   
-  scoreboard <- game_days %>% 
-    paste0(
+  urls <- paste0(
       "https://data.nba.net/prod/v2/",
-      .,
+      game_days,
       "/scoreboard.json"
-    ) %>% 
-    map(readLines, warn = FALSE) %>% 
+    )
+  
+  if(no_cores == 1){
+    
+    # single-core scraping
+    scoreboard <- map(urls, readLines, warn = FALSE)
+    
+  }else{
+    
+    # parallel scraping
+    cl <- makeCluster(no_cores)
+    scoreboard <- parLapply(cl, urls, readLines, warn = FALSE)
+    stopCluster(cl)
+    
+  }
+  
+  scoreboard %>% 
     map(fromJSON) %>% 
     map(nba_json_to_df) %>% 
-    bind_rows()
+    bind_rows() %>% 
+    arrange(date)
 }

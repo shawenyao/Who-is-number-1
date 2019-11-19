@@ -3,6 +3,7 @@ suppressWarnings(library(zoo))
 suppressWarnings(library(tidyverse))
 suppressWarnings(library(magrittr))
 suppressWarnings(library(rio))
+suppressWarnings(library(parallel))
 suppressWarnings(library(beepr))
 
 set.seed(350)
@@ -32,7 +33,8 @@ if(isTRUE(refresh_scoreboard)){
   # scrape NBA.com
   scoreboard <- scrape_nba_scoreboard(
     start_date = as.Date("2019-10-22"),
-    end_date = Sys.Date() - 1
+    end_date = Sys.Date() - 1,
+    no_cores = 10
   ) %>% 
     # keep only legitimate games (i.e., remove all-stars)
     filter(
