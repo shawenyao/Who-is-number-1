@@ -19,10 +19,7 @@ scrape_bbc <- function(start, end, league, no_threads = 1){
   }else{
     # parallel scraping
     cl <- makeCluster(no_threads)
-    clusterEvalQ(cl, library(dplyr))
-    clusterEvalQ(cl, library(stringr))
-    clusterEvalQ(cl, library(rvest))
-    clusterEvalQ(cl, library(zoo))
+    clusterEvalQ(cl, lapply(c("dplyr", "stringr", "rvest", "zoo"), library, character.only = TRUE))
     scoreboard <- parLapply(cl, game_months, scrape_one_month, league = league)
     stopCluster(cl)
   }
