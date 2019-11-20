@@ -47,7 +47,7 @@ if(isTRUE(refresh_scoreboard)){
       scrape_bbc,
       start = as.yearmon("2019-08-01"), 
       end = as.yearmon(Sys.Date()),
-      no_threads = 10
+      no_threads = detectCores() - 1
     ) %>% 
     bind_rows()
   
