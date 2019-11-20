@@ -34,7 +34,7 @@ if(isTRUE(refresh_scoreboard)){
   scoreboard <- scrape_nba_scoreboard(
     start_date = as.Date("2019-10-22"),
     end_date = Sys.Date() - 1,
-    no_threads = 10
+    no_threads = 4
   ) %>% 
     # keep only legitimate games (i.e., remove all-stars)
     filter(
