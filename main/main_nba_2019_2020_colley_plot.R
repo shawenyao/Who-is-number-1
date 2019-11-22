@@ -58,7 +58,7 @@ if(isTRUE(refresh_scoreboard)){
 
 #==== plot ====
 plot <- plot_nba_ranking(
-  ranking_start_date = as.Date("2019-10-24"),
+  ranking_start_date = as.Date("2019-10-27"),
   ranking_end_date = Sys.Date() - 1,
   scoreboard_full = scoreboard,
   frequency = 7,
