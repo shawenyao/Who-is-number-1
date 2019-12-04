@@ -48,7 +48,7 @@ scrape_one_month <- function(game_month, league){
   
   # read the match results page from bbc.com
   page <- paste0("https://www.bbc.com/sport/football/", league, "/scores-fixtures/", year, "-", month, "?filter=results") %>% 
-    read_html()
+    read_html(encoding = "UTF-8")
   
   # character vectors of home/away team names
   # needs to be cleaned due to
