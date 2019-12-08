@@ -149,6 +149,11 @@ premier-league,2019-12-04,Wolves,2,West Ham,0,Wolverhampton Wanderers,West Ham U
 premier-league,2019-12-04,Liverpool,5,Everton,2,Liverpool,Everton
 premier-league,2019-12-05,Sheff Utd,0,Newcastle,2,Sheffield United,Newcastle United
 premier-league,2019-12-05,Arsenal,1,Brighton,2,Arsenal,Brighton & Hove Albion
+premier-league,2019-12-07,Everton,3,Chelsea,1,Everton,Chelsea
+premier-league,2019-12-07,Bournemouth,0,Liverpool,3,AFC Bournemouth,Liverpool
+premier-league,2019-12-07,Tottenham,5,Burnley,0,Tottenham Hotspur,Burnley
+premier-league,2019-12-07,Watford,0,Crystal Palace,0,Watford,Crystal Palace
+premier-league,2019-12-07,Man City,1,Man Utd,2,Manchester City,Manchester United
 spanish-la-liga,2019-08-16,Ath Bilbao,1,Barcelona,0,Athletic Bilbao,Barcelona
 spanish-la-liga,2019-08-17,Celta Vigo,1,Real Madrid,3,Celta Vigo,Real Madrid
 spanish-la-liga,2019-08-17,Valencia,1,Real Sociedad,1,Valencia,Real Sociedad
@@ -299,6 +304,10 @@ spanish-la-liga,2019-12-01,Espanyol,2,Osasuna,4,Espanyol,Osasuna
 spanish-la-liga,2019-12-01,Getafe,4,Levante,0,Getafe,Levante
 spanish-la-liga,2019-12-01,Atl Madrid,0,Barcelona,1,Atlético Madrid,Barcelona
 spanish-la-liga,2019-12-06,Villarreal,0,Atl Madrid,0,Villarreal,Atlético Madrid
+spanish-la-liga,2019-12-07,Real Madrid,2,Espanyol,0,Real Madrid,Espanyol
+spanish-la-liga,2019-12-07,Granada,3,Alavés,0,Granada,Alavés
+spanish-la-liga,2019-12-07,Levante,2,Valencia,4,Levante,Valencia
+spanish-la-liga,2019-12-07,Barcelona,5,Mallorca,2,Barcelona,Mallorca
 italian-serie-a,2019-08-24,Parma,0,Juventus,1,Parma,Juventus
 italian-serie-a,2019-08-24,Fiorentina,3,Napoli,4,Fiorentina,Napoli
 italian-serie-a,2019-08-25,Udinese,1,AC Milan,0,Udinese,AC Milan
@@ -439,6 +448,9 @@ italian-serie-a,2019-12-01,Napoli,1,Bologna,2,Napoli,Bologna
 italian-serie-a,2019-12-01,Hellas Verona,1,Roma,3,Hellas Verona,Roma
 italian-serie-a,2019-12-02,Cagliari,4,Sampdoria,3,Cagliari,Sampdoria
 italian-serie-a,2019-12-06,Inter Milan,0,Roma,0,Inter Milan,Roma
+italian-serie-a,2019-12-07,Atalanta,3,Hellas Verona,2,Atalanta,Hellas Verona
+italian-serie-a,2019-12-07,Udinese,1,Napoli,1,Udinese,Napoli
+italian-serie-a,2019-12-07,Lazio,3,Juventus,1,Lazio,Juventus
 german-bundesliga,2019-08-16,Bayern Munich,2,Hertha Berlin,2,Bayern Munich,Hertha Berlin
 german-bundesliga,2019-08-17,B Leverkusen,3,Paderborn,2,Bayer 04 Leverkusen,SC Paderborn 07
 german-bundesliga,2019-08-17,B Dortmund,5,Augsburg,1,Borussia Dortmund,FC Augsburg
@@ -557,6 +569,12 @@ german-bundesliga,2019-12-01,B Mgladbach,4,Freiburg,2,Borussia Mönchengladbach,
 german-bundesliga,2019-12-01,Wolfsburg,2,Werder Bremen,3,VfL Wolfsburg,Werder Bremen
 german-bundesliga,2019-12-02,Mainz,2,Frankfurt,1,Mainz 05,Eintracht Frankfurt
 german-bundesliga,2019-12-06,Frankfurt,2,Hertha Berlin,2,Eintracht Frankfurt,Hertha Berlin
+german-bundesliga,2019-12-07,B Dortmund,5,Düsseldorf,0,Borussia Dortmund,Fortuna Düsseldorf
+german-bundesliga,2019-12-07,B Mgladbach,2,Bayern Munich,1,Borussia Mönchengladbach,Bayern Munich
+german-bundesliga,2019-12-07,Augsburg,2,Mainz,1,FC Augsburg,Mainz 05
+german-bundesliga,2019-12-07,RB Leipzig,3,Hoffenheim,1,RB Leipzig,1899 Hoffenheim
+german-bundesliga,2019-12-07,Freiburg,1,Wolfsburg,0,SC Freiburg,VfL Wolfsburg
+german-bundesliga,2019-12-07,B Leverkusen,2,Schalke,1,Bayer 04 Leverkusen,FC Schalke 04
 french-ligue-one,2019-08-09,Monaco,0,Lyon,3,Monaco,Lyon
 french-ligue-one,2019-08-10,Marseille,0,Reims,2,Marseille,Reims
 french-ligue-one,2019-08-10,Angers,3,Bordeaux,1,Angers,Bordeaux
@@ -716,6 +734,11 @@ french-ligue-one,2019-12-04,Toulouse,1,Monaco,2,Toulouse,Monaco
 french-ligue-one,2019-12-04,PSG,2,Nantes,0,Paris Saint Germain,Nantes
 french-ligue-one,2019-12-06,Lille,1,Brest,0,Lille,Brest
 french-ligue-one,2019-12-06,Nîmes,0,Lyon,4,Nîmes,Lyon
+french-ligue-one,2019-12-07,Montpellier,1,PSG,3,Montpellier,Paris Saint Germain
+french-ligue-one,2019-12-07,Monaco,3,Amiens,0,Monaco,Amiens
+french-ligue-one,2019-12-07,Nice,4,Metz,1,Nice,Metz
+french-ligue-one,2019-12-07,Rennes,2,Angers,1,Rennes,Angers
+french-ligue-one,2019-12-07,Strasbourg,4,Toulouse,2,Strasbourg,Toulouse
 champions-league,2019-08-06,Apoel Nicosia,1,FK Qarabag,2,Apoel Nicosia,FK Qarabag
 champions-league,2019-08-06,PAOK Salonika,2,Ajax,2,PAOK Salonika,Ajax
 champions-league,2019-08-06,Dinamo Zagreb,1,Ferencvárosi TC,1,Dinamo Zagreb,Ferencvárosi TC
