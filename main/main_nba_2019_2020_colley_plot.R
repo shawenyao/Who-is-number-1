@@ -17,7 +17,7 @@ source("functions/functions_colley's_method.R")
 source("functions/functions_plot_nba_ranking.R")
 
 # whether to scrape the scoreboard from web or load existing scoreboard
-refresh_scoreboard <- TRUE
+refresh_scoreboard <- FALSE
 
 # the match results
 scoreboard_file <- "data/nba_2019-2020.csv"
@@ -43,7 +43,7 @@ if(isTRUE(refresh_scoreboard)){
     )
   
   # stop if there is NA in the scoreboard scrape
-  stopifnot(all(!is.na(scoreboard)))
+  stopifnot(sum(is.na(scoreboard)) == 0)
   
   # save a copy
   export(scoreboard, scoreboard_file)
