@@ -168,6 +168,7 @@ premier-league,2019-12-14,Southampton,0,West Ham,1,Southampton,West Ham United
 premier-league,2019-12-15,Man Utd,1,Everton,1,Manchester United,Everton
 premier-league,2019-12-15,Wolves,1,Tottenham,2,Wolverhampton Wanderers,Tottenham Hotspur
 premier-league,2019-12-15,Arsenal,0,Man City,3,Arsenal,Manchester City
+premier-league,2019-12-16,Crystal Palace,1,Brighton,1,Crystal Palace,Brighton & Hove Albion
 spanish-la-liga,2019-08-16,Ath Bilbao,1,Barcelona,0,Athletic Bilbao,Barcelona
 spanish-la-liga,2019-08-17,Celta Vigo,1,Real Madrid,3,Celta Vigo,Real Madrid
 spanish-la-liga,2019-08-17,Valencia,1,Real Sociedad,1,Valencia,Real Sociedad
@@ -337,6 +338,8 @@ spanish-la-liga,2019-12-15,Celta Vigo,2,Mallorca,2,Celta Vigo,Mallorca
 spanish-la-liga,2019-12-15,Espanyol,2,Real Betis,2,Espanyol,Real Betis
 spanish-la-liga,2019-12-15,Sevilla,1,Villarreal,2,Sevilla,Villarreal
 spanish-la-liga,2019-12-15,Valencia,1,Real Madrid,1,Valencia,Real Madrid
+spanish-la-liga,2019-12-18,Barcelona,0,Real Madrid,0,Barcelona,Real Madrid
+spanish-la-liga,2019-12-20,Eibar,3,Granada,0,Eibar,Granada
 italian-serie-a,2019-08-24,Parma,0,Juventus,1,Parma,Juventus
 italian-serie-a,2019-08-24,Fiorentina,3,Napoli,4,Fiorentina,Napoli
 italian-serie-a,2019-08-25,Udinese,1,AC Milan,0,Udinese,AC Milan
@@ -495,6 +498,10 @@ italian-serie-a,2019-12-15,Juventus,3,Udinese,1,Juventus,Udinese
 italian-serie-a,2019-12-15,AC Milan,0,Sassuolo,0,AC Milan,Sassuolo
 italian-serie-a,2019-12-15,Roma,3,SPAL,1,Roma,SPAL
 italian-serie-a,2019-12-15,Fiorentina,1,Inter Milan,1,Fiorentina,Inter Milan
+italian-serie-a,2019-12-16,Cagliari,1,Lazio,2,Cagliari,Lazio
+italian-serie-a,2019-12-18,Sampdoria,1,Juventus,2,Sampdoria,Juventus
+italian-serie-a,2019-12-18,Brescia,0,Sassuolo,2,Brescia,Sassuolo
+italian-serie-a,2019-12-20,Fiorentina,1,Roma,4,Fiorentina,Roma
 german-bundesliga,2019-08-16,Bayern Munich,2,Hertha Berlin,2,Bayern Munich,Hertha Berlin
 german-bundesliga,2019-08-17,B Leverkusen,3,Paderborn,2,Bayer 04 Leverkusen,SC Paderborn 07
 german-bundesliga,2019-08-17,B Dortmund,5,Augsburg,1,Borussia Dortmund,FC Augsburg
@@ -630,6 +637,16 @@ german-bundesliga,2019-12-14,Paderborn,1,Union Berlin,1,SC Paderborn 07,1. FC Un
 german-bundesliga,2019-12-14,Düsseldorf,0,RB Leipzig,3,Fortuna Düsseldorf,RB Leipzig
 german-bundesliga,2019-12-15,Wolfsburg,2,B Mgladbach,1,VfL Wolfsburg,Borussia Mönchengladbach
 german-bundesliga,2019-12-15,Schalke,1,Frankfurt,0,FC Schalke 04,Eintracht Frankfurt
+german-bundesliga,2019-12-17,Werder Bremen,0,Mainz,5,Werder Bremen,Mainz 05
+german-bundesliga,2019-12-17,Union Berlin,0,Hoffenheim,2,1. FC Union Berlin,1899 Hoffenheim
+german-bundesliga,2019-12-17,B Dortmund,3,RB Leipzig,3,Borussia Dortmund,RB Leipzig
+german-bundesliga,2019-12-17,Augsburg,3,Düsseldorf,0,FC Augsburg,Fortuna Düsseldorf
+german-bundesliga,2019-12-18,B Leverkusen,0,Hertha Berlin,1,Bayer 04 Leverkusen,Hertha Berlin
+german-bundesliga,2019-12-18,B Mgladbach,2,Paderborn,0,Borussia Mönchengladbach,SC Paderborn 07
+german-bundesliga,2019-12-18,Frankfurt,2,Köln,4,Eintracht Frankfurt,1. FC Köln
+german-bundesliga,2019-12-18,Freiburg,1,Bayern Munich,3,SC Freiburg,Bayern Munich
+german-bundesliga,2019-12-18,Wolfsburg,1,Schalke,1,VfL Wolfsburg,FC Schalke 04
+german-bundesliga,2019-12-20,Hoffenheim,2,B Dortmund,1,1899 Hoffenheim,Borussia Dortmund
 french-ligue-one,2019-08-09,Monaco,0,Lyon,3,Monaco,Lyon
 french-ligue-one,2019-08-10,Marseille,0,Reims,2,Marseille,Reims
 french-ligue-one,2019-08-10,Angers,3,Bordeaux,1,Angers,Bordeaux
@@ -1098,7 +1115,7 @@ europa-league,2019-09-19,Slovan Bratislava,4,Besiktas,2,Slovan Bratislava,Besikt
 europa-league,2019-09-19,Wolves,0,Sporting Braga,1,Wolverhampton Wanderers,Sporting Braga
 europa-league,2019-09-19,Man Utd,1,FC Astana,0,Manchester United,FC Astana
 europa-league,2019-09-19,Partizan Belgrade,2,AZ Alkmaar,2,Partizan Belgrade,AZ Alkmaar
-europa-league,2019-09-19,Dynamo Kiev,1,Malmö FF,0,Dynamo Kiev,Malmö FF
+europa-league,2019-09-19,Dynamo Kyiv,1,Malmö FF,0,Dynamo Kyiv,Malmö FF
 europa-league,2019-09-19,FC Copenhagen,1,Lugano,0,FC Copenhagen,Lugano
 europa-league,2019-09-19,FC Basel,5,FK Krasnodar,0,FC Basel,FK Krasnodar
 europa-league,2019-09-19,Getafe,1,Trabzonspor,0,Getafe,Trabzonspor
