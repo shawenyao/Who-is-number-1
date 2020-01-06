@@ -14,13 +14,16 @@ scrape_bbc <- function(start, end, league, no_threads = 1){
   game_months <- seq(start, end, by = 1/12)
 
   if(no_threads == 1){
+    
     # single-core scraping
-    scoreboard <- map(game_months, scrape_one_month, league = league) 
+    scoreboard <- map(game_months, try_scrape_one_month, league = league) 
   }else{
+    
     # parallel scraping
     cl <- makeCluster(no_threads)
     clusterEvalQ(cl, lapply(c("dplyr", "stringr", "rvest", "zoo"), library, character.only = TRUE))
-    scoreboard <- parLapply(cl, game_months, scrape_one_month, league = league)
+    clusterExport(cl, varlist = c("scrape_one_month"))
+    scoreboard <- parLapply(cl, game_months, try_scrape_one_month, league = league)
     stopCluster(cl)
   }
   
@@ -29,6 +32,23 @@ scrape_bbc <- function(start, end, league, no_threads = 1){
   scoreboard %>% 
     bind_rows() %>% 
     arrange(date)
+}
+
+
+#' query match results for one league for one month
+#' with error handling
+#' 
+#' @param game_month the month to query in yearmon format
+#' @param league name of the league
+#' 
+#' @return a data.frame of match results of the month
+#' 
+try_scrape_one_month <- function(game_month, league){
+  
+  tryCatch(
+    scrape_one_month(game_month, league),
+    error = function(e){NULL}
+  )
 }
 
 
