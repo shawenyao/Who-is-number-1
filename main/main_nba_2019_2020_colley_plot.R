@@ -28,10 +28,19 @@ nba_color_palette <- import("data/NBA_Color_Palette.csv")
 
 
 #==== game results ====
+# read exisiting game results file
+if(file.exists(scoreboard_file)){
+  scoreboard <- scoreboard_file %>% 
+    import(colClasses = c("date" = "character"))
+}else{
+  scoreboard <- NULL
+}
+
+# scrape NBA.com for incremental scoreboard information
 if(isTRUE(refresh_scoreboard)){
   
-  # scrape NBA.com
-  scoreboard <- scrape_nba_scoreboard(
+  # scrape the entire season's scoreboard
+  scoreboard_from_web <- scrape_nba_scoreboard(
     start_date = as.Date("2019-10-22"),
     end_date = Sys.Date() - 1,
     no_threads = detectCores() - 1
@@ -42,17 +51,30 @@ if(isTRUE(refresh_scoreboard)){
       away_team %in% unique(nba_color_palette$team_short_name)
     )
   
-  # stop if there is NA in the scoreboard scrape
-  stopifnot(sum(is.na(scoreboard)) == 0)
+  # the overlapping scoreboard between web and local file
+  # for reconciling purposes
+  scoreboard_old <- scoreboard_from_web %>% 
+    na.omit() %>% 
+    inner_join(scoreboard, by = c("date", "away_team", "home_team"))
+  
+  # check for discrepancies in history
+  stopifnot(all(scoreboard_old$away_team_score.x == scoreboard_old$away_team_score.y))
+  stopifnot(all(scoreboard_old$home_team_score.x == scoreboard_old$home_team_score.y))
+  
+  # the incremental scoreboard from the web compared to local file
+  # can't have any NA
+  scoreboard_new <- scoreboard_from_web %>% 
+    anti_join(scoreboard, by = c("date", "away_team", "home_team"))
+  
+  # check for NA
+  stopifnot(sum(is.na(scoreboard_new)) == 0)
+  
+  # bind exisiting and new scoreboard information
+  scoreboard <- bind_rows(scoreboard, scoreboard_new) %>% 
+    arrange(date)
   
   # save a copy
   export(scoreboard, scoreboard_file)
-  
-}else{
-  
-  # read exisiting game results file
-  scoreboard <- scoreboard_file %>% 
-    import(colClasses = c("date" = "character"))
 }
 
 
