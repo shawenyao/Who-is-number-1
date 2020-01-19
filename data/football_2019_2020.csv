@@ -218,6 +218,14 @@ premier-league,2020-01-11,Wolves,1,Newcastle,1,Wolverhampton Wanderers,Newcastle
 premier-league,2020-01-11,Tottenham,0,Liverpool,1,Tottenham Hotspur,Liverpool
 premier-league,2020-01-12,Bournemouth,0,Watford,3,AFC Bournemouth,Watford
 premier-league,2020-01-12,Aston Villa,1,Man City,6,Aston Villa,Manchester City
+premier-league,2020-01-18,Watford,0,Tottenham,0,Watford,Tottenham Hotspur
+premier-league,2020-01-18,Arsenal,1,Sheff Utd,1,Arsenal,Sheffield United
+premier-league,2020-01-18,Brighton,1,Aston Villa,1,Brighton & Hove Albion,Aston Villa
+premier-league,2020-01-18,Man City,2,Crystal Palace,2,Manchester City,Crystal Palace
+premier-league,2020-01-18,Norwich,1,Bournemouth,0,Norwich City,AFC Bournemouth
+premier-league,2020-01-18,Southampton,2,Wolves,3,Southampton,Wolverhampton Wanderers
+premier-league,2020-01-18,West Ham,1,Everton,1,West Ham United,Everton
+premier-league,2020-01-18,Newcastle,1,Chelsea,0,Newcastle United,Chelsea
 spanish-la-liga,2019-08-16,Ath Bilbao,1,Barcelona,0,Athletic Bilbao,Barcelona
 spanish-la-liga,2019-08-17,Celta Vigo,1,Real Madrid,3,Celta Vigo,Real Madrid
 spanish-la-liga,2019-08-17,Valencia,1,Real Sociedad,1,Valencia,Real Sociedad
@@ -409,6 +417,10 @@ spanish-la-liga,2020-01-05,Real Sociedad,1,Villarreal,2,Real Sociedad,Villarreal
 spanish-la-liga,2020-01-05,Alavés,1,Real Betis,1,Alavés,Real Betis
 spanish-la-liga,2020-01-05,Celta Vigo,1,Osasuna,1,Celta Vigo,Osasuna
 spanish-la-liga,2020-01-17,Leganés,0,Getafe,3,Leganés,Getafe
+spanish-la-liga,2020-01-18,Levante,0,Alavés,1,Levante,Alavés
+spanish-la-liga,2020-01-18,Real Madrid,2,Sevilla,1,Real Madrid,Sevilla
+spanish-la-liga,2020-01-18,Osasuna,0,Real Valladolid,0,Osasuna,Real Valladolid
+spanish-la-liga,2020-01-18,Eibar,2,Atl Madrid,0,Eibar,Atlético Madrid
 italian-serie-a,2019-08-24,Parma,0,Juventus,1,Parma,Juventus
 italian-serie-a,2019-08-24,Fiorentina,3,Napoli,4,Fiorentina,Napoli
 italian-serie-a,2019-08-25,Udinese,1,AC Milan,0,Udinese,AC Milan
@@ -598,6 +610,9 @@ italian-serie-a,2020-01-12,Torino,1,Bologna,0,Torino,Bologna
 italian-serie-a,2020-01-12,Hellas Verona,2,Genoa,1,Hellas Verona,Genoa
 italian-serie-a,2020-01-12,Roma,1,Juventus,2,Roma,Juventus
 italian-serie-a,2020-01-13,Parma,2,Lecce,0,Parma,Lecce
+italian-serie-a,2020-01-18,Lazio,5,Sampdoria,1,Lazio,Sampdoria
+italian-serie-a,2020-01-18,Sassuolo,2,Torino,1,Sassuolo,Torino
+italian-serie-a,2020-01-18,Napoli,0,Fiorentina,2,Napoli,Fiorentina
 german-bundesliga,2019-08-16,Bayern Munich,2,Hertha Berlin,2,Bayern Munich,Hertha Berlin
 german-bundesliga,2019-08-17,B Leverkusen,3,Paderborn,2,Bayer 04 Leverkusen,SC Paderborn 07
 german-bundesliga,2019-08-17,B Dortmund,5,Augsburg,1,Borussia Dortmund,FC Augsburg
@@ -752,6 +767,12 @@ german-bundesliga,2019-12-21,Hertha Berlin,0,B Mgladbach,0,Hertha Berlin,Borussi
 german-bundesliga,2019-12-22,Düsseldorf,2,Union Berlin,1,Fortuna Düsseldorf,1. FC Union Berlin
 german-bundesliga,2019-12-22,Paderborn,2,Frankfurt,1,SC Paderborn 07,Eintracht Frankfurt
 german-bundesliga,2020-01-17,Schalke,2,B Mgladbach,0,FC Schalke 04,Borussia Mönchengladbach
+german-bundesliga,2020-01-18,Köln,3,Wolfsburg,1,1. FC Köln,VfL Wolfsburg
+german-bundesliga,2020-01-18,Mainz,1,Freiburg,2,Mainz 05,SC Freiburg
+german-bundesliga,2020-01-18,Augsburg,3,B Dortmund,5,FC Augsburg,Borussia Dortmund
+german-bundesliga,2020-01-18,Düsseldorf,0,Werder Bremen,1,Fortuna Düsseldorf,Werder Bremen
+german-bundesliga,2020-01-18,Hoffenheim,1,Frankfurt,2,1899 Hoffenheim,Eintracht Frankfurt
+german-bundesliga,2020-01-18,RB Leipzig,3,Union Berlin,1,RB Leipzig,1. FC Union Berlin
 french-ligue-one,2019-08-09,Monaco,0,Lyon,3,Monaco,Lyon
 french-ligue-one,2019-08-10,Marseille,0,Reims,2,Marseille,Reims
 french-ligue-one,2019-08-10,Angers,3,Bordeaux,1,Angers,Bordeaux
