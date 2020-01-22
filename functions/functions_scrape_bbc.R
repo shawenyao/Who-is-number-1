@@ -16,7 +16,7 @@ scrape_bbc <- function(start, end, league, no_threads = 1){
   if(no_threads == 1){
     
     # single-core scraping
-    scoreboard <- map(game_months, try_scrape_one_month, league = league) 
+    scoreboard <- map(game_months, try_scrape_one_month, league = league)
   }else{
     
     # parallel scraping
