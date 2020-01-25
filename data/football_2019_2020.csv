@@ -438,6 +438,7 @@ spanish-la-liga,2020-01-19,Real Betis,3,Real Sociedad,0,Real Betis,Real Sociedad
 spanish-la-liga,2020-01-19,Villarreal,1,Espanyol,2,Villarreal,Espanyol
 spanish-la-liga,2020-01-19,Ath Bilbao,1,Celta Vigo,1,Athletic Bilbao,Celta Vigo
 spanish-la-liga,2020-01-19,Barcelona,1,Granada,0,Barcelona,Granada
+spanish-la-liga,2020-01-24,Osasuna,2,Levante,0,Osasuna,Levante
 italian-serie-a,2019-08-24,Parma,0,Juventus,1,Parma,Juventus
 italian-serie-a,2019-08-24,Fiorentina,3,Napoli,4,Fiorentina,Napoli
 italian-serie-a,2019-08-25,Udinese,1,AC Milan,0,Udinese,AC Milan
@@ -637,6 +638,7 @@ italian-serie-a,2020-01-19,Lecce,1,Inter Milan,1,Lecce,Inter Milan
 italian-serie-a,2020-01-19,Genoa,1,Roma,3,Genoa,Roma
 italian-serie-a,2020-01-19,Juventus,2,Parma,1,Juventus,Parma
 italian-serie-a,2020-01-20,Atalanta,1,SPAL,2,Atalanta,SPAL
+italian-serie-a,2020-01-24,Brescia,0,AC Milan,1,Brescia,AC Milan
 german-bundesliga,2019-08-16,Bayern Munich,2,Hertha Berlin,2,Bayern Munich,Hertha Berlin
 german-bundesliga,2019-08-17,B Leverkusen,3,Paderborn,2,Bayer 04 Leverkusen,SC Paderborn 07
 german-bundesliga,2019-08-17,B Dortmund,5,Augsburg,1,Borussia Dortmund,FC Augsburg
@@ -799,6 +801,7 @@ german-bundesliga,2020-01-18,Hoffenheim,1,Frankfurt,2,1899 Hoffenheim,Eintracht 
 german-bundesliga,2020-01-18,RB Leipzig,3,Union Berlin,1,RB Leipzig,1. FC Union Berlin
 german-bundesliga,2020-01-19,Hertha Berlin,0,Bayern Munich,4,Hertha Berlin,Bayern Munich
 german-bundesliga,2020-01-19,Paderborn,1,B Leverkusen,4,SC Paderborn 07,Bayer 04 Leverkusen
+german-bundesliga,2020-01-24,B Dortmund,5,Köln,1,Borussia Dortmund,1. FC Köln
 french-ligue-one,2019-08-09,Monaco,0,Lyon,3,Monaco,Lyon
 french-ligue-one,2019-08-10,Marseille,0,Reims,2,Marseille,Reims
 french-ligue-one,2019-08-10,Angers,3,Bordeaux,1,Angers,Bordeaux
@@ -999,6 +1002,7 @@ french-ligue-one,2020-01-12,PSG,3,Monaco,3,Paris Saint Germain,Monaco
 french-ligue-one,2020-01-15,Amiens,1,Reims,1,Amiens,Reims
 french-ligue-one,2020-01-15,Nîmes,0,Rennes,1,Nîmes,Rennes
 french-ligue-one,2020-01-15,Monaco,1,PSG,4,Monaco,Paris Saint Germain
+french-ligue-one,2020-01-24,Nice,1,Rennes,1,Nice,Rennes
 champions-league,2019-08-06,Apoel Nicosia,1,FK Qarabag,2,Apoel Nicosia,FK Qarabag
 champions-league,2019-08-06,PAOK Salonika,2,Ajax,2,PAOK Salonika,Ajax
 champions-league,2019-08-06,Dinamo Zagreb,1,Ferencvárosi TC,1,Dinamo Zagreb,Ferencvárosi TC
