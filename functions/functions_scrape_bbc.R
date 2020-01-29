@@ -17,6 +17,7 @@ scrape_bbc <- function(start, end, league, no_threads = 1){
     
     # single-core scraping
     scoreboard <- map(game_months, try_scrape_one_month, league = league)
+    
   }else{
     
     # parallel scraping
@@ -25,6 +26,7 @@ scrape_bbc <- function(start, end, league, no_threads = 1){
     clusterExport(cl, varlist = c("scrape_one_month"))
     scoreboard <- parLapply(cl, game_months, try_scrape_one_month, league = league)
     stopCluster(cl)
+    
   }
   
   print(paste0("==== Finished scraping ", league, " ===="))
