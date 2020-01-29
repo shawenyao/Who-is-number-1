@@ -49,6 +49,10 @@ if(isTRUE(refresh_scoreboard)){
     filter(
       home_team %in% unique(nba_color_palette$team_short_name),
       away_team %in% unique(nba_color_palette$team_short_name)
+    ) %>% 
+    # remove the rescheduled match between LAC and LAL
+    filter(
+      !(date == "20200128" & away_team == "LAC" & home_team == "LAL")
     )
   
   # the overlapping scoreboard between web and local file
