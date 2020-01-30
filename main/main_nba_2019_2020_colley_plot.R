@@ -52,7 +52,7 @@ if(isTRUE(refresh_scoreboard)){
     ) %>% 
     # remove the rescheduled match between LAC and LAL
     filter(
-      !(date == "20200128" & away_team == "LAC" & home_team == "LAL")
+      !(date == "20200128" & away_team == "LAC" & home_team == "LAL" & is.na(away_team_score))
     )
   
   # the overlapping scoreboard between web and local file
