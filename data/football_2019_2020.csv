@@ -688,6 +688,7 @@ italian-serie-a,2020-02-02,AC Milan,1,Hellas Verona,1,AC Milan,Hellas Verona
 italian-serie-a,2020-02-02,Lecce,4,Torino,0,Lecce,Torino
 italian-serie-a,2020-02-02,Udinese,0,Inter Milan,2,Udinese,Inter Milan
 italian-serie-a,2020-02-03,Sampdoria,2,Napoli,4,Sampdoria,Napoli
+italian-serie-a,2020-02-05,Lazio,0,Hellas Verona,0,Lazio,Hellas Verona
 german-bundesliga,2019-08-16,Bayern Munich,2,Hertha Berlin,2,Bayern Munich,Hertha Berlin
 german-bundesliga,2019-08-17,B Leverkusen,3,Paderborn,2,Bayer 04 Leverkusen,SC Paderborn 07
 german-bundesliga,2019-08-17,B Dortmund,5,Augsburg,1,Borussia Dortmund,FC Augsburg
@@ -1091,6 +1092,13 @@ french-ligue-one,2020-02-02,Bordeaux,0,Marseille,0,Bordeaux,Marseille
 french-ligue-one,2020-02-04,Lille,1,Rennes,0,Lille,Rennes
 french-ligue-one,2020-02-04,Monaco,1,Angers,0,Monaco,Angers
 french-ligue-one,2020-02-04,Nantes,1,PSG,2,Nantes,Paris Saint Germain
+french-ligue-one,2020-02-05,Brest,1,Bordeaux,1,Brest,Bordeaux
+french-ligue-one,2020-02-05,Lyon,0,Amiens,0,Lyon,Amiens
+french-ligue-one,2020-02-05,Montpellier,1,Metz,1,Montpellier,Metz
+french-ligue-one,2020-02-05,Nîmes,2,Dijon,0,Nîmes,Dijon
+french-ligue-one,2020-02-05,Reims,1,Nice,1,Reims,Nice
+french-ligue-one,2020-02-05,Toulouse,0,Strasbourg,1,Toulouse,Strasbourg
+french-ligue-one,2020-02-05,Saint-Étienne,0,Marseille,2,Saint-Étienne,Marseille
 champions-league,2019-08-06,Apoel Nicosia,1,FK Qarabag,2,Apoel Nicosia,FK Qarabag
 champions-league,2019-08-06,PAOK Salonika,2,Ajax,2,PAOK Salonika,Ajax
 champions-league,2019-08-06,Dinamo Zagreb,1,Ferencvárosi TC,1,Dinamo Zagreb,Ferencvárosi TC
