@@ -252,6 +252,7 @@ premier-league,2020-02-02,Tottenham,2,Man City,0,Tottenham Hotspur,Manchester Ci
 premier-league,2020-02-08,Everton,3,Crystal Palace,1,Everton,Crystal Palace
 premier-league,2020-02-08,Brighton,1,Watford,1,Brighton & Hove Albion,Watford
 premier-league,2020-02-09,Sheff Utd,2,Bournemouth,1,Sheffield United,AFC Bournemouth
+premier-league,2020-02-14,Wolves,0,Leicester,0,Wolverhampton Wanderers,Leicester City
 spanish-la-liga,2019-08-16,Ath Bilbao,1,Barcelona,0,Athletic Bilbao,Barcelona
 spanish-la-liga,2019-08-17,Celta Vigo,1,Real Madrid,3,Celta Vigo,Real Madrid
 spanish-la-liga,2019-08-17,Valencia,1,Real Sociedad,1,Valencia,Real Sociedad
@@ -482,6 +483,7 @@ spanish-la-liga,2020-02-09,Real Sociedad,2,Ath Bilbao,1,Real Sociedad,Athletic B
 spanish-la-liga,2020-02-09,Osasuna,1,Real Madrid,4,Osasuna,Real Madrid
 spanish-la-liga,2020-02-09,Celta Vigo,2,Sevilla,1,Celta Vigo,Sevilla
 spanish-la-liga,2020-02-09,Real Betis,2,Barcelona,3,Real Betis,Barcelona
+spanish-la-liga,2020-02-14,Valencia,2,Atl Madrid,2,Valencia,Atlético Madrid
 italian-serie-a,2019-08-24,Parma,0,Juventus,1,Parma,Juventus
 italian-serie-a,2019-08-24,Fiorentina,3,Napoli,4,Fiorentina,Napoli
 italian-serie-a,2019-08-25,Udinese,1,AC Milan,0,Udinese,AC Milan
@@ -900,6 +902,7 @@ german-bundesliga,2020-02-08,Werder Bremen,0,Union Berlin,2,Werder Bremen,1. FC 
 german-bundesliga,2020-02-08,Wolfsburg,1,Düsseldorf,1,VfL Wolfsburg,Fortuna Düsseldorf
 german-bundesliga,2020-02-08,B Leverkusen,4,B Dortmund,3,Bayer 04 Leverkusen,Borussia Dortmund
 german-bundesliga,2020-02-09,Bayern Munich,0,RB Leipzig,0,Bayern Munich,RB Leipzig
+german-bundesliga,2020-02-14,B Dortmund,4,Frankfurt,0,Borussia Dortmund,Eintracht Frankfurt
 french-ligue-one,2019-08-09,Monaco,0,Lyon,3,Monaco,Lyon
 french-ligue-one,2019-08-10,Marseille,0,Reims,2,Marseille,Reims
 french-ligue-one,2019-08-10,Angers,3,Bordeaux,1,Angers,Bordeaux
@@ -1140,6 +1143,7 @@ french-ligue-one,2020-02-08,Rennes,0,Brest,0,Rennes,Brest
 french-ligue-one,2020-02-09,Montpellier,1,Saint-Étienne,0,Montpellier,Saint-Étienne
 french-ligue-one,2020-02-09,Strasbourg,3,Reims,0,Strasbourg,Reims
 french-ligue-one,2020-02-09,PSG,4,Lyon,2,Paris Saint Germain,Lyon
+french-ligue-one,2020-02-14,Monaco,1,Montpellier,0,Monaco,Montpellier
 champions-league,2019-08-06,Apoel Nicosia,1,FK Qarabag,2,Apoel Nicosia,FK Qarabag
 champions-league,2019-08-06,PAOK Salonika,2,Ajax,2,PAOK Salonika,Ajax
 champions-league,2019-08-06,Dinamo Zagreb,1,Ferencvárosi TC,1,Dinamo Zagreb,Ferencvárosi TC
