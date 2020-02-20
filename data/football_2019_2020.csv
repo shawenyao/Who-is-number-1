@@ -258,6 +258,7 @@ premier-league,2020-02-15,Norwich,0,Liverpool,1,Norwich City,Liverpool
 premier-league,2020-02-16,Aston Villa,2,Tottenham,3,Aston Villa,Tottenham Hotspur
 premier-league,2020-02-16,Arsenal,4,Newcastle,0,Arsenal,Newcastle United
 premier-league,2020-02-17,Chelsea,0,Man Utd,2,Chelsea,Manchester United
+premier-league,2020-02-19,Man City,2,West Ham,0,Manchester City,West Ham United
 spanish-la-liga,2019-08-16,Ath Bilbao,1,Barcelona,0,Athletic Bilbao,Barcelona
 spanish-la-liga,2019-08-17,Celta Vigo,1,Real Madrid,3,Celta Vigo,Real Madrid
 spanish-la-liga,2019-08-17,Valencia,1,Real Sociedad,1,Valencia,Real Sociedad
@@ -1314,6 +1315,8 @@ champions-league,2019-12-11,Atl Madrid,2,Lokomotiv Moscow,0,Atlético Madrid,Lok
 champions-league,2019-12-11,B Leverkusen,0,Juventus,2,Bayer 04 Leverkusen,Juventus
 champions-league,2020-02-18,Atl Madrid,1,Liverpool,0,Atlético Madrid,Liverpool
 champions-league,2020-02-18,B Dortmund,2,PSG,1,Borussia Dortmund,Paris Saint Germain
+champions-league,2020-02-19,Atalanta,4,Valencia,1,Atalanta,Valencia
+champions-league,2020-02-19,Tottenham,0,RB Leipzig,1,Tottenham Hotspur,RB Leipzig
 europa-league,2019-08-01,FC Astana,4,FC Santa Coloma,1,FC Astana,FC Santa Coloma
 europa-league,2019-08-01,Ordabasy,2,Mladá Boleslav,3,Ordabasy,Mladá Boleslav
 europa-league,2019-08-01,Kairat,1,Hapoel Be'er Sheva,1,Kairat,Hapoel Be'er Sheva
