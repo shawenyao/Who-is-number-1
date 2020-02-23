@@ -259,6 +259,12 @@ premier-league,2020-02-16,Aston Villa,2,Tottenham,3,Aston Villa,Tottenham Hotspu
 premier-league,2020-02-16,Arsenal,4,Newcastle,0,Arsenal,Newcastle United
 premier-league,2020-02-17,Chelsea,0,Man Utd,2,Chelsea,Manchester United
 premier-league,2020-02-19,Man City,2,West Ham,0,Manchester City,West Ham United
+premier-league,2020-02-22,Chelsea,2,Tottenham,1,Chelsea,Tottenham Hotspur
+premier-league,2020-02-22,Burnley,3,Bournemouth,0,Burnley,AFC Bournemouth
+premier-league,2020-02-22,Crystal Palace,1,Newcastle,0,Crystal Palace,Newcastle United
+premier-league,2020-02-22,Sheff Utd,1,Brighton,1,Sheffield United,Brighton & Hove Albion
+premier-league,2020-02-22,Southampton,2,Aston Villa,0,Southampton,Aston Villa
+premier-league,2020-02-22,Leicester,0,Man City,1,Leicester City,Manchester City
 spanish-la-liga,2019-08-16,Ath Bilbao,1,Barcelona,0,Athletic Bilbao,Barcelona
 spanish-la-liga,2019-08-17,Celta Vigo,1,Real Madrid,3,Celta Vigo,Real Madrid
 spanish-la-liga,2019-08-17,Valencia,1,Real Sociedad,1,Valencia,Real Sociedad
@@ -499,6 +505,10 @@ spanish-la-liga,2020-02-16,Leganés,0,Real Betis,0,Leganés,Real Betis
 spanish-la-liga,2020-02-16,Ath Bilbao,0,Osasuna,1,Athletic Bilbao,Osasuna
 spanish-la-liga,2020-02-16,Real Madrid,2,Celta Vigo,2,Real Madrid,Celta Vigo
 spanish-la-liga,2020-02-21,Real Betis,3,Mallorca,3,Real Betis,Mallorca
+spanish-la-liga,2020-02-22,Celta Vigo,1,Leganés,0,Celta Vigo,Leganés
+spanish-la-liga,2020-02-22,Barcelona,5,Eibar,0,Barcelona,Eibar
+spanish-la-liga,2020-02-22,Real Sociedad,3,Valencia,0,Real Sociedad,Valencia
+spanish-la-liga,2020-02-22,Levante,1,Real Madrid,0,Levante,Real Madrid
 italian-serie-a,2019-08-24,Parma,0,Juventus,1,Parma,Juventus
 italian-serie-a,2019-08-24,Fiorentina,3,Napoli,4,Fiorentina,Napoli
 italian-serie-a,2019-08-25,Udinese,1,AC Milan,0,Udinese,AC Milan
@@ -740,6 +750,9 @@ italian-serie-a,2020-02-16,Cagliari,0,Napoli,1,Cagliari,Napoli
 italian-serie-a,2020-02-16,Lazio,2,Inter Milan,1,Lazio,Inter Milan
 italian-serie-a,2020-02-17,AC Milan,1,Torino,0,AC Milan,Torino
 italian-serie-a,2020-02-21,Brescia,1,Napoli,2,Brescia,Napoli
+italian-serie-a,2020-02-22,Bologna,1,Udinese,1,Bologna,Udinese
+italian-serie-a,2020-02-22,SPAL,1,Juventus,2,SPAL,Juventus
+italian-serie-a,2020-02-22,Fiorentina,1,AC Milan,1,Fiorentina,AC Milan
 german-bundesliga,2019-08-16,Bayern Munich,2,Hertha Berlin,2,Bayern Munich,Hertha Berlin
 german-bundesliga,2019-08-17,B Leverkusen,3,Paderborn,2,Bayer 04 Leverkusen,SC Paderborn 07
 german-bundesliga,2019-08-17,B Dortmund,5,Augsburg,1,Borussia Dortmund,FC Augsburg
@@ -938,6 +951,11 @@ german-bundesliga,2020-02-15,Düsseldorf,1,B Mgladbach,4,Fortuna Düsseldorf,Bor
 german-bundesliga,2020-02-16,Köln,1,Bayern Munich,4,1. FC Köln,Bayern Munich
 german-bundesliga,2020-02-16,Mainz,0,Schalke,0,Mainz 05,FC Schalke 04
 german-bundesliga,2020-02-21,Bayern Munich,3,Paderborn,2,Bayern Munich,SC Paderborn 07
+german-bundesliga,2020-02-22,B Mgladbach,1,Hoffenheim,1,Borussia Mönchengladbach,1899 Hoffenheim
+german-bundesliga,2020-02-22,Hertha Berlin,0,Köln,5,Hertha Berlin,1. FC Köln
+german-bundesliga,2020-02-22,Freiburg,0,Düsseldorf,2,SC Freiburg,Fortuna Düsseldorf
+german-bundesliga,2020-02-22,Werder Bremen,0,B Dortmund,2,Werder Bremen,Borussia Dortmund
+german-bundesliga,2020-02-22,Schalke,0,RB Leipzig,5,FC Schalke 04,RB Leipzig
 french-ligue-one,2019-08-09,Monaco,0,Lyon,3,Monaco,Lyon
 french-ligue-one,2019-08-10,Marseille,0,Reims,2,Marseille,Reims
 french-ligue-one,2019-08-10,Angers,3,Bordeaux,1,Angers,Bordeaux
@@ -1190,6 +1208,11 @@ french-ligue-one,2020-02-16,Reims,1,Rennes,0,Reims,Rennes
 french-ligue-one,2020-02-16,Lille,1,Marseille,2,Lille,Marseille
 french-ligue-one,2020-02-21,Nice,2,Brest,2,Nice,Brest
 french-ligue-one,2020-02-21,Metz,0,Lyon,2,Metz,Lyon
+french-ligue-one,2020-02-22,Marseille,1,Nantes,3,Marseille,Nantes
+french-ligue-one,2020-02-22,Angers,1,Montpellier,0,Angers,Montpellier
+french-ligue-one,2020-02-22,Dijon,1,Monaco,1,Dijon,Monaco
+french-ligue-one,2020-02-22,Lille,3,Toulouse,0,Lille,Toulouse
+french-ligue-one,2020-02-22,Strasbourg,0,Amiens,0,Strasbourg,Amiens
 champions-league,2019-08-06,Apoel Nicosia,1,FK Qarabag,2,Apoel Nicosia,FK Qarabag
 champions-league,2019-08-06,PAOK Salonika,2,Ajax,2,PAOK Salonika,Ajax
 champions-league,2019-08-06,Dinamo Zagreb,1,Ferencvárosi TC,1,Dinamo Zagreb,Ferencvárosi TC
