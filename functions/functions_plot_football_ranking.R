@@ -70,9 +70,12 @@ plot_football_ranking <- function(
   output_plot <- ggplot(data = rankings, aes(x = day, y = rank, group = team)) +
     
     # the geoms
-    geom_line(aes(alpha = 1, color = team), size = 2) +
-    geom_point(aes(alpha = 1, color = team), size = 6) +
+    geom_line(aes(color = team, alpha = day), size = 2) +
+    geom_point(aes(color = team, alpha = day), size = 6) +
     geom_point(color = "white", size = 2) +
+    
+    # fromat transparency
+    scale_alpha_continuous(range = c(0.2, 0.9)) + 
     
     # format x axis
     scale_x_continuous(
