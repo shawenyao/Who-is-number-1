@@ -51,8 +51,7 @@ if(isTRUE(refresh_scoreboard)){
     ) %>% 
     bind_rows()
   
-  # stop if there is more than certain number of NAs in the scoreboard scrape (matches were rescheduled due to weather or other reasons)
-  stopifnot(sum(is.na(scoreboard)) <= 2)
+  print(paste0(sum(is.na(scoreboard)) / 2, " matches are missing scores!"))
   
   scoreboard <- scoreboard %>% na.omit()
   
