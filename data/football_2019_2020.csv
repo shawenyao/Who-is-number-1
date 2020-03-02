@@ -275,6 +275,8 @@ premier-league,2020-02-29,Bournemouth,2,Chelsea,2,AFC Bournemouth,Chelsea
 premier-league,2020-02-29,Newcastle,0,Burnley,0,Newcastle United,Burnley
 premier-league,2020-02-29,West Ham,3,Southampton,1,West Ham United,Southampton
 premier-league,2020-02-29,Watford,3,Liverpool,0,Watford,Liverpool
+premier-league,2020-03-01,Everton,1,Man Utd,1,Everton,Manchester United
+premier-league,2020-03-01,Tottenham,2,Wolves,3,Tottenham Hotspur,Wolverhampton Wanderers
 spanish-la-liga,2019-08-16,Ath Bilbao,1,Barcelona,0,Athletic Bilbao,Barcelona
 spanish-la-liga,2019-08-17,Celta Vigo,1,Real Madrid,3,Celta Vigo,Real Madrid
 spanish-la-liga,2019-08-17,Valencia,1,Real Sociedad,1,Valencia,Real Sociedad
@@ -529,6 +531,11 @@ spanish-la-liga,2020-02-29,Eibar,3,Levante,0,Eibar,Levante
 spanish-la-liga,2020-02-29,Valencia,2,Real Betis,1,Valencia,Real Betis
 spanish-la-liga,2020-02-29,Leganés,1,Alavés,1,Leganés,Alavés
 spanish-la-liga,2020-02-29,Granada,0,Celta Vigo,0,Granada,Celta Vigo
+spanish-la-liga,2020-03-01,Sevilla,3,Osasuna,2,Sevilla,Osasuna
+spanish-la-liga,2020-03-01,Ath Bilbao,1,Villarreal,0,Athletic Bilbao,Villarreal
+spanish-la-liga,2020-03-01,Espanyol,1,Atl Madrid,1,Espanyol,Atlético Madrid
+spanish-la-liga,2020-03-01,Mallorca,0,Getafe,1,Mallorca,Getafe
+spanish-la-liga,2020-03-01,Real Madrid,2,Barcelona,0,Real Madrid,Barcelona
 italian-serie-a,2019-08-24,Parma,0,Juventus,1,Parma,Juventus
 italian-serie-a,2019-08-24,Fiorentina,3,Napoli,4,Fiorentina,Napoli
 italian-serie-a,2019-08-25,Udinese,1,AC Milan,0,Udinese,AC Milan
@@ -777,6 +784,8 @@ italian-serie-a,2020-02-23,Genoa,2,Lazio,3,Genoa,Lazio
 italian-serie-a,2020-02-23,Roma,4,Lecce,0,Roma,Lecce
 italian-serie-a,2020-02-29,Lazio,2,Bologna,0,Lazio,Bologna
 italian-serie-a,2020-02-29,Napoli,2,Torino,1,Napoli,Torino
+italian-serie-a,2020-03-01,Lecce,2,Atalanta,7,Lecce,Atalanta
+italian-serie-a,2020-03-01,Cagliari,3,Roma,4,Cagliari,Roma
 german-bundesliga,2019-08-16,Bayern Munich,2,Hertha Berlin,2,Bayern Munich,Hertha Berlin
 german-bundesliga,2019-08-17,B Leverkusen,3,Paderborn,2,Bayer 04 Leverkusen,SC Paderborn 07
 german-bundesliga,2019-08-17,B Dortmund,5,Augsburg,1,Borussia Dortmund,FC Augsburg
@@ -989,6 +998,8 @@ german-bundesliga,2020-02-29,B Dortmund,1,Freiburg,0,Borussia Dortmund,SC Freibu
 german-bundesliga,2020-02-29,Augsburg,2,B Mgladbach,3,FC Augsburg,Borussia Mönchengladbach
 german-bundesliga,2020-02-29,Hoffenheim,0,Bayern Munich,6,1899 Hoffenheim,Bayern Munich
 german-bundesliga,2020-02-29,Köln,3,Schalke,0,1. FC Köln,FC Schalke 04
+german-bundesliga,2020-03-01,Union Berlin,2,Wolfsburg,2,1. FC Union Berlin,VfL Wolfsburg
+german-bundesliga,2020-03-01,RB Leipzig,1,B Leverkusen,1,RB Leipzig,Bayer 04 Leverkusen
 french-ligue-one,2019-08-09,Monaco,0,Lyon,3,Monaco,Lyon
 french-ligue-one,2019-08-10,Marseille,0,Reims,2,Marseille,Reims
 french-ligue-one,2019-08-10,Angers,3,Bordeaux,1,Angers,Bordeaux
@@ -1256,6 +1267,9 @@ french-ligue-one,2020-02-29,Brest,0,Angers,1,Brest,Angers
 french-ligue-one,2020-02-29,Monaco,1,Reims,1,Monaco,Reims
 french-ligue-one,2020-02-29,Montpellier,3,Strasbourg,0,Montpellier,Strasbourg
 french-ligue-one,2020-02-29,Toulouse,0,Rennes,2,Toulouse,Rennes
+french-ligue-one,2020-03-01,Nantes,0,Lille,1,Nantes,Lille
+french-ligue-one,2020-03-01,Bordeaux,1,Nice,1,Bordeaux,Nice
+french-ligue-one,2020-03-01,Lyon,2,Saint-Étienne,0,Lyon,Saint-Étienne
 champions-league,2019-08-06,Apoel Nicosia,1,FK Qarabag,2,Apoel Nicosia,FK Qarabag
 champions-league,2019-08-06,PAOK Salonika,2,Ajax,2,PAOK Salonika,Ajax
 champions-league,2019-08-06,Dinamo Zagreb,1,Ferencvárosi TC,1,Dinamo Zagreb,Ferencvárosi TC
