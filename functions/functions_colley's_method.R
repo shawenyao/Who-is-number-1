@@ -50,16 +50,20 @@ colleys_method <- function(scoreboard){
   # C = M + 2I
   colley_matrix <- massey_matrix + 2 * diag(nrow(massey_matrix))
   
+  # b = 1 + 1/2 * (win - loss)
+  b <- 1 + 1/2 * team_performance$net_wins
   
-  #==== the Colley's method ====
   # make sure the order is consistent
   all(team_performance$team == colnames(colley_matrix)) %>% stopifnot()
   all(colnames(colley_matrix) == rownames(colley_matrix)) %>% stopifnot()
   
+  
+  #==== the Colley's method ====
   # solve for the overall Massey ratings
+  # C r = b
   colley_ratings <- solve(
     a = colley_matrix,
-    b = 1 + 1/2 * team_performance$net_wins,
+    b = b,
     tol = .Machine$double.xmin
   )
 
