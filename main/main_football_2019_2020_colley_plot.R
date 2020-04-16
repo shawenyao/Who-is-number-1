@@ -92,7 +92,7 @@ plot <- plot_football_ranking(
   frequency = 28,
   scoreboard = scoreboard,
   fc_logos = fc_logos,
-  title = "European Football Club 2019-2020 Season Power Rankings"
+  title = "European Football Clubs 2019-2020 Season Power Rankings"
 )
 
 
