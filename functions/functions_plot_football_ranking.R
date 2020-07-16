@@ -128,7 +128,7 @@ plot_football_ranking <- function(
       # plot.title = element_text(hjust = 0.04),
       # plot.subtitle = element_text(hjust = 0.03),
       plot.margin = margin(0, 0, 0, 0, "cm"),
-      axis.text.x = element_text(angle = 0),
+      axis.text.x = element_text(angle = 30),
       axis.text.y.left = element_text(size = 15, margin = margin(0, 0, 0, 0, "cm")),
       axis.text.y.right = element_text(size = 15, margin = margin(0, 0, 0, 0, "cm")),
       axis.ticks = element_blank(),
