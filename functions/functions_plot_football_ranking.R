@@ -118,7 +118,8 @@ plot_football_ranking <- function(
     # the title
     labs(
       title = title,
-      subtitle = paste0("Last updated on ", as_of_dates %>% tail(1) %>% format("%b %d, %Y"))
+      # subtitle = paste0("Last updated on ", as_of_dates %>% tail(1) %>% format("%b %d, %Y"))
+      subtitle = "Source: BBC/Colley's Method"
     ) +
     
     # other aesthetics
