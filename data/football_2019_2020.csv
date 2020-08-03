@@ -354,6 +354,31 @@ premier-league,2020-07-15,Burnley,1,Wolves,1,Burnley,Wolverhampton Wanderers
 premier-league,2020-07-15,Man City,2,Bournemouth,1,Manchester City,AFC Bournemouth
 premier-league,2020-07-15,Newcastle,1,Tottenham,3,Newcastle United,Tottenham Hotspur
 premier-league,2020-07-15,Arsenal,2,Liverpool,1,Arsenal,Liverpool
+premier-league,2020-07-16,Everton,1,Aston Villa,1,Everton,Aston Villa
+premier-league,2020-07-16,Leicester,2,Sheff Utd,0,Leicester City,Sheffield United
+premier-league,2020-07-16,Crystal Palace,0,Man Utd,2,Crystal Palace,Manchester United
+premier-league,2020-07-16,Southampton,1,Brighton,1,Southampton,Brighton & Hove Albion
+premier-league,2020-07-17,West Ham,3,Watford,1,West Ham United,Watford
+premier-league,2020-07-18,Norwich,0,Burnley,2,Norwich City,Burnley
+premier-league,2020-07-19,Bournemouth,0,Southampton,2,AFC Bournemouth,Southampton
+premier-league,2020-07-19,Tottenham,3,Leicester,0,Tottenham Hotspur,Leicester City
+premier-league,2020-07-20,Brighton,0,Newcastle,0,Brighton & Hove Albion,Newcastle United
+premier-league,2020-07-20,Sheff Utd,0,Everton,1,Sheffield United,Everton
+premier-league,2020-07-20,Wolves,2,Crystal Palace,0,Wolverhampton Wanderers,Crystal Palace
+premier-league,2020-07-21,Watford,0,Man City,4,Watford,Manchester City
+premier-league,2020-07-21,Aston Villa,1,Arsenal,0,Aston Villa,Arsenal
+premier-league,2020-07-22,Man Utd,1,West Ham,1,Manchester United,West Ham United
+premier-league,2020-07-22,Liverpool,5,Chelsea,3,Liverpool,Chelsea
+premier-league,2020-07-26,Arsenal,3,Watford,2,Arsenal,Watford
+premier-league,2020-07-26,Burnley,1,Brighton,2,Burnley,Brighton & Hove Albion
+premier-league,2020-07-26,Chelsea,2,Wolves,0,Chelsea,Wolverhampton Wanderers
+premier-league,2020-07-26,Crystal Palace,1,Tottenham,1,Crystal Palace,Tottenham Hotspur
+premier-league,2020-07-26,Everton,1,Bournemouth,3,Everton,AFC Bournemouth
+premier-league,2020-07-26,Leicester,0,Man Utd,2,Leicester City,Manchester United
+premier-league,2020-07-26,Man City,5,Norwich,0,Manchester City,Norwich City
+premier-league,2020-07-26,Newcastle,1,Liverpool,3,Newcastle United,Liverpool
+premier-league,2020-07-26,Southampton,3,Sheff Utd,1,Southampton,Sheffield United
+premier-league,2020-07-26,West Ham,1,Aston Villa,1,West Ham United,Aston Villa
 spanish-la-liga,2019-08-16,Ath Bilbao,1,Barcelona,0,Athletic Bilbao,Barcelona
 spanish-la-liga,2019-08-17,Celta Vigo,1,Real Madrid,3,Celta Vigo,Real Madrid
 spanish-la-liga,2019-08-17,Valencia,1,Real Sociedad,1,Valencia,Real Sociedad
@@ -714,6 +739,26 @@ spanish-la-liga,2020-07-12,Sevilla,2,Mallorca,0,Sevilla,Mallorca
 spanish-la-liga,2020-07-13,Alavés,0,Getafe,0,Alavés,Getafe
 spanish-la-liga,2020-07-13,Villarreal,1,Real Sociedad,2,Villarreal,Real Sociedad
 spanish-la-liga,2020-07-13,Granada,1,Real Madrid,2,Granada,Real Madrid
+spanish-la-liga,2020-07-16,Eibar,3,Real Valladolid,1,Eibar,Real Valladolid
+spanish-la-liga,2020-07-16,Ath Bilbao,0,Leganés,2,Athletic Bilbao,Leganés
+spanish-la-liga,2020-07-16,Barcelona,1,Osasuna,2,Barcelona,Osasuna
+spanish-la-liga,2020-07-16,Celta Vigo,2,Levante,3,Celta Vigo,Levante
+spanish-la-liga,2020-07-16,Getafe,0,Atl Madrid,2,Getafe,Atlético Madrid
+spanish-la-liga,2020-07-16,Mallorca,1,Granada,2,Mallorca,Granada
+spanish-la-liga,2020-07-16,Real Betis,1,Alavés,2,Real Betis,Alavés
+spanish-la-liga,2020-07-16,Real Madrid,2,Villarreal,1,Real Madrid,Villarreal
+spanish-la-liga,2020-07-16,Real Sociedad,0,Sevilla,0,Real Sociedad,Sevilla
+spanish-la-liga,2020-07-16,Valencia,1,Espanyol,0,Valencia,Espanyol
+spanish-la-liga,2020-07-19,Alavés,0,Barcelona,5,Alavés,Barcelona
+spanish-la-liga,2020-07-19,Real Valladolid,2,Real Betis,0,Real Valladolid,Real Betis
+spanish-la-liga,2020-07-19,Villarreal,4,Eibar,0,Villarreal,Eibar
+spanish-la-liga,2020-07-19,Atl Madrid,1,Real Sociedad,1,Atlético Madrid,Real Sociedad
+spanish-la-liga,2020-07-19,Espanyol,0,Celta Vigo,0,Espanyol,Celta Vigo
+spanish-la-liga,2020-07-19,Granada,4,Ath Bilbao,0,Granada,Athletic Bilbao
+spanish-la-liga,2020-07-19,Leganés,2,Real Madrid,2,Leganés,Real Madrid
+spanish-la-liga,2020-07-19,Levante,1,Getafe,0,Levante,Getafe
+spanish-la-liga,2020-07-19,Osasuna,2,Mallorca,2,Osasuna,Mallorca
+spanish-la-liga,2020-07-19,Sevilla,1,Valencia,0,Sevilla,Valencia
 italian-serie-a,2019-08-24,Parma,0,Juventus,1,Parma,Juventus
 italian-serie-a,2019-08-24,Fiorentina,3,Napoli,4,Fiorentina,Napoli
 italian-serie-a,2019-08-25,Udinese,1,AC Milan,0,Udinese,AC Milan
@@ -1042,6 +1087,58 @@ italian-serie-a,2020-07-15,Lecce,1,Fiorentina,3,Lecce,Fiorentina
 italian-serie-a,2020-07-15,Roma,2,Hellas Verona,1,Roma,Hellas Verona
 italian-serie-a,2020-07-15,Sassuolo,3,Juventus,3,Sassuolo,Juventus
 italian-serie-a,2020-07-15,Udinese,0,Lazio,0,Udinese,Lazio
+italian-serie-a,2020-07-16,Torino,3,Genoa,0,Torino,Genoa
+italian-serie-a,2020-07-16,SPAL,0,Inter Milan,4,SPAL,Inter Milan
+italian-serie-a,2020-07-18,Hellas Verona,1,Atalanta,1,Hellas Verona,Atalanta
+italian-serie-a,2020-07-18,Cagliari,1,Sassuolo,1,Cagliari,Sassuolo
+italian-serie-a,2020-07-18,AC Milan,5,Bologna,1,AC Milan,Bologna
+italian-serie-a,2020-07-19,Parma,2,Sampdoria,3,Parma,Sampdoria
+italian-serie-a,2020-07-19,Brescia,2,SPAL,1,Brescia,SPAL
+italian-serie-a,2020-07-19,Fiorentina,2,Torino,0,Fiorentina,Torino
+italian-serie-a,2020-07-19,Genoa,2,Lecce,1,Genoa,Lecce
+italian-serie-a,2020-07-19,Napoli,2,Udinese,1,Napoli,Udinese
+italian-serie-a,2020-07-19,Roma,2,Inter Milan,2,Roma,Inter Milan
+italian-serie-a,2020-07-20,Juventus,2,Lazio,1,Juventus,Lazio
+italian-serie-a,2020-07-21,Atalanta,1,Bologna,0,Atalanta,Bologna
+italian-serie-a,2020-07-21,Sassuolo,1,AC Milan,2,Sassuolo,AC Milan
+italian-serie-a,2020-07-22,Parma,2,Napoli,1,Parma,Napoli
+italian-serie-a,2020-07-22,Inter Milan,0,Fiorentina,0,Inter Milan,Fiorentina
+italian-serie-a,2020-07-22,Lecce,3,Brescia,1,Lecce,Brescia
+italian-serie-a,2020-07-22,Sampdoria,1,Genoa,2,Sampdoria,Genoa
+italian-serie-a,2020-07-22,SPAL,1,Roma,6,SPAL,Roma
+italian-serie-a,2020-07-22,Torino,1,Hellas Verona,1,Torino,Hellas Verona
+italian-serie-a,2020-07-23,Udinese,2,Juventus,1,Udinese,Juventus
+italian-serie-a,2020-07-23,Lazio,2,Cagliari,1,Lazio,Cagliari
+italian-serie-a,2020-07-24,AC Milan,1,Atalanta,1,AC Milan,Atalanta
+italian-serie-a,2020-07-25,Brescia,1,Parma,2,Brescia,Parma
+italian-serie-a,2020-07-25,Genoa,0,Inter Milan,3,Genoa,Inter Milan
+italian-serie-a,2020-07-25,Napoli,2,Sassuolo,0,Napoli,Sassuolo
+italian-serie-a,2020-07-26,Bologna,3,Lecce,2,Bologna,Lecce
+italian-serie-a,2020-07-26,Cagliari,0,Udinese,1,Cagliari,Udinese
+italian-serie-a,2020-07-26,Roma,2,Fiorentina,1,Roma,Fiorentina
+italian-serie-a,2020-07-26,SPAL,1,Torino,1,SPAL,Torino
+italian-serie-a,2020-07-26,Hellas Verona,1,Lazio,5,Hellas Verona,Lazio
+italian-serie-a,2020-07-26,Juventus,2,Sampdoria,0,Juventus,Sampdoria
+italian-serie-a,2020-07-28,Parma,1,Atalanta,2,Parma,Atalanta
+italian-serie-a,2020-07-28,Inter Milan,2,Napoli,0,Inter Milan,Napoli
+italian-serie-a,2020-07-29,Lazio,2,Brescia,0,Lazio,Brescia
+italian-serie-a,2020-07-29,Sampdoria,1,AC Milan,4,Sampdoria,AC Milan
+italian-serie-a,2020-07-29,Sassuolo,5,Genoa,0,Sassuolo,Genoa
+italian-serie-a,2020-07-29,Udinese,1,Lecce,2,Udinese,Lecce
+italian-serie-a,2020-07-29,Hellas Verona,3,SPAL,0,Hellas Verona,SPAL
+italian-serie-a,2020-07-29,Cagliari,2,Juventus,0,Cagliari,Juventus
+italian-serie-a,2020-07-29,Fiorentina,4,Bologna,0,Fiorentina,Bologna
+italian-serie-a,2020-07-29,Torino,2,Roma,3,Torino,Roma
+italian-serie-a,2020-08-01,Brescia,1,Sampdoria,1,Brescia,Sampdoria
+italian-serie-a,2020-08-01,Atalanta,0,Inter Milan,2,Atalanta,Inter Milan
+italian-serie-a,2020-08-01,Juventus,1,Roma,3,Juventus,Roma
+italian-serie-a,2020-08-01,AC Milan,3,Cagliari,0,AC Milan,Cagliari
+italian-serie-a,2020-08-01,Napoli,3,Lazio,1,Napoli,Lazio
+italian-serie-a,2020-08-02,SPAL,1,Fiorentina,3,SPAL,Fiorentina
+italian-serie-a,2020-08-02,Bologna,1,Torino,1,Bologna,Torino
+italian-serie-a,2020-08-02,Genoa,3,Hellas Verona,0,Genoa,Hellas Verona
+italian-serie-a,2020-08-02,Lecce,3,Parma,4,Lecce,Parma
+italian-serie-a,2020-08-02,Sassuolo,0,Udinese,1,Sassuolo,Udinese
 german-bundesliga,2019-08-16,Bayern Munich,2,Hertha Berlin,2,Bayern Munich,Hertha Berlin
 german-bundesliga,2019-08-17,B Leverkusen,3,Paderborn,2,Bayer 04 Leverkusen,SC Paderborn 07
 german-bundesliga,2019-08-17,B Dortmund,5,Augsburg,1,Borussia Dortmund,FC Augsburg
