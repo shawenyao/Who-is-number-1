@@ -1864,6 +1864,12 @@ champions-league,2020-03-10,RB Leipzig,3,Tottenham,0,RB Leipzig,Tottenham Hotspu
 champions-league,2020-03-10,Valencia,3,Atalanta,4,Valencia,Atalanta
 champions-league,2020-03-11,Liverpool,2,Atl Madrid,3,Liverpool,Atlético Madrid
 champions-league,2020-03-11,PSG,2,B Dortmund,0,Paris Saint Germain,Borussia Dortmund
+champions-league,2020-08-07,Juventus,2,Lyon,1,Juventus,Lyon
+champions-league,2020-08-07,Man City,2,Real Madrid,1,Manchester City,Real Madrid
+champions-league,2020-08-08,Barcelona,3,Napoli,1,Barcelona,Napoli
+champions-league,2020-08-08,Bayern Munich,4,Chelsea,1,Bayern Munich,Chelsea
+champions-league,2020-08-12,Atalanta,1,PSG,2,Atalanta,Paris Saint Germain
+champions-league,2020-08-13,RB Leipzig,2,Atl Madrid,1,RB Leipzig,Atlético Madrid
 europa-league,2019-08-01,FC Astana,4,FC Santa Coloma,1,FC Astana,FC Santa Coloma
 europa-league,2019-08-01,Ordabasy,2,Mladá Boleslav,3,Ordabasy,Mladá Boleslav
 europa-league,2019-08-01,Kairat,1,Hapoel Be'er Sheva,1,Kairat,Hapoel Be'er Sheva
@@ -2201,3 +2207,15 @@ europa-league,2020-03-12,LASK,0,Man Utd,5,LASK,Manchester United
 europa-league,2020-03-12,Olympiakos,1,Wolves,1,Olympiakos,Wolverhampton Wanderers
 europa-league,2020-03-12,Rangers,1,B Leverkusen,3,Rangers,Bayer 04 Leverkusen
 europa-league,2020-03-12,Wolfsburg,1,Shakhtar Donetsk,2,VfL Wolfsburg,Shakhtar Donetsk
+europa-league,2020-08-05,FC Copenhagen,3,Istanbul Basaksehir,0,FC Copenhagen,Istanbul Basaksehir
+europa-league,2020-08-05,Shakhtar Donetsk,3,Wolfsburg,0,Shakhtar Donetsk,VfL Wolfsburg
+europa-league,2020-08-05,Inter Milan,2,Getafe,0,Inter Milan,Getafe
+europa-league,2020-08-05,Man Utd,2,LASK,1,Manchester United,LASK
+europa-league,2020-08-06,B Leverkusen,1,Rangers,0,Bayer 04 Leverkusen,Rangers
+europa-league,2020-08-06,Sevilla,2,Roma,0,Sevilla,Roma
+europa-league,2020-08-06,FC Basel,1,Frankfurt,0,FC Basel,Eintracht Frankfurt
+europa-league,2020-08-06,Wolves,1,Olympiakos,0,Wolverhampton Wanderers,Olympiakos
+europa-league,2020-08-10,Inter Milan,2,B Leverkusen,1,Inter Milan,Bayer 04 Leverkusen
+europa-league,2020-08-10,Man Utd,1,FC Copenhagen,0,Manchester United,FC Copenhagen
+europa-league,2020-08-11,Shakhtar Donetsk,4,FC Basel,1,Shakhtar Donetsk,FC Basel
+europa-league,2020-08-11,Wolves,0,Sevilla,1,Wolverhampton Wanderers,Sevilla
