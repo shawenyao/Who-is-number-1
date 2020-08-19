@@ -1870,6 +1870,13 @@ champions-league,2020-08-08,Barcelona,3,Napoli,1,Barcelona,Napoli
 champions-league,2020-08-08,Bayern Munich,4,Chelsea,1,Bayern Munich,Chelsea
 champions-league,2020-08-12,Atalanta,1,PSG,2,Atalanta,Paris Saint Germain
 champions-league,2020-08-13,RB Leipzig,2,Atl Madrid,1,RB Leipzig,Atlético Madrid
+champions-league,2020-08-14,Barcelona,2,Bayern Munich,8,Barcelona,Bayern Munich
+champions-league,2020-08-15,Man City,1,Lyon,3,Manchester City,Lyon
+champions-league,2020-08-18,RB Leipzig,0,PSG,3,RB Leipzig,Paris Saint Germain
+champions-league,2020-08-18,FK Qarabag,4,Sileks,0,FK Qarabag,Sileks
+champions-league,2020-08-18,Legia Warsaw,1,Linfield,0,Legia Warsaw,Linfield
+champions-league,2020-08-18,Dinamo Brest,6,FC Astana,3,Dinamo Brest,FC Astana
+champions-league,2020-08-18,Red Star Belgrade,5,Europa,0,Red Star Belgrade,Europa
 europa-league,2019-08-01,FC Astana,4,FC Santa Coloma,1,FC Astana,FC Santa Coloma
 europa-league,2019-08-01,Ordabasy,2,Mladá Boleslav,3,Ordabasy,Mladá Boleslav
 europa-league,2019-08-01,Kairat,1,Hapoel Be'er Sheva,1,Kairat,Hapoel Be'er Sheva
@@ -2219,3 +2226,6 @@ europa-league,2020-08-10,Inter Milan,2,B Leverkusen,1,Inter Milan,Bayer 04 Lever
 europa-league,2020-08-10,Man Utd,1,FC Copenhagen,0,Manchester United,FC Copenhagen
 europa-league,2020-08-11,Shakhtar Donetsk,4,FC Basel,1,Shakhtar Donetsk,FC Basel
 europa-league,2020-08-11,Wolves,0,Sevilla,1,Wolverhampton Wanderers,Sevilla
+europa-league,2020-08-16,Sevilla,2,Man Utd,1,Sevilla,Manchester United
+europa-league,2020-08-17,Inter Milan,5,Shakhtar Donetsk,0,Inter Milan,Shakhtar Donetsk
+europa-league,2020-08-18,UE Engordany,1,Zeta,3,UE Engordany,Zeta
