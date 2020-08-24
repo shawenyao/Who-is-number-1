@@ -1724,6 +1724,13 @@ french-ligue-one,2020-03-07,Reims,1,Brest,0,Reims,Brest
 french-ligue-one,2020-03-08,Saint-Étienne,1,Bordeaux,1,Saint-Étienne,Bordeaux
 french-ligue-one,2020-03-08,Rennes,5,Montpellier,0,Rennes,Montpellier
 french-ligue-one,2020-03-08,Lille,1,Lyon,0,Lille,Lyon
+french-ligue-one,2020-08-21,Bordeaux,0,Nantes,0,Bordeaux,Nantes
+french-ligue-one,2020-08-22,Dijon,0,Angers,1,Dijon,Angers
+french-ligue-one,2020-08-22,Lille,1,Rennes,1,Lille,Rennes
+french-ligue-one,2020-08-23,Monaco,2,Reims,2,Monaco,Reims
+french-ligue-one,2020-08-23,Lorient,3,Strasbourg,1,Lorient,Strasbourg
+french-ligue-one,2020-08-23,Nîmes,4,Brest,0,Nîmes,Brest
+french-ligue-one,2020-08-23,Nice,2,Lens,1,Nice,Lens
 champions-league,2019-08-06,Apoel Nicosia,1,FK Qarabag,2,Apoel Nicosia,FK Qarabag
 champions-league,2019-08-06,PAOK Salonika,2,Ajax,2,PAOK Salonika,Ajax
 champions-league,2019-08-06,Dinamo Zagreb,1,Ferencvárosi TC,1,Dinamo Zagreb,Ferencvárosi TC
@@ -1876,7 +1883,21 @@ champions-league,2020-08-18,RB Leipzig,0,PSG,3,RB Leipzig,Paris Saint Germain
 champions-league,2020-08-18,FK Qarabag,4,Sileks,0,FK Qarabag,Sileks
 champions-league,2020-08-18,Legia Warsaw,1,Linfield,0,Legia Warsaw,Linfield
 champions-league,2020-08-18,Dinamo Brest,6,FC Astana,3,Dinamo Brest,FC Astana
+champions-league,2020-08-18,Celtic,6,KR Reykjavík,0,Celtic,KR Reykjavík
 champions-league,2020-08-18,Red Star Belgrade,5,Europa,0,Red Star Belgrade,Europa
+champions-league,2020-08-19,Lyon,0,Bayern Munich,3,Lyon,Bayern Munich
+champions-league,2020-08-19,Ararat-Armenia,0,Omonia Nicosia,1,Ararat-Armenia,Omonia Nicosia
+champions-league,2020-08-19,Molde,5,KuPS Kuopio,0,Molde,KuPS Kuopio
+champions-league,2020-08-19,Flora,1,Suduva,1,Flora,Suduva
+champions-league,2020-08-19,Celje,3,Dundalk,0,Celje,Dundalk
+champions-league,2020-08-19,Dinamo Tbilisi,0,Tirana,2,Dinamo Tbilisi,Tirana
+champions-league,2020-08-19,Ferencvárosi TC,2,Djurgårdens IF,0,Ferencvárosi TC,Djurgårdens IF
+champions-league,2020-08-19,Maccabi Tel-Aviv,2,Riga FC,0,Maccabi Tel-Aviv,Riga FC
+champions-league,2020-08-19,Buducnost Podgorica,1,Ludogorets,3,Buducnost Podgorica,Ludogorets Razgrad
+champions-league,2020-08-19,Connah's Quay Nomads,0,FK Sarajevo,2,Connah's Quay Nomads,FK Sarajevo
+champions-league,2020-08-19,Sheriff Tiraspol,2,Fola Esch,0,Sheriff Tiraspol,Fola Esch
+champions-league,2020-08-19,Floriana FC,0,CFR Cluj,2,Floriana FC,CFR Cluj
+champions-league,2020-08-23,PSG,0,Bayern Munich,1,Paris Saint Germain,Bayern Munich
 europa-league,2019-08-01,FC Astana,4,FC Santa Coloma,1,FC Astana,FC Santa Coloma
 europa-league,2019-08-01,Ordabasy,2,Mladá Boleslav,3,Ordabasy,Mladá Boleslav
 europa-league,2019-08-01,Kairat,1,Hapoel Be'er Sheva,1,Kairat,Hapoel Be'er Sheva
@@ -2229,3 +2250,10 @@ europa-league,2020-08-11,Wolves,0,Sevilla,1,Wolverhampton Wanderers,Sevilla
 europa-league,2020-08-16,Sevilla,2,Man Utd,1,Sevilla,Manchester United
 europa-league,2020-08-17,Inter Milan,5,Shakhtar Donetsk,0,Inter Milan,Shakhtar Donetsk
 europa-league,2020-08-18,UE Engordany,1,Zeta,3,UE Engordany,Zeta
+europa-league,2020-08-20,St Joseph's,1,B36 Tórshavn,2,St Joseph's,B36 Tórshavn
+europa-league,2020-08-20,NSÍ Runavík,5,Barry Town United,1,NSÍ Runavík,Barry Town United
+europa-league,2020-08-20,FC Santa Coloma,0,FK Iskra,0,FC Santa Coloma,FK Iskra
+europa-league,2020-08-20,Glentoran,1,HB Tórshavn,0,Glentoran,HB Tórshavn
+europa-league,2020-08-20,Coleraine,1,La Fiorita,0,Coleraine,La Fiorita
+europa-league,2020-08-21,Sevilla,3,Inter Milan,2,Sevilla,Inter Milan
+europa-league,2020-08-21,Tre Penne,1,Gjilani,3,Tre Penne,Gjilani
