@@ -98,7 +98,7 @@ fc_logos <- import(fc_logos_file, encoding = "UTF-8")
 #==== plot ====
 plot <- plot_football_ranking(
   ranking_start_date = as.Date("2019-09-08"),
-  ranking_end_date = as.Date("2019-09-06"),
+  ranking_end_date = as.Date("2020-09-06"),
   frequency = 28,
   scoreboard = scoreboard,
   fc_logos = fc_logos,
