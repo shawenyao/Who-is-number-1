@@ -13,7 +13,7 @@ set.seed(350)
 
 #==== general setup ====
 # whether to scrape the scoreboard from web or load existing scoreboard
-refresh_scoreboard <- TRUE
+refresh_scoreboard <- FALSE
 
 setwd("C:/Users/Wenyao/Desktop/R/Who-is-number-1")
 
