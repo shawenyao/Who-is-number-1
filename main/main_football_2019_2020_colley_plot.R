@@ -33,20 +33,30 @@ scoreboard_file <- "data/football_2019_2020.csv"
 # the match results
 if(isTRUE(refresh_scoreboard)){
   
-  scoreboard <- c(
-    "premier-league",
-    "spanish-la-liga",
-    "italian-serie-a",
-    "german-bundesliga",
-    "french-ligue-one",
-    "champions-league",
-    "europa-league"
+  scoreboard <- list(
+    league = c(
+      "premier-league",
+      "spanish-la-liga",
+      "italian-serie-a",
+      "german-bundesliga",
+      "french-ligue-one",
+      "champions-league",
+      "europa-league"
+    ),
+    end = c(
+      as.yearmon("2020-07-31"),
+      as.yearmon("2020-07-31"),
+      as.yearmon("2020-08-31"),
+      as.yearmon("2020-07-31"),
+      as.yearmon("2020-03-31"),
+      as.yearmon("2020-08-31"),
+      as.yearmon("2020-08-31")
+    )
   ) %>% 
     # scrape bbc.com
-    map(
+    pmap(
       scrape_bbc,
       start = as.yearmon("2019-08-01"), 
-      end = as.yearmon(Sys.Date()),
       no_threads = detectCores() - 1
     ) %>% 
     bind_rows()
