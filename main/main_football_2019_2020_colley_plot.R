@@ -47,7 +47,7 @@ if(isTRUE(refresh_scoreboard)){
       as.yearmon("2020-07-31"),
       as.yearmon("2020-07-31"),
       as.yearmon("2020-08-31"),
-      as.yearmon("2020-07-31"),
+      as.yearmon("2020-06-30"),
       as.yearmon("2020-03-31"),
       as.yearmon("2020-08-31"),
       as.yearmon("2020-08-31")
