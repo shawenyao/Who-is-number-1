@@ -106,7 +106,7 @@ plot_nba_ranking <- function(
       plot.title = element_text(hjust = 0.09),
       plot.subtitle = element_text(hjust = 0.04),
       plot.margin = margin(0, 0, 0, 0, "cm"),
-      axis.text.x = element_text(angle = 60),
+      axis.text.x = element_text(angle = 80),
       axis.text.y.left = element_text(margin = margin(0, -1.2, 0, 0, "cm")),
       axis.text.y.right = element_text(margin = margin(0, 0, 0, -1.2, "cm")),
       axis.ticks = element_blank(),
