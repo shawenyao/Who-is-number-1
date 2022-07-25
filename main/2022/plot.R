@@ -166,13 +166,13 @@ plot <- data %>%
   # group background
   geom_tile(data = coord_group, width = 42, height = 47, fill = "gray95") +
   # round of 16 background
-  geom_tile(data = coord_round_16, width = 22, height = 47, fill = "gray85") +
+  geom_tile(data = coord_round_16, width = 22, height = 47, fill = "gray90") +
   # round of 8 background
-  geom_tile(data = coord_round_8, width = 22, height = 75, fill = "gray80") +
+  geom_tile(data = coord_round_8, width = 22, height = 75, fill = "gray85") +
   # round of 4 background
-  geom_tile(data = coord_round_4, width = 22, height = 135, fill = "gray75") +
+  geom_tile(data = coord_round_4, width = 22, height = 135, fill = "gray80") +
   # round of 2 (final) background
-  geom_tile(data = tibble(x = 0, y = 0), width = 72, height = 25, fill = "gray65") +
+  geom_tile(data = tibble(x = 0, y = 0), width = 72, height = 25, fill = "gray75") +
   # flag border 
   geom_tile(width = 18, height = 14, fill = "gray20") +
   # champion border 
