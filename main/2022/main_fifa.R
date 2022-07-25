@@ -80,3 +80,4 @@ overall_rank <- colley_ratings_1y %>%
   arrange(-rating_overall) %>% 
   mutate(ranking_overall = row_number())
 
+View(overall_rank)
