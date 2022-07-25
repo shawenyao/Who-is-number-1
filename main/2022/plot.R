@@ -164,15 +164,15 @@ plot <- data %>%
     aes(x = x, y = y)
   ) +
   # group background
-  geom_tile(data = coord_group, width = 42, height = 47, fill = "gray95") +
+  geom_tile(data = coord_group, width = 42, height = 47, fill = "gray95", color = "gray50") +
   # round of 16 background
-  geom_tile(data = coord_round_16, width = 22, height = 47, fill = "gray90") +
+  geom_tile(data = coord_round_16, width = 22, height = 47, fill = "gray90", color = "gray45") +
   # round of 8 background
-  geom_tile(data = coord_round_8, width = 22, height = 75, fill = "gray85") +
+  geom_tile(data = coord_round_8, width = 22, height = 75, fill = "gray85", color = "gray40") +
   # round of 4 background
-  geom_tile(data = coord_round_4, width = 22, height = 135, fill = "gray80") +
+  geom_tile(data = coord_round_4, width = 22, height = 135, fill = "gray80", color = "gray35") +
   # round of 2 (final) background
-  geom_tile(data = tibble(x = 0, y = 0), width = 72, height = 25, fill = "gray75") +
+  geom_tile(data = tibble(x = 0, y = 0), width = 72, height = 25, fill = "gray75", color = "gray30") +
   # flag border 
   geom_tile(width = 18, height = 14, fill = "gray20") +
   # champion border 
