@@ -188,7 +188,7 @@ plot <- data %>%
   geom_image(aes(image = image), asp = 1.3, size = data$size) +
   # logos
   annotation_custom(logo_qatar, xmin = -17, xmax = 17, ymin = 70, ymax = 104) +
-  annotation_custom(logo_my, xmin = -30, xmax = 30, ymin = -105, ymax = -85) +
+  annotation_custom(logo_my, xmin = -27, xmax = 27, ymin = -103, ymax = -85) +
   # flag text
   geom_text(aes(y = y - 9, label = country), size = 4) +
   coord_fixed(xlim = c(-130, 130), ylim = c(-100, 100)) +
