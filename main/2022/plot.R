@@ -1,5 +1,6 @@
 library(tidyverse)
 library(ggimage)
+library(grImport2)
 library(png)
 library(grid)
 
@@ -44,10 +45,11 @@ country <- tribble(
   "South Korea", "https://flagicons.lipis.dev/flags/4x3/kr.svg"
 )
 
-# logo image
-logo <- rasterGrob(readPNG("logo.png"), interpolate=TRUE)
+# logo images
+logo_qatar <- rasterGrob(readPNG("logo_qatar.png"), interpolate=TRUE)
+logo_my <- rasterGrob(readPNG("logo.png"), interpolate=TRUE)
 
-# group backrgound coordinates
+# group background coordinates
 coord_group <- tibble(x = c(-110, 110, -110, 110, -110, 110, -110, 110), y = c(80, 80, 30, 30, -30, -30, -80, -80))
 coord_round_16 <- tibble(x = c(-75, 75, -75, 75, -75, 75, -75, 75), y = c(80, 80, 30, 30, -30, -30, -80, -80))
 coord_round_8 <- tibble(x = c(-50, 50, -50, 50), y = c(55, 55, -55, -55))
@@ -184,8 +186,9 @@ plot <- data %>%
   geom_tile(data = tibble(x = 0, y = 0), width = 18, height = 14, fill = "gold") +
   # flag
   geom_image(aes(image = image), asp = 1.3, size = data$size) +
-  # logo
-  annotation_custom(logo, xmin = -30, xmax = 30, ymin = -105, ymax = -85) +
+  # logos
+  annotation_custom(logo_qatar, xmin = -17, xmax = 17, ymin = 70, ymax = 104) +
+  annotation_custom(logo_my, xmin = -30, xmax = 30, ymin = -105, ymax = -85) +
   # flag text
   geom_text(aes(y = y - 9, label = country), size = 4) +
   coord_fixed(xlim = c(-130, 130), ylim = c(-100, 100)) +
