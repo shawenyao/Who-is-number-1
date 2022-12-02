@@ -25,9 +25,9 @@ fifa <- import("https://raw.githubusercontent.com/martj42/international_results/
 
 
 #==== apply Colley's method the rate team performance ====
-colley_ratings_1y <- colleys_method(scoreboard = fifa %>% filter(date >= "2021-06-01"))
-colley_ratings_2y <- colleys_method(scoreboard = fifa %>% filter(date >= "2020-06-01"))
-colley_ratings_4y <- colleys_method(scoreboard = fifa %>% filter(date >= "2018-06-01"))
+colley_ratings_1y <- colleys_method(scoreboard = fifa %>% filter(date >= "2021-06-01", date <= "2022-07-26"))
+colley_ratings_2y <- colleys_method(scoreboard = fifa %>% filter(date >= "2020-06-01", date <= "2022-07-26"))
+colley_ratings_4y <- colleys_method(scoreboard = fifa %>% filter(date >= "2018-06-01", date <= "2022-07-26"))
 
 
 #==== group stage ====
